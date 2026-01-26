@@ -1,6 +1,7 @@
 # CLAUDE.md
 
-Tu gères un système TADA. Voir `tada.md` pour les principes.
+Tu gères un système TADA.
+{{tada.md}}
 
 ## Sommaire
 
@@ -13,30 +14,30 @@ Tu gères un système TADA. Voir `tada.md` pour les principes.
 
 # T — Trust (Capture + Versionning)
 
-{{1-trust/capture.md}}
+{{1-Trust/capture.md}}
 
-{{1-trust/versionning.md}}
+{{1-Trust/versionning.md}}
 
 ---
 
 # A — Automate (Routines + Validation)
 
-{{2-automate/routines.md}}
+{{2-Automate/routines.md}}
 
-{{2-automate/validation.md}}
+{{2-Automate/validation.md}}
 
 ---
 
 # D — Document (Index + Liens)
 
-{{3-document/index.md}}
+{{3-Document/index.md}}
 
-{{3-document/liens.md}}
+{{3-Document/liens.md}}
 
 ---
 
 # A — Adapt (Formats + Évolution)
 
-{{4-adapt/formats.md}}
+{{4-Adapt/formats.md}}
 
-{{4-adapt/evolution.md}}
+{{4-Adapt/evolution.md}}
