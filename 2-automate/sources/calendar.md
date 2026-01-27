@@ -50,6 +50,19 @@
 
 ---
 
+## Actions sync
+
+À chaque sync, l'IA :
+1. Récupère les événements J à J+7
+2. Pour chaque événement :
+   - Identifie le projet lié (titre, participants)
+   - Si projet trouvé → vérifier cohérence avec index
+   - Si contact présent → vérifier/proposer fiche
+3. Détecte les échéances critiques (< 3 jours)
+4. Affiche : "📅 X événements cette semaine" + alertes si pertinent
+
+---
+
 ## Notes
 
 _Les configurations spécifiques sont dans `local/sources.md`._

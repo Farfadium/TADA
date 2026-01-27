@@ -50,6 +50,20 @@
 
 ---
 
+## Actions sync
+
+À chaque sync, l'IA :
+1. Récupère les emails depuis la dernière sync (voir `local/sources.md`)
+2. Filtre : inbox, non traités
+3. Pour chaque email :
+   - Identifie le projet (mots-clés, expéditeur)
+   - Si projet trouvé → proposer de labelliser/router
+   - Si pièce jointe → proposer de télécharger vers le projet
+   - Si non routé → afficher dans le résumé
+4. Affiche : "📧 X nouveaux emails" + résumé si pertinent
+
+---
+
 ## Notes
 
 _Les configurations spécifiques (Gmail, Outlook, etc.) sont dans `local/sources.md`._

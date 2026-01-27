@@ -49,6 +49,18 @@
 
 ---
 
+## Actions sync
+
+À chaque sync (si source active), l'IA :
+1. Récupère les messages non lus depuis dernière sync
+2. Pour chaque conversation :
+   - Identifie le projet concerné
+   - Extrait infos importantes (dates, décisions, fichiers)
+   - Si fichier partagé → proposer de télécharger
+3. Affiche : "💬 X messages non lus" + résumé si pertinent
+
+---
+
 ## Notes
 
 _Les configurations spécifiques sont dans `local/sources.md`._

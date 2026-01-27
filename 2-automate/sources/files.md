@@ -51,6 +51,18 @@
 
 ---
 
+## Actions sync
+
+À chaque sync, l'IA :
+1. Liste les fichiers dans INBOX/ (hors index.md)
+2. Pour chaque fichier :
+   - Identifie le projet potentiel (nom, contenu)
+   - Si projet évident → proposer routage
+   - Si > 7 jours dans INBOX → alerter
+3. Affiche : "📁 X fichiers dans INBOX" + propositions si pertinent
+
+---
+
 ## Notes
 
 _Source toujours active, pas de configuration requise._
