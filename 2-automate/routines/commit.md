@@ -17,7 +17,8 @@ cd _SYSTEM && git status
 Si des changements existent :
 1. Stager tous les fichiers : `git add -A`
 2. Commiter avec un message descriptif
-3. Revenir au repo principal
+3. Push : `git push`
+4. Revenir au repo principal
 
 ### 2. Vérifier l'état du repo principal
 
@@ -57,9 +58,15 @@ Types :
 - `fix` : correction
 - `refactor` : restructuration
 
-### 6. Confirmer
+### 6. Push
 
-Afficher le résultat : `git log -1 --oneline`
+```
+git push
+```
+
+### 7. Confirmer
+
+Afficher le résultat : `git log -1 --oneline` et statut du push
 
 ## Notes
 
