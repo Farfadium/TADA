@@ -4,7 +4,8 @@
 
 | Type | Valeur |
 |------|--------|
-| Tag | `#commit`, `commit` |
+| Tag | `#commit`, `#sync`, `#save` |
+| Intention | `commit`, `sync`, `enregistre`, `sauvegarde`, `push`, `git` |
 
 ## Actions
 

@@ -40,7 +40,7 @@ Tu n'as pas besoin du tag exact. Si l'intention correspond, exécute la routine.
 | Mise à jour projet | | | #projet |
 | Ajout règle | | | #rule |
 | Analyse logs | 1er du mois | | #analyse-logs |
-| Commit | | | #commit |
+| Commit | | | #commit, #sync, #save |
 
 **Détails des routines :** `_SYSTEM/2-Automate/routines/[nom].md`
 
