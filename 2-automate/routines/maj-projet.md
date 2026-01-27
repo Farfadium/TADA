@@ -6,6 +6,8 @@
 |------|--------|
 | Tag | #projet [nom] |
 
+**Impact :** Contenu
+
 **Contexte :**
 Mettre à jour un projet spécifique suite à un événement ou une information nouvelle.
 

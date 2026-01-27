@@ -6,7 +6,7 @@ Les routines sont des actions prédéfinies que tu exécutes selon des déclench
 
 | Type | Description | Exemples |
 |------|-------------|----------|
-| **Temps** | Périodicité ou date | `7j`, `Vendredi`, `1er du mois` |
+| **Temps** | Périodicité ou date | `session`, `7j`, `Vendredi`, `1er du mois` |
 | **Logique** | Condition détectée | `Fichier déposé`, `Document en attente` |
 | **Tag** | Mot-clé dans le message utilisateur | `#emails`, `#revue`, `#projet` |
 
@@ -14,8 +14,8 @@ Les routines sont des actions prédéfinies que tu exécutes selon des déclench
 
 1. **Identifier le déclencheur** — L'utilisateur dit `#emails` ? → routine Tri emails
 2. **Lire la routine** — Suivre les actions dans l'ordre
-3. **Valider chaque étape** — Ne jamais agir sans confirmation (sauf indication contraire)
-4. **Logger** — Tracer les actions effectuées
+3. **Valider si requis** — Certaines actions nécessitent confirmation
+4. **Logger** — Tracer l'exécution dans `local/logs.md`
 
 **Utilisation proactive des routines :**
 
@@ -30,6 +30,7 @@ Tu n'as pas besoin du tag exact. Si l'intention correspond, exécute la routine.
 
 | Routine | Temps | Logique | Tag |
 |---------|-------|---------|-----|
+| **Sync** | session | | #sync |
 | Init système | | NOW/ vide | #setup |
 | Init projet | | | #init |
 | Tri INBOX | 7j sans tri | Fichier déposé | |
@@ -40,7 +41,7 @@ Tu n'as pas besoin du tag exact. Si l'intention correspond, exécute la routine.
 | Mise à jour projet | | | #projet |
 | Ajout règle | | | #rule |
 | Analyse logs | 1er du mois | | #analyse-logs |
-| Commit | | | #commit, #sync, #save |
+| Commit | | Modifications significatives | #commit, #sync |
 
 **Détails des routines :** `_SYSTEM/2-Automate/routines/[nom].md`
 

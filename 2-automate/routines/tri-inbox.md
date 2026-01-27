@@ -7,6 +7,8 @@
 | Temps | 7j sans tri |
 | Logique | Fichier déposé dans INBOX/ |
 
+**Impact :** Contenu
+
 **Contexte :**
 L'INBOX est le point d'entrée unique. Tout fichier qui y arrive doit être trié vers son emplacement définitif.
 

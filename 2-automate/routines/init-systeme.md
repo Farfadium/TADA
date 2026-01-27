@@ -7,6 +7,8 @@
 | Logique | NOW/ vide ou presque vide |
 | Tag | #setup |
 
+**Impact :** Système
+
 **Contexte :**
 Quand le système TADA est nouveau ou peu rempli, tu guides l'utilisateur pour capturer toutes ses informations existantes. L'objectif est d'avoir un système complet et à jour dès le départ.
 

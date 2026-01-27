@@ -6,6 +6,8 @@
 |------|--------|
 | Tag | #init [nom du projet] |
 
+**Impact :** Contenu, Externe
+
 **Contexte :**
 Créer la structure complète d'un nouveau projet pour qu'il soit immédiatement opérationnel dans TADA.
 

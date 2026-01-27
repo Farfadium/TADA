@@ -7,6 +7,8 @@
 | Temps | Vendredi |
 | Tag | #revue |
 
+**Impact :** Contenu
+
 **Contexte :**
 Faire le point hebdomadaire sur tous les projets actifs pour identifier les blocages et planifier la semaine suivante.
 

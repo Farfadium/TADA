@@ -8,37 +8,37 @@
 ## Principes
 
 **T — Trust**
-Fais confiance au système. Tout est capturé, rien ne se perd.
+Tout est lisible. L'historique est traçable, les formats sont ouverts, le système s'adapte à toi.
 
 **A — Automate**
-Le routage est automatisé et les routines maintiennent le système à jour. L'humain reste décideur.
+Tout est capturé. L'inbox centralise, les routines maintiennent, le système évolue.
 
 **D — Document**
-Tout est écrit. Chaque dossier s'explique lui-même.
+Tout est contextualisé. Les index structurent, les liens connectent, l'information est prête quand tu en as besoin.
 
-**A — Adapt**
-C'est ton système. Tu le comprends, tu le fais évoluer.
+**A — Act**
+Tout est instantané. Tu agis de partout, l'IA anticipe et propose.
 
 ---
 
 ## Concepts
 
-### Trust — Capture + Versionning
+### Trust — Lisible + Personnalisé
 
-- **Capture** : Un point d'entrée unique (INBOX). Tout y est collecté de n'importe où, même une idée éphémère.
-- **Versionning** : Tout est sauvegardé, sécurisé, versionné.
+- **Lisible** : Historique traçable (versionning, logs). Formats ouverts (Markdown, fichiers locaux). Tout est consultable sans outil spécifique.
+- **Personnalisé** : Le système s'adapte à toi — structure, communication, règles. C'est ton système.
 
-### Automate — Routines + Validation
+### Automate — Inbox + Maintenance
 
-- **Routines** : Des actions, dont le routage, sont déclenchées par le temps, des événements ou manuellement.
-- **Validation** : Le système propose, l'humain valide. Une question après l'autre.
+- **Inbox** : Un point d'entrée unique. Toutes les sources (email, fichiers, conversations) convergent vers INBOX.
+- **Maintenance** : Les routines maintiennent le système à jour. L'IA apprend et met à jour ses propres instructions.
 
 ### Document — Index + Liens
 
-- **Index** : Chaque dossier contient un fichier qui documente son contexte.
-- **Liens** : Les informations se connectent entre elles (`[[Nom]]`). Des répertoires de référence centralisent les fiches (personnes, entreprises, concepts...).
+- **Index** : Chaque dossier s'explique lui-même. Le contexte est clair, structuré, à jour.
+- **Liens** : Les informations se connectent (`[[Nom]]`). Les répertoires centralisent les fiches de référence.
 
-### Adapt — Formats + Évolution
+### Act — Instantané + Proactif
 
-- **Formats** : Markdown, fichiers locaux, structure modulable des dossiers. Lisibles par tous, indépendants de l'outil.
-- **Évolution** : Le système s'adapte à toi — communication, règles, structure. Il évolue avec toi.
+- **Instantané** : Tu agis de partout — voiture, mobile, ordi, audio, écrit. Pas de latence, pas de recherche.
+- **Proactif** : L'IA ne se contente pas de répondre. Elle anticipe, propose, prépare les actions.

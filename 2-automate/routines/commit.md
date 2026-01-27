@@ -6,6 +6,16 @@
 |------|--------|
 | Tag | `#commit`, `#sync`, `#save` |
 | Intention | `commit`, `sync`, `enregistre`, `sauvegarde`, `push`, `git` |
+| Logique | Modifications significatives effectuées par Claude |
+
+**Impact :** Externe
+
+**Déclenchement automatique :**
+Tu déclenches cette routine toi-même quand :
+- Tu as fait des modifications significatives (nouveau fichier, édition importante)
+- Tu as modifié plusieurs fichiers dans la session
+- Tu as terminé une tâche demandée par l'utilisateur qui impliquait des changements
+- En fin de session si des changements non commités existent
 
 ## Actions
 

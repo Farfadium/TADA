@@ -6,6 +6,8 @@
 |------|--------|
 | Tag | #rule |
 
+**Impact :** Système
+
 **Contexte :**
 Quand l'utilisateur identifie un comportement à systématiser, il demande l'ajout d'une règle dans CLAUDE.md.
 

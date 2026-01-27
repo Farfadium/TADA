@@ -7,6 +7,8 @@
 | Temps | Mensuel (1er du mois) |
 | Tag | #analyse-logs |
 
+**Impact :** Système
+
 **Objectif :**
 Lire entre les lignes des conversations pour comprendre les besoins non exprimés, les frustrations, les intentions profondes — et proposer des améliorations du système TADA dans son ensemble.
 

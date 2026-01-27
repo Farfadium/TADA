@@ -7,6 +7,8 @@
 | Logique | Document en attente depuis trop longtemps |
 | Temps | Hebdomadaire (lors de la revue) |
 
+**Impact :** Contenu, Externe
+
 **Contexte :**
 Les documents dans PENDING/ attendent une action externe (signature, réponse, décision). Il faut surveiller qu'ils n'y restent pas indéfiniment.
 

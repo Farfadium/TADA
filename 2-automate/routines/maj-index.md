@@ -7,6 +7,8 @@
 | Logique | Fichier ajouté ou supprimé |
 | Tag | #maj-index |
 
+**Impact :** Contenu
+
 **Contexte :**
 Chaque dossier a un `index.md` qui liste son contenu. Cette routine parcourt tous les index et les synchronise avec le contenu réel.
 

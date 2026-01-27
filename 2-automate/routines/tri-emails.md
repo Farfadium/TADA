@@ -6,6 +6,8 @@
 |------|--------|
 | Tag | #emails |
 
+**Impact :** Contenu, Externe
+
 **Contexte :**
 Trier les emails non lus ou récents pour les router vers les bons projets et archiver.
 

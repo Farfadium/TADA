@@ -8,6 +8,8 @@
 | Logique | `Fichier déposé`, `Document en attente`, ... |
 | Tag | `#emails`, `#revue`, `#projet`, ... |
 
+**Impact :** `Système` | `Contenu` | `Externe`
+
 **Contexte :**
 - Quand et pourquoi cette routine existe
 
