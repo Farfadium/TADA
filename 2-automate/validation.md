@@ -1,27 +1,65 @@
 ## Validation
 
-Tu proposes, l'humain valide. Une question à la fois.
+Le système propose, l'humain valide — mais pas pour tout.
 
-**Règle absolue :** Tu ne fais jamais d'action sans validation préalable (sauf logging).
+---
 
-**Comment tu valides :**
+### Actions SANS validation
 
-| Action | Ce que tu montres | Ce que tu demandes |
-|--------|-------------------|-------------------|
-| Modifier un fichier | Le diff complet | "Valider ?" |
-| Déplacer un fichier | Source → Destination | "Valider ?" |
-| Envoyer un email | Le brouillon complet | "Je l'envoie ?" |
-| Supprimer un fichier | Le fichier concerné | "Confirmer la suppression ?" |
-| Créer une fiche | Le contenu proposé | "Valider ?" |
+Ces actions peuvent être exécutées directement :
 
-**Format diff — tu utilises :**
+| Action | Périmètre | Condition |
+|--------|-----------|-----------|
+| **Lire** un fichier | Tout TADA | — |
+| **Créer** un fichier | `INBOX/` | — |
+| **Modifier** un fichier | `_SYSTEM/` | Sauf `instructions.md` |
+| **Modifier** un index | `*/index.md` | Ajout/suppression de fichier listé |
+| **Déplacer** un fichier | `INBOX/` → ailleurs | Routage évident |
+| **Régénérer** `claude.md` | — | Après modif dans `_SYSTEM/` |
+| **Exécuter** une routine | — | Déclenchée par tag |
+| **Commit** git | — | Quand un ensemble cohérent de modifications est terminé |
+
+---
+
+### Actions AVEC validation
+
+Ces actions nécessitent toujours une confirmation :
+
+| Action | Raison |
+|--------|--------|
+| **Supprimer** un fichier | Irréversible |
+| **Modifier** `instructions.md` | Impact sur le comportement global |
+| **Envoyer** un email | Action externe |
+| **Modifier** un fichier hors `_SYSTEM/` | Données utilisateur |
+| **Créer** une fiche (annuaires) | Demander du contexte et des informations à ajouter |
+
+---
+
+### Format de validation
+
+Quand une validation est requise :
+
 ```
-+ ligne ajoutée
-- ligne supprimée
+**Action :** [description courte]
+
+[diff ou aperçu]
+
+Valider ?
 ```
+
+**Réponses acceptées :** `oui`, `go`, `ok`, `yes`, `valide`, `1`
+
+---
+
+### Cas particuliers
+
+**Modifications multiples :**
+Si plusieurs fichiers doivent être modifiés ensemble → montrer la liste, une seule validation pour l'ensemble.
+
+**Doute :**
+En cas de doute sur la catégorie → demander validation.
 
 **Tu ne fais JAMAIS :**
 - Envoyer un email directement (toujours brouillon d'abord)
-- Modifier un fichier sans montrer le diff
 - Supprimer un fichier sans confirmation explicite
 - Poser plusieurs questions à la fois

@@ -7,105 +7,123 @@
 | Temps | Mensuel (1er du mois) |
 | Tag | #analyse-logs |
 
-**Contexte :**
-Analyser l'historique des conversations pour identifier les patterns, problèmes récurrents, et améliorations possibles du système TADA.
+**Objectif :**
+Lire entre les lignes des conversations pour comprendre les besoins non exprimés, les frustrations, les intentions profondes — et proposer des améliorations du système TADA dans son ensemble.
 
 **Emplacement des logs :** `_SYSTEM/local/Claude_logs/`
 
+---
+
+**Ce que je cherche :**
+
+| Signal | Ce que ça révèle |
+|--------|------------------|
+| Questions répétées | Besoin de documentation ou de clarté |
+| Hésitations, reformulations | Concept mal défini ou structure confuse |
+| Micro-validations ("oui", "go") | Manque d'autonomie, trop de friction |
+| Abandons de conversation | Frustration, mauvaise direction |
+| Demandes de "faire comme avant" | Régression, changement non souhaité |
+| Idées évoquées puis oubliées | Projets latents à capturer |
+| Plaintes implicites | Pain points à résoudre |
+
+---
+
 **Actions :**
 
-1. **Lister les conversations**
-   ```bash
-   ls -lhS "_SYSTEM/local/Claude_logs/"*.jsonl
-   ```
+1. **Lire l'ensemble des conversations récentes**
+   - Extraire les messages utilisateur
+   - Noter le contexte et l'émotion derrière chaque échange
 
-2. **Extraire les messages utilisateur de toutes les conversations**
-   ```bash
-   for f in "_SYSTEM/local/Claude_logs/"*.jsonl; do
-     cat "$f" | jq -r 'select(.type == "user") | .message.content[] | select(.type == "text") | .text'
-   done
-   ```
+2. **Identifier les intentions profondes**
+   - Qu'est-ce que l'utilisateur essayait vraiment de faire ?
+   - Où le système l'a-t-il freiné ?
+   - Quelles idées sont restées en suspens ?
 
-3. **Identifier les patterns** :
-   - Questions répétées (= documentation manquante)
-   - Micro-validations fréquentes ("oui", "go") (= manque d'autonomie)
-   - Demandes de mise à jour d'index (= routine à automatiser)
-   - Problèmes non résolus qui reviennent
-   - Hésitations sur la structure/nommage
+3. **Détecter les frustrations**
+   - Reformulations multiples = incompréhension
+   - Réponses courtes = impatience
+   - Abandon = échec du système
 
-4. **Catégoriser les findings** :
+4. **Repérer les opportunités**
+   - Tâches manuelles récurrentes → automatiser
+   - Questions fréquentes → documenter
+   - Idées évoquées → capturer dans GARDEN ou projets
 
-   | Catégorie | Symptôme | Solution type |
-   |-----------|----------|---------------|
-   | Documentation | Question répétée | Ajouter dans CLAUDE.md |
-   | Autonomie | Micro-validations | Ajouter aux "actions sans validation" |
-   | Routine | Action récurrente manuelle | Créer/améliorer routine |
-   | Bug | Problème qui revient | Logger dans issues.md |
-   | Structure | Hésitation sur organisation | Clarifier dans formats.md |
+5. **Proposer des améliorations TADA**
+   - Structure des dossiers
+   - Routines manquantes
+   - Documentation à clarifier
+   - Nouvelles fonctionnalités
 
-5. **Produire un rapport** dans `_SYSTEM/local/analyse-logs.md` :
-   ```markdown
-   # Analyse des logs — [YYYY-MM-DD]
+---
 
-   ## Conversations analysées
-   - X conversations
-   - Période : [date début] → [date fin]
+**Format du rapport :** `_SYSTEM/local/analyse-logs.md`
 
-   ## Patterns identifiés
+```markdown
+# Analyse des logs — [YYYY-MM-DD]
 
-   ### Documentation manquante
-   - ...
+## Période analysée
+- X conversations
+- [date début] → [date fin]
 
-   ### Manque d'autonomie
-   - ...
+## Ce que j'ai compris
 
-   ### Routines à créer/améliorer
-   - ...
+### Tes priorités actuelles
+- ...
 
-   ### Problèmes récurrents
-   - ...
+### Ce qui te frustre
+- ...
 
-   ## Actions proposées
-   | Priorité | Action | Fichier concerné |
-   |----------|--------|------------------|
-   | 1 | ... | ... |
-   ```
+### Idées en suspens
+- ...
 
-6. **Proposer les améliorations** au système
+## Améliorations proposées pour TADA
 
-**Validation requise :** Oui (pour les modifications du système)
+| Priorité | Proposition | Impact |
+|----------|-------------|--------|
+| 1 | ... | ... |
+
+## Questions pour toi
+- ...
+```
+
+---
+
+**Validation requise :** Oui (pour toute modification du système)
 
 **Exemple :**
 ```
 #analyse-logs
 
-Je lis les 19 conversations dans _SYSTEM/local/Claude_logs/...
+J'ai lu les 19 conversations du mois...
 
 ---
 
-## Patterns identifiés
+## Ce que j'ai compris
 
-### Documentation manquante
-- "Quand commence une session?" (3 fois)
-- "Comment marche ton contexte?" (2 fois)
-→ Ajouter section "Fonctionnement Claude" dans CLAUDE.md
+### Tes priorités actuelles
+- Finaliser la structure TADA pour pouvoir la partager
+- Réduire la friction dans nos échanges
 
-### Manque d'autonomie
-- 47 micro-validations ("oui", "go", "ok")
-→ Définir les actions que je peux faire seul
+### Ce qui te frustre
+- Trop de validations demandées pour des actions simples
+- Pas assez clair comment le système fonctionne techniquement
 
-### Problèmes récurrents
-- "GARDEN qui revient" (2 fois, non résolu)
-→ Créer _SYSTEM/local/issues.md
+### Idées en suspens
+- Subagents pour les routines (évoqué mais pas implémenté)
+- Template anonymisé pour partage
 
----
+## Améliorations proposées
 
-## Actions proposées
-| Priorité | Action |
-|----------|--------|
-| 1 | Créer section "Comment Claude fonctionne" |
-| 2 | Définir liste d'actions autonomes |
-| 3 | Créer issues.md |
+| Priorité | Proposition | Impact |
+|----------|-------------|--------|
+| 1 | Définir les actions sans validation | Moins de friction |
+| 2 | Documenter le fonctionnement technique | Autonomie utilisateur |
+| 3 | Créer routine export-template | Partage facilité |
 
-Valider ?
+## Questions pour toi
+- Veux-tu que je puisse modifier les fichiers système sans demander ?
+- Le rythme mensuel pour cette analyse te convient ?
+
+Valider les propositions ?
 ```
