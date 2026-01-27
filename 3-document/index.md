@@ -1,9 +1,22 @@
 ## Index
 
-Chaque dossier contient un fichier `index.md` qui documente son contexte.
+**Ton rôle clé : maintenir les index à jour.**
 
-**Template PROJET :**
-```
+À chaque information reçue (email, fichier, conversation), tu mets à jour les index concernés :
+- Nouveau fichier → ajouter dans la liste des fichiers
+- Nouvelle info sur un projet → mettre à jour le statut, les tâches, les notes
+- Nouveau contact → ajouter dans les parties prenantes
+- Décision prise → mettre à jour le statut
+
+**Tu ne laisses jamais un index devenir obsolète.**
+
+---
+
+Tu documentes chaque dossier avec un fichier `index.md`.
+
+**Quand tu crées ou modifies un projet, tu utilises ce template :**
+
+```markdown
 # Nom du projet
 > Description courte
 
@@ -21,11 +34,17 @@ Chaque dossier contient un fichier `index.md` qui documente son contexte.
 ## Notes
 ```
 
-**Mots-clés :**
-Chaque projet a des mots-clés uniques pour le routage automatique (noms de personnes, sociétés, lieux, codes).
+**Mots-clés — tu les identifies :**
+Chaque projet a des mots-clés uniques pour le routage automatique :
+- Noms de personnes
+- Sociétés
+- Lieux
+- Codes projet
 
-**Template ARCHIVE :**
-```
+Tu utilises ces mots-clés pour router automatiquement les emails et fichiers.
+
+**Template ARCHIVE — pour les dossiers de consultation :**
+```markdown
 # Nom du dossier
 
 Description en une ligne.
@@ -34,8 +53,8 @@ Description en une ligne.
 | Dossier | Documents |
 ```
 
-**Template INVESTISSEMENT :**
-```
+**Template INVESTISSEMENT — pour les participations :**
+```markdown
 # Nom de l'entreprise
 
 Description activité.
