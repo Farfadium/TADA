@@ -64,6 +64,57 @@
 
 ---
 
+## Archivage des emails importants
+
+**Quand archiver un email :**
+- Décision importante (validation, accord, refus)
+- Engagement contractuel ou financier
+- Information clé pour le projet
+- Échange à conserver pour référence future
+
+**Format Markdown :**
+```markdown
+# [Sujet de l'email]
+
+- **De :** [[Prénom Nom]] (email@exemple.com)
+- **À :** Destinataire
+- **Date :** YYYY-MM-DD HH:MM
+- **Gmail :** [Lien](https://mail.google.com/mail/u/0/#inbox/ID)
+
+## Résumé
+[1-2 phrases : ce que dit l'email]
+
+## Pourquoi c'est important
+[1-2 phrases : impact sur le projet, décision prise, action requise]
+
+---
+
+[Contenu complet de l'email]
+
+---
+
+## PJ
+- [Nom_fichier.pdf](Nom_fichier.pdf) — description
+```
+
+**Emplacement :** `NOW/[Projet]/_emails/YYYY-MM-DD_Sujet_court.md`
+
+**Avant d'archiver :**
+1. Vérifier que l'email n'existe pas déjà (Glob `_emails/*Sujet*` ou recherche par date)
+2. Pour chaque personne mentionnée (expéditeur, destinataires) :
+   - Vérifier si fiche existe dans `ARCHIVE/Répertoires/People/`
+   - Si non → créer la fiche immédiatement
+3. Créer le fichier markdown avec liens `[[Prénom Nom]]`
+
+**Règles :**
+- Toujours créer les liens `[[Prénom Nom]]` vers les fiches People
+- Créer les fiches People manquantes AVANT d'archiver l'email
+- Télécharger les PJ dans le même dossier `_emails/`
+- Le lien Gmail permet de retrouver l'original si besoin
+- Ne jamais dupliquer un email déjà archivé
+
+---
+
 ## Notes
 
 _Les configurations spécifiques (Gmail, Outlook, etc.) sont dans `local/sources.md`._

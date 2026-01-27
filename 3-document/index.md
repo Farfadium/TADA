@@ -43,6 +43,14 @@ Chaque projet a des mots-clés uniques pour le routage automatique :
 
 Tu utilises ces mots-clés pour router automatiquement les emails et fichiers.
 
+**Documents partagés :**
+Certains documents sont utilisés par plusieurs projets (ex: avis d'imposition pour dossiers bancaires).
+- **Stockage** : `ARCHIVE/Administratif/[Catégorie]/` (ex: Impôts/, Identité/, Banques/)
+- **Dans les projets** : créer un lien relatif vers le document
+- **Exemple** : `[Avis d'imposition](../../ARCHIVE/Administratif/Impôts/2025_Avis_imposition.pdf)`
+
+Tu évites de dupliquer les documents. Un seul exemplaire, plusieurs liens.
+
 **Template ARCHIVE — pour les dossiers de consultation :**
 ```markdown
 # Nom du dossier
@@ -72,4 +80,67 @@ Description activité.
 ## Stratégie
 ## Statut actuel
 ## Documents disponibles
+```
+
+---
+
+## Tracks
+
+**Quand utiliser des tracks :**
+Les projets complexes ont souvent plusieurs axes de travail parallèles (financement, travaux, juridique, etc.). Plutôt que de tout mettre dans l'index, on crée un fichier par track.
+
+**Avantages :**
+- Index reste synthétique (vue d'ensemble)
+- Chaque track a son historique détaillé
+- Plusieurs tracks peuvent avancer en parallèle
+- Facilite le suivi granulaire
+
+**Convention de nommage :** `_track_[nom].md`
+
+**Template TRACK :**
+```markdown
+# Track [Nom]
+
+> [Description courte du track]
+
+## Objectif
+[Ce qu'on cherche à obtenir sur ce track]
+
+## Interlocuteurs
+| Entité | Contact | Rôle |
+|--------|---------|------|
+| [[Entreprise]] | [[Prénom Nom]] | Description |
+
+## Suivi
+| Date | Action | Résultat | Prochaine étape |
+|------|--------|----------|-----------------|
+| JJ/MM | Description | ✅/🟡/❌ | Action suivante |
+
+## Statut actuel
+🟢 En bonne voie / 🟡 En attente / 🔴 Bloqué / ⚪ Non démarré
+
+**Dernière action :** [Date] — [Description]
+**Prochaine étape :** [Action attendue]
+
+## Historique détaillé
+
+### [Date] — [Titre]
+[Description de l'événement, décisions, échanges]
+
+---
+
+## Documents
+- [Document](chemin) — description
+
+## Notes
+```
+
+**Dans l'index du projet :**
+Ajouter une section "Tracks" avec le nom cliquable :
+```markdown
+## Tracks
+| Track | Statut | Prochaine étape |
+|-------|--------|-----------------|
+| [Banques](_track_banques.md) | 🟡 En attente | Action à faire |
+| [Travaux](_track_travaux.md) | 🟢 En cours | Action à faire |
 ```
