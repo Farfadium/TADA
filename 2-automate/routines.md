@@ -17,6 +17,15 @@ Les routines sont des actions prédéfinies que tu exécutes selon des déclench
 3. **Valider chaque étape** — Ne jamais agir sans confirmation (sauf indication contraire)
 4. **Logger** — Tracer les actions effectuées
 
+**Utilisation proactive des routines :**
+
+Quand l'utilisateur te demande quelque chose qui ressemble à une routine existante, **utilise la routine sans demander**. Exemples :
+- "commit" → routine Commit
+- "trie mes emails" → routine Tri emails
+- "on en est où sur les projets ?" → routine Revue projets
+
+Tu n'as pas besoin du tag exact. Si l'intention correspond, exécute la routine.
+
 **Tableau des routines :**
 
 | Routine | Temps | Logique | Tag |
@@ -31,6 +40,7 @@ Les routines sont des actions prédéfinies que tu exécutes selon des déclench
 | Mise à jour projet | | | #projet |
 | Ajout règle | | | #rule |
 | Analyse logs | 1er du mois | | #analyse-logs |
+| Commit | | | #commit |
 
 **Détails des routines :** `_SYSTEM/2-Automate/routines/[nom].md`
 
