@@ -1,6 +1,6 @@
 ### Sync
 
-> Synchronisation + maintenance proactive du système TADA.
+> Diagnostic système + propositions adaptées à l'état actuel.
 
 **Déclencheurs :**
 
@@ -13,38 +13,54 @@
 
 ## Actions
 
-### 1. Sources — Récupérer les nouveautés
+### 1. Diagnostic système
 
-Lire `local/sources.md` pour identifier les sources actives.
-Pour chaque source active, exécuter les actions définies dans `sources/[source].md` § "Actions sync".
+| Vérification | État |
+|--------------|------|
+| NOW/ | Projets actifs ? |
+| INBOX/ | Fichiers en attente ? |
+| PENDING/ | Documents expirés ? |
+| Sources | Configurées et syncées ? |
 
-### 2. Système — Maintenance automatique
+### 2. Déterminer la priorité
 
-| Vérification | Action |
-|--------------|--------|
-| Index obsolètes | Nettoyer les entrées orphelines |
-| Fichiers non listés | Ajouter aux index |
-| Date de sync | Mettre à jour `local/sources.md` |
+| État du système | Priorité |
+|-----------------|----------|
+| NOW/ vide | Initialiser les projets |
+| Projets sans labels Gmail | Configurer la correspondance |
+| INBOX/ non vide | Trier les fichiers |
+| Système prêt + emails non lus | Trier les emails |
 
-### 3. Système — Diagnostic
-
-- [ ] NOW/ a des projets actifs ?
-- [ ] INBOX/ vide ?
-- [ ] PENDING/ docs expirés ?
-- [ ] Routines non exécutées > 30j ?
-- [ ] Incohérences détectées ?
-
-### 4. Output
+### 3. Output
 
 ```
-**Sync** | [sources actives] | [X nouveautés]
-🔧 [maintenance effectuée]
-→ [action suggérée]
+**Sync** | [état système en 1 ligne]
+
+[diagnostic court]
+
+→ Par quoi on commence ?
+1. [action prioritaire] (recommandé)
+2. [autre action possible]
+3. [autre action possible]
 ```
 
 ---
 
 ## Validation
 
-**Sans validation :** récupération, maintenance index, mise à jour dates
-**Avec validation :** actions proposées, évolutions système
+**Sans validation :** diagnostic, lecture des sources
+**Avec validation :** toute action proposée
+
+---
+
+## Maintenance (si système opérationnel)
+
+À faire en arrière-plan si le système est déjà configuré :
+
+| Vérification | Action |
+|--------------|--------|
+| Index obsolètes | Nettoyer les entrées orphelines |
+| Fichiers non listés | Ajouter aux index |
+| Dernière vérification | Mettre à jour avec date+heure dans `local/sources.md` |
+
+**Note :** "Inbox 0" n'est mis à jour que lorsque tous les éléments d'une source ont été traités (routine tri terminée).
