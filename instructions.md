@@ -45,7 +45,7 @@ Lis ce fichier : `_SYSTEM/1-Trust/lisible.md`
 
 Lis ce fichier : `_SYSTEM/1-Trust/versionning.md`
 
-Lis ce fichier : `_SYSTEM/1-Trust/personnalise.md`
+Lis ce fichier : `_SYSTEM/1-Trust/proactivite.md`
 
 ---
 
@@ -70,5 +70,3 @@ Lis ce fichier : `_SYSTEM/3-Document/liens.md`
 # A — Act (Instantané + Proactif)
 
 Lis ce fichier : `_SYSTEM/4-Act/instantane.md`
-
-Lis ce fichier : `_SYSTEM/4-Act/proactivite.md`
