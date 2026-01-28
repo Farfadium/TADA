@@ -18,8 +18,7 @@
 | Vérification | État |
 |--------------|------|
 | DATA/NOW/ | Projets actifs ? |
-| DATA/INBOX/ | Fichiers en attente ? |
-| DATA/PENDING/ | Documents expirés ? |
+| DATA/INBOX/ | Décision humaine requise ? |
 | Sources | Configurées et syncées ? |
 
 ### 2. Déterminer la priorité
@@ -61,6 +60,6 @@
 |--------------|--------|
 | Index obsolètes | Nettoyer les entrées orphelines |
 | Fichiers non listés | Ajouter aux index |
-| Dernière vérification | Mettre à jour avec date+heure dans `local/sources.md` |
+| Dernière vérification | Mettre à jour avec date+heure dans `local/TOOLS.md` |
 
 **Note :** "Inbox 0" n'est mis à jour que lorsque tous les éléments d'une source ont été traités (routine tri terminée).

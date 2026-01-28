@@ -16,9 +16,7 @@ Chaque dossier a un `index.md` qui liste son contenu. Cette routine parcourt tou
 
 1. **Parcourir les dossiers principaux :**
    - DATA/NOW/ (projets actifs)
-   - DATA/PENDING/ (en attente)
-   - DATA/ARCHIVE/ (consultation)
-   - DATA/GARDEN/ (idées)
+   - DATA/ARCHIVE/ (consultation + Garden)
 
 2. **Pour chaque dossier avec un index.md :**
    - Lire l'index existant
@@ -50,9 +48,6 @@ Je parcours tous les index...
 
 **DATA/NOW/Changement Travail/index.md**
 (à jour)
-
-**DATA/PENDING/index.md**
-- | 2026-01-10_Devis_Travaux.pdf | (déplacé vers ARCHIVE) |
 
 **DATA/ARCHIVE/Répertoires/People/index.md**
 + | [[Jean Dupont]] | Notaire |

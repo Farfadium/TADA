@@ -4,7 +4,7 @@
 
 **Type :** `meetings`
 
-**Statut :** Voir `_SYSTEM/local/sources.md` pour la configuration active.
+**Statut :** Voir `_SYSTEM/local/TOOLS.md` pour la configuration active.
 
 ---
 
@@ -45,7 +45,7 @@
 **Fréquence :** `session` (à chaque démarrage)
 
 **Critères de récupération :**
-- Depuis : dernière sync (voir `local/sources.md`)
+- Depuis : dernière sync (voir `local/TOOLS.md`)
 - Filtres : meetings de l'utilisateur
 
 ---
@@ -167,4 +167,4 @@
 
 ## Notes
 
-_Les configurations spécifiques (Fireflies, Otter, etc.) sont dans `local/sources.md`._
+_Les configurations spécifiques (Fireflies, Otter, etc.) sont dans `local/TOOLS.md`._

@@ -49,7 +49,7 @@ Lire entre les lignes des conversations pour comprendre les besoins non exprimé
 4. **Repérer les opportunités**
    - Tâches manuelles récurrentes → automatiser
    - Questions fréquentes → documenter
-   - Idées évoquées → capturer dans GARDEN ou projets
+   - Idées évoquées → capturer dans ARCHIVE/Garden/ ou projets
 
 5. **Proposer des améliorations TADA**
    - Structure des dossiers

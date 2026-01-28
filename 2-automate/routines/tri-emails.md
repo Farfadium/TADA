@@ -17,7 +17,7 @@ Trier les emails non lus ou récents pour les router vers les bons projets et ar
 2. Présenter chaque email au format ci-dessous
 3. Proposer les actions pour chaque email
 4. Exécuter après validation
-5. Si tous les emails ont été traités → mettre à jour "Inbox 0" avec date+heure dans `local/sources.md`
+5. Si tous les emails ont été traités → mettre à jour "Inbox 0" avec date+heure dans `local/TOOLS.md`
 
 **Format de présentation :**
 ```

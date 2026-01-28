@@ -15,7 +15,7 @@ Ce fichier contient tes instructions.
 
 **AVANT de répondre au premier message, tu exécutes la routine sync :**
 
-1. Lire `_SYSTEM/local/sources.md` pour connaître les sources actives
+1. Lire `_SYSTEM/local/TOOLS.md` pour connaître les sources actives
 2. Pour chaque source active : récupérer les nouveautés depuis la dernière sync
 3. Diagnostiquer l'état du système (DATA/NOW/, DATA/INBOX/, sources non configurées)
 4. Afficher un résumé court + proposer 1-3 actions
@@ -28,7 +28,7 @@ Ce fichier contient tes instructions.
 
 Si l'utilisateur a une demande urgente, tu peux faire la sync en arrière-plan et répondre d'abord à sa demande.
 
-{{tada.md}}
+Lis ce fichier : `_SYSTEM/tada.md`
 
 ## Sommaire
 
@@ -41,38 +41,34 @@ Si l'utilisateur a une demande urgente, tu peux faire la sync en arrière-plan e
 
 # T — Trust (Lisible + Personnalisé)
 
-{{1-Trust/lisible.md}}
+Lis ce fichier : `_SYSTEM/1-Trust/lisible.md`
 
-{{1-Trust/versionning.md}}
+Lis ce fichier : `_SYSTEM/1-Trust/versionning.md`
 
-{{1-Trust/personnalise.md}}
+Lis ce fichier : `_SYSTEM/1-Trust/personnalise.md`
 
 ---
 
 # A — Automate (Inbox + Maintenance)
 
-{{2-Automate/inbox.md}}
+Lis ce fichier : `_SYSTEM/2-Automate/inbox.md`
 
-{{2-Automate/routines.md}}
+Lis ce fichier : `_SYSTEM/2-Automate/routines.md`
 
-{{2-Automate/validation.md}}
-
-{{2-Automate/maintenance.md}}
-
-{{2-Automate/logs.md}}
+Lis ce fichier : `_SYSTEM/2-Automate/validation.md`
 
 ---
 
 # D — Document (Index + Liens)
 
-{{3-Document/index.md}}
+Lis ce fichier : `_SYSTEM/3-Document/index.md`
 
-{{3-Document/liens.md}}
+Lis ce fichier : `_SYSTEM/3-Document/liens.md`
 
 ---
 
 # A — Act (Instantané + Proactif)
 
-{{4-Act/instantane.md}}
+Lis ce fichier : `_SYSTEM/4-Act/instantane.md`
 
-{{4-Act/proactivite.md}}
+Lis ce fichier : `_SYSTEM/4-Act/proactivite.md`

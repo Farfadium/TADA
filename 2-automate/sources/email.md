@@ -4,7 +4,7 @@
 
 **Type :** `email`
 
-**Statut :** Voir `_SYSTEM/local/sources.md` pour la configuration active.
+**Statut :** Voir `_SYSTEM/local/TOOLS.md` pour la configuration active.
 
 ---
 
@@ -45,7 +45,7 @@
 **Fréquence :** `session` (à chaque démarrage)
 
 **Critères de récupération :**
-- Depuis : dernière sync (voir `local/sources.md`)
+- Depuis : dernière sync (voir `local/TOOLS.md`)
 - Filtres : inbox uniquement, non traités
 
 ---
@@ -53,7 +53,7 @@
 ## Actions sync
 
 À chaque sync, l'IA :
-1. Récupère les emails depuis la dernière sync (voir `local/sources.md`)
+1. Récupère les emails depuis la dernière sync (voir `local/TOOLS.md`)
 2. Filtre : inbox, non traités
 3. Pour chaque email :
    - Identifie le projet (mots-clés, expéditeur)
@@ -117,4 +117,4 @@
 
 ## Notes
 
-_Les configurations spécifiques (Gmail, Outlook, etc.) sont dans `local/sources.md`._
+_Les configurations spécifiques (Gmail, Outlook, etc.) sont dans `local/TOOLS.md`._

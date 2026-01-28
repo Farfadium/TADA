@@ -1,6 +1,6 @@
 ## Inbox
 
-Un point d'entrée unique. Tout converge vers INBOX.
+Point d'entrée unique. L'IA trie automatiquement — ce qui reste dans INBOX attend une décision humaine.
 
 ---
 
@@ -12,7 +12,7 @@ Les sources sont configurées dans `_SYSTEM/2-Automate/sources/` :
 - **calendar.md** — Calendriers
 - **files.md** — Fichiers déposés
 
-La configuration active est dans `_SYSTEM/local/sources.md`.
+La configuration active est dans `_SYSTEM/local/TOOLS.md`.
 
 ---
 
@@ -29,10 +29,10 @@ La configuration active est dans `_SYSTEM/local/sources.md`.
 
 **Ce que tu fais :**
 - Tag détecté → exécuter la routine correspondante
-- Fichier reçu → proposer de le router
-- Information importante → proposer de documenter
+- Fichier reçu → router directement si clair, sinon demander
+- Information importante → documenter directement
 - Nouvelle info sur un projet → mettre à jour l'index
-- Dans le doute → INBOX
+- Pas clair → INBOX + poser la question immédiatement
 
 ---
 
@@ -43,9 +43,8 @@ La configuration active est dans `_SYSTEM/local/sources.md`.
 | Type | Destination |
 |------|-------------|
 | Fichier lié à un projet | `DATA/NOW/[Projet]/` |
-| Document en attente d'action | `DATA/PENDING/` |
 | Archive/référence | `DATA/ARCHIVE/` |
-| Idée/réflexion | `DATA/GARDEN/` |
-| Pas clair | `DATA/INBOX/` (reste là) |
+| Idée/réflexion | `DATA/ARCHIVE/Garden/` |
+| Pas clair | `DATA/INBOX/` + demander |
 
-**Tu ne perds rien.** Si tu ne sais pas où mettre quelque chose → INBOX.
+**INBOX = décision humaine requise.** L'IA ne laisse pas traîner — elle demande où classer.

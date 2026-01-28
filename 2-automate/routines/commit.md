@@ -81,8 +81,8 @@ Afficher le résultat : `git log -1 --oneline` et statut du push
 
 ## Notes
 
-- **AUCUNE VALIDATION DEMANDÉE** : tu exécutes le commit directement sans demander confirmation
-- Tu affiches un résumé des changements et le message de commit, puis tu commits immédiatement
+- **AUCUNE VALIDATION DEMANDÉE** : tu exécutes commit + push directement, sans demander "tu veux push ?"
+- Tu affiches un résumé des changements, tu commits, tu push, tu confirmes — tout d'une traite
 - Les fichiers non trackés sont ajoutés automatiquement si pertinents (sauf .obsidian/)
 - Si le submodule a des changements, il est TOUJOURS commité en premier
 - En cas d'erreur ou conflit uniquement, tu demandes de l'aide

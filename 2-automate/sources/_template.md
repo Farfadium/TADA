@@ -4,7 +4,7 @@
 
 **Type :** `email` | `messaging` | `calendar` | `files` | `meetings` | `other`
 
-**Statut :** Voir `_SYSTEM/local/sources.md` pour la configuration active.
+**Statut :** Voir `_SYSTEM/local/TOOLS.md` pour la configuration active.
 
 ---
 
@@ -104,4 +104,4 @@
 
 ## Notes
 
-_Les configurations spécifiques sont dans `local/sources.md`._
+_Les configurations spécifiques sont dans `local/TOOLS.md`._

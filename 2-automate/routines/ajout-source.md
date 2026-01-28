@@ -28,13 +28,13 @@ Quand l'utilisateur veut connecter une nouvelle source de capture (email, calend
    - Ajouter la config dans `~/.claude.json` (section `mcpServers` du projet)
    - Demander les credentials à l'utilisateur
 
-3. **Mettre à jour `local/sources.md`**
+3. **Mettre à jour `local/TOOLS.md`**
    - Ajouter la section avec : Service, Compte, MCP, Statut
    - Noter la date de dernière vérification
 
 4. **Tester la connexion**
    - Vérifier que le MCP fonctionne
-   - Mettre à jour le statut dans `local/sources.md`
+   - Mettre à jour le statut dans `local/TOOLS.md`
 
 5. **Logger** dans `local/logs.md`
 
@@ -43,7 +43,7 @@ Quand l'utilisateur veut connecter une nouvelle source de capture (email, calend
 **Checklist :**
 - [ ] `_SYSTEM/2-Automate/sources/[source].md` créé
 - [ ] MCP configuré dans `~/.claude.json`
-- [ ] `_SYSTEM/local/sources.md` mis à jour
+- [ ] `_SYSTEM/local/TOOLS.md` mis à jour
 - [ ] Connexion testée
 - [ ] Statut = actif
 
@@ -53,7 +53,7 @@ Utilisateur : "Ajoute Fireflies comme source"
 
 1. Créer _SYSTEM/2-Automate/sources/meetings.md
 2. Configurer MCP Fireflies dans ~/.claude.json
-3. Ajouter section Meetings dans local/sources.md
+3. Ajouter section Meetings dans local/TOOLS.md
 4. Tester : mcp__fireflies__fireflies_get_user
 5. Statut : actif
 ```

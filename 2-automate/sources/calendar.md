@@ -4,7 +4,7 @@
 
 **Type :** `calendar`
 
-**Statut :** Voir `_SYSTEM/local/sources.md` pour la configuration active.
+**Statut :** Voir `_SYSTEM/local/TOOLS.md` pour la configuration active.
 
 ---
 
@@ -35,7 +35,7 @@
 
 **Règles spécifiques :**
 - Événements liés à un projet → mentionner dans l'index
-- Échéances importantes → PENDING si action requise
+- Échéances importantes → noter dans le projet concerné
 - RDV avec contact → vérifier/créer la fiche
 
 ---
@@ -65,4 +65,4 @@
 
 ## Notes
 
-_Les configurations spécifiques sont dans `local/sources.md`._
+_Les configurations spécifiques sont dans `local/TOOLS.md`._

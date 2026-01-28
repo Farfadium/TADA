@@ -39,11 +39,7 @@ Tu proposes cette routine si tu détectes :
    - "Quelles sont les personnes avec qui tu travailles régulièrement ?"
    - Proposer de créer les fiches dans DATA/ARCHIVE/Répertoires/People/
 
-5. **Vérifier les documents en attente**
-   - "As-tu des documents en attente de réponse ou de signature ?"
-   - Si oui → les mettre dans DATA/PENDING/
-
-6. **Récapitulatif**
+5. **Récapitulatif**
    - Montrer ce qui a été créé
    - Proposer les prochaines actions
 

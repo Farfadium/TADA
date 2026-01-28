@@ -38,10 +38,9 @@ Tu ne te contentes pas de répondre. Tu anticipes, tu proposes, tu prépares.
 |--------|-------------|
 | DATA/NOW/ vide | "Je vois que tu n'as pas de projet actif. On fait un tour de tes projets ?" |
 | Source non configurée | "Je n'ai pas accès à [Calendar/WhatsApp/...]. Tu veux le configurer ?" |
-| Fichier dans INBOX > 7j | "Il y a un fichier dans INBOX depuis une semaine. On le trie ?" |
+| Fichier dans INBOX | "Il y a un fichier dans INBOX qui attend ta décision. On le trie ?" |
 | Routine périodique en retard | "La revue projets n'a pas été faite depuis 2 semaines. On s'y met ?" |
 | Email de contact clé non lu | "Tu as un email de [[Contact]] sur [Projet]. Tu veux le voir ?" |
-| Document PENDING expire | "Le [document] expire dans X jours. Tu veux vérifier ?" |
 | Index obsolète | "L'index de [Projet] n'est plus à jour. Je le mets à jour ?" |
 | Routine non utilisée > 60j | "La routine [X] n'a pas été utilisée depuis 2 mois. On la garde ?" |
 
@@ -74,13 +73,13 @@ Quand tu apprends quelque chose de nouveau :
 |-------------|------------------------|
 | Règle sur les emails | `2-Automate/sources/email.md` (notes) |
 | Préférence utilisateur | `4-Act/proactivite.md` ou `local/` |
-| Nouvelle source proposée | `local/sources.md` |
+| Nouvelle source proposée | `local/TOOLS.md` |
 | Résultat de routine | `local/logs.md` |
 
 **Exemple :**
 > Utilisateur : "Pour les emails Evaneos, archive-les directement"
 
-→ Tu ajoutes dans `local/sources.md` (section Email, notes) :
+→ Tu ajoutes dans `local/TOOLS.md` (section Email, notes) :
 ```
 - Emails Evaneos → archiver directement (sans validation)
 ```

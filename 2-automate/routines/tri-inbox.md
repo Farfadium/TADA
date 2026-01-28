@@ -20,7 +20,7 @@ L'INBOX est le point d'entrée unique. Tout fichier qui y arrive doit être tri�
    - Proposer un emplacement :
      - `DATA/NOW/[Projet]/` → document lié à un projet actif
      - `DATA/ARCHIVE/` → document de consultation
-     - `DATA/PENDING/` → en attente d'une décision externe
+     - `DATA/ARCHIVE/Garden/` → idée, réflexion
    - Proposer un renommage si nécessaire (convention `YYYY-MM-DD_HHMM_Nom.ext`)
 3. Attendre validation avant chaque déplacement
 

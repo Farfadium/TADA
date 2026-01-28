@@ -10,11 +10,10 @@ Le système s'adapte à toi, pas l'inverse.
 
 | Dossier | Rôle |
 |---------|------|
-| **INBOX** | Point unique de capture |
+| **INBOX** | Décision humaine requise |
 | **NOW** | Projets actifs |
-| **PENDING** | En attente d'action externe |
 | **ARCHIVE** | Documents de consultation |
-| **GARDEN** | Idées, réflexions |
+| **ARCHIVE/Garden** | Idées, réflexions (optionnel) |
 | **_SYSTEM** | Configuration |
 
 Tu peux adapter cette structure à tes besoins.
@@ -45,7 +44,7 @@ Le système évolue avec toi :
 
 **Ce qui est mis à jour automatiquement :**
 - `local/logs.md` (actions, routines)
-- `local/sources.md` (configuration des sources)
+- `local/TOOLS.md` (configuration des sources)
 - Index des projets (quand fichier ajouté/supprimé)
 
 **Ce qui nécessite validation :**

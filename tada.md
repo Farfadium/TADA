@@ -30,7 +30,7 @@ Tout est instantané. Tu agis de partout, l'IA anticipe et propose.
 
 ### Automate — Inbox + Maintenance
 
-- **Inbox** : Un point d'entrée unique. Toutes les sources (email, fichiers, conversations) convergent vers INBOX.
+- **Inbox** : Point d'entrée unique. L'IA trie automatiquement — ce qui reste dans INBOX attend une décision humaine.
 - **Maintenance** : Les routines maintiennent le système à jour. L'IA apprend et met à jour ses propres instructions.
 
 ### Document — Index + Liens

@@ -1,4 +1,10 @@
-## Routines
+## Routines & Maintenance
+
+Le système s'auto-maintient. Les routines exécutent, l'IA apprend et documente.
+
+---
+
+### Routines
 
 Les routines sont des actions prédéfinies que tu exécutes selon des déclencheurs précis.
 
@@ -33,10 +39,9 @@ Tu n'as pas besoin du tag exact. Si l'intention correspond, exécute la routine.
 | **Sync** | session | | #sync |
 | Init système | | DATA/NOW/ vide | #setup |
 | Init projet | | | #init |
-| Tri INBOX | 7j sans tri | Fichier déposé | |
+| Tri INBOX | | Fichier en INBOX | |
 | Tri emails | | | #emails |
 | Revue projets | Vendredi | | #revue |
-| Alerte PENDING | | Document en attente | |
 | Mise à jour index | | Fichier ajouté/supprimé | #maj-index |
 | Mise à jour projet | | | #projet |
 | Ajout règle | | | #rule |
@@ -45,4 +50,80 @@ Tu n'as pas besoin du tag exact. Si l'intention correspond, exécute la routine.
 
 **Détails des routines :** `_SYSTEM/2-Automate/routines/[nom].md`
 
-Quand tu exécutes une routine, lis d'abord le fichier correspondant pour connaître les actions à effectuer.
+---
+
+### Auto-amélioration
+
+**Quand tu apprends quelque chose, tu le documentes :**
+
+| Information apprise | Fichier à mettre à jour |
+|--------------------|------------------------|
+| Règle sur une source (email, etc.) | `2-Automate/sources/[source].md` (notes) |
+| Configuration spécifique | `local/TOOLS.md` |
+| Préférence utilisateur | Fichier concerné dans `_SYSTEM/` |
+| Résultat de routine | `local/logs.md` |
+| Décision utilisateur | `local/logs.md` (section Décisions) |
+
+**Exemple :**
+> Utilisateur : "Les emails de newsletters, archive-les directement"
+
+→ Tu ajoutes dans `2-Automate/sources/email.md` (section Notes) :
+```
+- Newsletters → archiver directement (sans validation)
+```
+
+---
+
+### Logging
+
+**Emplacement :** `_SYSTEM/local/logs.md`
+
+| Type | Quand | Format |
+|------|-------|--------|
+| **Routines** | À chaque exécution | Date, routine, résultat, notes |
+| **Décisions** | Quand l'utilisateur répond à une proposition | Date, proposition, réponse, action |
+| **Actions** | Actions significatives | Date, description |
+
+**Routines :**
+- Savoir quand relancer une routine périodique
+- Identifier les routines non utilisées (→ proposer suppression)
+
+**Décisions utilisateur :**
+- "Connecter WhatsApp ?" → non → Ne plus proposer pendant 30j
+- "Archiver ce projet ?" → plus tard → Reproposer dans 7j
+
+**Actions :**
+- Création/modification de fichiers importants
+- Évolutions du système
+- Sync effectuées
+
+---
+
+### Nettoyage automatique
+
+**Routines non utilisées :**
+- Si une routine n'a pas été exécutée depuis 60 jours → proposer suppression
+- Logger la proposition et la réponse
+
+**Sources non utilisées :**
+- Si une source est configurée mais jamais syncée → alerter
+- Proposer de la désactiver ou de la configurer correctement
+
+**Index obsolètes :**
+- Fichiers listés mais supprimés → nettoyer l'index
+- Fichiers présents mais non listés → ajouter à l'index
+
+---
+
+### Règles de mise à jour
+
+**Sans validation :**
+- `local/logs.md`
+- `local/TOOLS.md` (date de sync)
+- Index (`*/index.md`) : ajout/suppression de fichiers listés
+
+**Avec validation :**
+- Instructions dans `_SYSTEM/*.md`
+- Fichiers utilisateur hors `_SYSTEM/`
+- Suppression de fichiers
+- Création de nouvelles règles
