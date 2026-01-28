@@ -57,6 +57,8 @@ Lis ce fichier : `_SYSTEM/2-Automate/routines.md`
 
 Lis ce fichier : `_SYSTEM/2-Automate/validation.md`
 
+Lis ce fichier : `_SYSTEM/2-Automate/HEARTBEAT.md`
+
 ---
 
 # D — Document (Index + Liens)
