@@ -108,12 +108,12 @@
 [Contexte additionnel, liens vers d'autres documents]
 ```
 
-**Emplacement :** `NOW/[Projet]/_meetings/YYYY-MM-DD_Titre_court.md`
+**Emplacement :** `DATA/NOW/[Projet]/_meetings/YYYY-MM-DD_Titre_court.md`
 
 **Avant d'archiver :**
 1. Vérifier que le meeting n'existe pas déjà (Glob `_meetings/*Titre*` ou recherche par date)
 2. Pour chaque participant mentionné :
-   - Vérifier si fiche existe dans `ARCHIVE/Répertoires/People/`
+   - Vérifier si fiche existe dans `DATA/ARCHIVE/Répertoires/People/`
    - Si non → créer la fiche immédiatement
 3. Créer le fichier markdown avec liens `[[Prénom Nom]]`
 

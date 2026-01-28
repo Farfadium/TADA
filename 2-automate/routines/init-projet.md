@@ -21,7 +21,7 @@ Créer la structure complète d'un nouveau projet pour qu'il soit immédiatement
 
 2. Créer la structure de dossiers :
    ```
-   NOW/[Nom Projet]/
+   DATA/NOW/[Nom Projet]/
    ├── index.md
    ├── _attachments/      # Pièces jointes des emails
    ├── _emails/           # Emails sauvegardés en markdown

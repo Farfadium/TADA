@@ -45,7 +45,7 @@ Tu utilises ces mots-clés pour router automatiquement les emails et fichiers.
 
 **Documents partagés :**
 Certains documents sont utilisés par plusieurs projets (ex: avis d'imposition pour dossiers bancaires).
-- **Stockage** : `ARCHIVE/Administratif/[Catégorie]/` (ex: Impôts/, Identité/, Banques/)
+- **Stockage** : `DATA/ARCHIVE/Administratif/[Catégorie]/` (ex: Impôts/, Identité/, Banques/)
 - **Dans les projets** : créer un lien relatif vers le document
 - **Exemple** : `[Avis d'imposition](../../ARCHIVE/Administratif/Impôts/2025_Avis_imposition.pdf)`
 

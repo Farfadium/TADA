@@ -10,11 +10,11 @@
 **Impact :** Contenu, Externe
 
 **Contexte :**
-Les documents dans PENDING/ attendent une action externe (signature, réponse, décision). Il faut surveiller qu'ils n'y restent pas indéfiniment.
+Les documents dans DATA/PENDING/ attendent une action externe (signature, réponse, décision). Il faut surveiller qu'ils n'y restent pas indéfiniment.
 
 **Actions :**
 
-1. Lister les fichiers dans `PENDING/`
+1. Lister les fichiers dans `DATA/PENDING/`
 2. Vérifier la date de chaque fichier (préfixe `YYYY-MM-DD`)
 3. Alerter si un document attend depuis plus de 7 jours
 4. Proposer :

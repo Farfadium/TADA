@@ -23,7 +23,7 @@
 ## Comportement
 
 **Ce que l'IA peut faire :**
-- Lire les fichiers dans INBOX/
+- Lire les fichiers dans DATA/INBOX/
 - Proposer le routage vers le bon dossier
 - Renommer selon les conventions
 - Créer des versions (versionning)
@@ -46,7 +46,7 @@
 **Fréquence :** `session` (à chaque démarrage)
 
 **Critères de récupération :**
-- Dossier : INBOX/
+- Dossier : DATA/INBOX/
 - Filtres : fichiers non traités (pas dans un sous-dossier projet)
 
 ---
@@ -54,7 +54,7 @@
 ## Actions sync
 
 À chaque sync, l'IA :
-1. Liste les fichiers dans INBOX/ (hors index.md)
+1. Liste les fichiers dans DATA/INBOX/ (hors index.md)
 2. Pour chaque fichier :
    - Identifie le projet potentiel (nom, contenu)
    - Si projet évident → proposer routage

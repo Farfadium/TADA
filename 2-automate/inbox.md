@@ -42,10 +42,10 @@ La configuration active est dans `_SYSTEM/local/sources.md`.
 
 | Type | Destination |
 |------|-------------|
-| Fichier lié à un projet | `NOW/[Projet]/` |
-| Document en attente d'action | `PENDING/` |
-| Archive/référence | `ARCHIVE/` |
-| Idée/réflexion | `GARDEN/` |
-| Pas clair | `INBOX/` (reste là) |
+| Fichier lié à un projet | `DATA/NOW/[Projet]/` |
+| Document en attente d'action | `DATA/PENDING/` |
+| Archive/référence | `DATA/ARCHIVE/` |
+| Idée/réflexion | `DATA/GARDEN/` |
+| Pas clair | `DATA/INBOX/` (reste là) |
 
 **Tu ne perds rien.** Si tu ne sais pas où mettre quelque chose → INBOX.

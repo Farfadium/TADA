@@ -81,6 +81,8 @@ Afficher le résultat : `git log -1 --oneline` et statut du push
 
 ## Notes
 
-- Cette routine s'exécute **sans validation intermédiaire** (sauf si conflit ou erreur)
-- Les fichiers non trackés sont signalés mais pas ajoutés automatiquement
+- **AUCUNE VALIDATION DEMANDÉE** : tu exécutes le commit directement sans demander confirmation
+- Tu affiches un résumé des changements et le message de commit, puis tu commits immédiatement
+- Les fichiers non trackés sont ajoutés automatiquement si pertinents (sauf .obsidian/)
 - Si le submodule a des changements, il est TOUJOURS commité en premier
+- En cas d'erreur ou conflit uniquement, tu demandes de l'aide

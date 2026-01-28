@@ -9,9 +9,9 @@ Tu connectes les informations entre elles avec des liens.
 **Répertoires de référence :**
 | Type | Emplacement |
 |------|-------------|
-| Personnes | `ARCHIVE/Répertoires/People/` |
-| Entreprises | `ARCHIVE/Répertoires/Entreprise/` |
-| Concepts | `ARCHIVE/Répertoires/Concepts/` |
+| Personnes | `DATA/ARCHIVE/Répertoires/People/` |
+| Entreprises | `DATA/ARCHIVE/Répertoires/Entreprise/` |
+| Concepts | `DATA/ARCHIVE/Répertoires/Concepts/` |
 
 **Quand tu mentionnes quelqu'un ou une entreprise :**
 1. Vérifier si la fiche existe dans le répertoire (Glob avant de créer)
@@ -32,7 +32,7 @@ Tu connectes les informations entre elles avec des liens.
 Quand tu crées une fiche, tu cherches à l'enrichir :
 1. **Recherche web** : site personnel, LinkedIn, entreprise (si publiquement disponible)
 2. **Photo** : télécharger depuis source publique (site perso, site entreprise, etc.)
-   - Stockage : `ARCHIVE/Répertoires/People/_photos/Prénom_Nom.jpg`
+   - Stockage : `DATA/ARCHIVE/Répertoires/People/_photos/Prénom_Nom.jpg`
    - Référence dans la fiche : `![[_photos/Prénom_Nom.jpg|200]]`
 3. **Infos métier** : titre, entreprise, localisation
 
@@ -44,7 +44,7 @@ Quand tu crées une fiche, tu cherches à l'enrichir :
 Quand tu crées une fiche entreprise, tu cherches à l'enrichir :
 1. **Site web** : URL officiel
 2. **Logo** : télécharger depuis le site officiel
-   - Stockage : `ARCHIVE/Répertoires/Entreprises/_logos/Nom_Entreprise.png`
+   - Stockage : `DATA/ARCHIVE/Répertoires/Entreprises/_logos/Nom_Entreprise.png`
    - Référence dans la fiche : `![[_logos/Nom_Entreprise.png|200]]`
 3. **Infos clés** : type, groupe, siège
 

@@ -33,7 +33,7 @@ Trier les emails non lus ou récents pour les router vers les bons projets et ar
 ```
 
 **Actions possibles :**
-- Appliquer un label Gmail (= projet actif, voir `NOW/index.md`)
+- Appliquer un label Gmail (= projet actif, voir `DATA/NOW/index.md`)
 - Archiver l'email
 - Télécharger les PJ vers le dossier projet
 - Créer un brouillon de réponse
@@ -50,9 +50,9 @@ Trier les emails non lus ou récents pour les router vers les bons projets et ar
 
 **Actions proposées :**
 - Label : Achat Maison
-- PJ : NOW/Achat Maison/2026-01-27_Compromis_Signe.pdf
+- PJ : DATA/NOW/Achat Maison/2026-01-27_Compromis_Signe.pdf
 - Gmail : archiver
-- TADA : mettre à jour statut dans NOW/Achat Maison/index.md
+- TADA : mettre à jour statut dans DATA/NOW/Achat Maison/index.md
 
 Valider ?
 ```

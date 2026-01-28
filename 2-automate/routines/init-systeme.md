@@ -4,7 +4,7 @@
 
 | Type | Valeur |
 |------|--------|
-| Logique | NOW/ vide ou presque vide |
+| Logique | DATA/NOW/ vide ou presque vide |
 | Tag | #setup |
 
 **Impact :** Système
@@ -14,7 +14,7 @@ Quand le système TADA est nouveau ou peu rempli, tu guides l'utilisateur pour c
 
 **Détection automatique :**
 Tu proposes cette routine si tu détectes :
-- Moins de 2 projets dans NOW/
+- Moins de 2 projets dans DATA/NOW/
 - INBOX vide
 - Première conversation
 
@@ -26,7 +26,7 @@ Tu proposes cette routine si tu détectes :
    - Pour chaque projet → lancer `#init [nom]`
 
 2. **Vérifier INBOX**
-   - Lister le contenu de INBOX/
+   - Lister le contenu de DATA/INBOX/
    - Si vide : "As-tu des fichiers à mettre dans INBOX ? (documents en attente, factures, contrats...)"
    - Si fichiers présents → proposer de les trier
 
@@ -37,11 +37,11 @@ Tu proposes cette routine si tu détectes :
 
 4. **Identifier les contacts clés**
    - "Quelles sont les personnes avec qui tu travailles régulièrement ?"
-   - Proposer de créer les fiches dans ARCHIVE/Répertoires/People/
+   - Proposer de créer les fiches dans DATA/ARCHIVE/Répertoires/People/
 
 5. **Vérifier les documents en attente**
    - "As-tu des documents en attente de réponse ou de signature ?"
-   - Si oui → les mettre dans PENDING/
+   - Si oui → les mettre dans DATA/PENDING/
 
 6. **Récapitulatif**
    - Montrer ce qui a été créé

@@ -34,9 +34,9 @@
 - Marquer comme lu sans traitement
 
 **Règles spécifiques :**
-- Labels/dossiers = projets actifs dans `NOW/`
+- Labels/dossiers = projets actifs dans `DATA/NOW/`
 - Pièces jointes → dossier du projet ou INBOX
-- Email non routé → reste dans inbox email + copie dans INBOX/
+- Email non routé → reste dans inbox email + copie dans DATA/INBOX/
 
 ---
 
@@ -97,12 +97,12 @@
 - [Nom_fichier.pdf](Nom_fichier.pdf) — description
 ```
 
-**Emplacement :** `NOW/[Projet]/_emails/YYYY-MM-DD_Sujet_court.md`
+**Emplacement :** `DATA/NOW/[Projet]/_emails/YYYY-MM-DD_Sujet_court.md`
 
 **Avant d'archiver :**
 1. Vérifier que l'email n'existe pas déjà (Glob `_emails/*Sujet*` ou recherche par date)
 2. Pour chaque personne mentionnée (expéditeur, destinataires) :
-   - Vérifier si fiche existe dans `ARCHIVE/Répertoires/People/`
+   - Vérifier si fiche existe dans `DATA/ARCHIVE/Répertoires/People/`
    - Si non → créer la fiche immédiatement
 3. Créer le fichier markdown avec liens `[[Prénom Nom]]`
 

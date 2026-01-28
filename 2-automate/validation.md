@@ -11,10 +11,10 @@ Ces actions peuvent être exécutées directement :
 | Action | Périmètre | Condition |
 |--------|-----------|-----------|
 | **Lire** un fichier | Tout TADA | — |
-| **Créer** un fichier | `INBOX/` | — |
+| **Créer** un fichier | `DATA/INBOX/` | — |
 | **Modifier** un fichier | `_SYSTEM/` | Sauf `instructions.md` |
 | **Modifier** un index | `*/index.md` | Ajout/suppression de fichier listé |
-| **Déplacer** un fichier | `INBOX/` → ailleurs | Routage évident |
+| **Déplacer** un fichier | `DATA/INBOX/` → ailleurs | Routage évident |
 | **Régénérer** `claude.md` | — | Après modif dans `_SYSTEM/` |
 | **Exécuter** une routine | — | Déclenchée par tag |
 | **Commit** git | — | Quand un ensemble cohérent de modifications est terminé |

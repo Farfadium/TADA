@@ -5,7 +5,7 @@
 | Type | Valeur |
 |------|--------|
 | Temps | 7j sans tri |
-| Logique | Fichier déposé dans INBOX/ |
+| Logique | Fichier déposé dans DATA/INBOX/ |
 
 **Impact :** Contenu
 
@@ -14,13 +14,13 @@ L'INBOX est le point d'entrée unique. Tout fichier qui y arrive doit être tri�
 
 **Actions :**
 
-1. Lister les fichiers dans `INBOX/`
+1. Lister les fichiers dans `DATA/INBOX/`
 2. Pour chaque fichier :
    - Identifier le type (document projet, archive, en attente de décision)
    - Proposer un emplacement :
-     - `NOW/[Projet]/` → document lié à un projet actif
-     - `ARCHIVE/` → document de consultation
-     - `PENDING/` → en attente d'une décision externe
+     - `DATA/NOW/[Projet]/` → document lié à un projet actif
+     - `DATA/ARCHIVE/` → document de consultation
+     - `DATA/PENDING/` → en attente d'une décision externe
    - Proposer un renommage si nécessaire (convention `YYYY-MM-DD_HHMM_Nom.ext`)
 3. Attendre validation avant chaque déplacement
 
@@ -32,7 +32,7 @@ INBOX/ contient : facture_electricite.pdf
 
 → Proposition :
   - Type : Facture
-  - Destination : ARCHIVE/Administratif/Factures/
+  - Destination : DATA/ARCHIVE/Administratif/Factures/
   - Renommage : 2026-01-27_Facture_Electricite.pdf
 
 Valider ? (oui/non)

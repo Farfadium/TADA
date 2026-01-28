@@ -75,11 +75,11 @@
 [contexte additionnel]
 ```
 
-**Emplacement :** `NOW/[Projet]/_[type]/YYYY-MM-DD_Titre.md`
+**Emplacement :** `DATA/NOW/[Projet]/_[type]/YYYY-MM-DD_Titre.md`
 
 **Avant d'archiver — vérifications obligatoires :**
 1. **Vérifier les doublons** : `Glob _[type]/*` pour s'assurer que l'élément n'existe pas déjà
-2. **Créer les fiches People** manquantes dans `ARCHIVE/Répertoires/People/`
+2. **Créer les fiches People** manquantes dans `DATA/ARCHIVE/Répertoires/People/`
 3. Créer le fichier avec liens `[[Prénom Nom]]`
 
 ---

@@ -17,18 +17,18 @@
 
 | Vérification | État |
 |--------------|------|
-| NOW/ | Projets actifs ? |
-| INBOX/ | Fichiers en attente ? |
-| PENDING/ | Documents expirés ? |
+| DATA/NOW/ | Projets actifs ? |
+| DATA/INBOX/ | Fichiers en attente ? |
+| DATA/PENDING/ | Documents expirés ? |
 | Sources | Configurées et syncées ? |
 
 ### 2. Déterminer la priorité
 
 | État du système | Priorité |
 |-----------------|----------|
-| NOW/ vide | Initialiser les projets |
+| DATA/NOW/ vide | Initialiser les projets |
 | Projets sans labels Gmail | Configurer la correspondance |
-| INBOX/ non vide | Trier les fichiers |
+| DATA/INBOX/ non vide | Trier les fichiers |
 | Système prêt + emails non lus | Trier les emails |
 
 ### 3. Output

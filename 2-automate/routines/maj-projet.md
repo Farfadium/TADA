@@ -14,7 +14,7 @@ Mettre à jour un projet spécifique suite à un événement ou une information 
 **Actions :**
 
 1. Identifier le projet concerné (via le nom après #projet)
-2. Lire l'`index.md` du projet dans `NOW/`
+2. Lire l'`index.md` du projet dans `DATA/NOW/`
 3. Proposer les mises à jour :
    - Statut
    - Tâches (ajouter/compléter)
@@ -30,7 +30,7 @@ Mettre à jour un projet spécifique suite à un événement ou une information 
 
 Le notaire a confirmé la date de signature.
 
-→ Mise à jour proposée dans NOW/Achat Maison/index.md :
+→ Mise à jour proposée dans DATA/NOW/Achat Maison/index.md :
 
 ## Statut
 - En cours → **Signature prévue le 15/02**

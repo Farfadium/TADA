@@ -15,10 +15,10 @@ Chaque dossier a un `index.md` qui liste son contenu. Cette routine parcourt tou
 **Actions :**
 
 1. **Parcourir les dossiers principaux :**
-   - NOW/ (projets actifs)
-   - PENDING/ (en attente)
-   - ARCHIVE/ (consultation)
-   - GARDEN/ (idées)
+   - DATA/NOW/ (projets actifs)
+   - DATA/PENDING/ (en attente)
+   - DATA/ARCHIVE/ (consultation)
+   - DATA/GARDEN/ (idées)
 
 2. **Pour chaque dossier avec un index.md :**
    - Lire l'index existant
@@ -44,17 +44,17 @@ Je parcours tous les index...
 
 ---
 
-**NOW/Achat Maison/index.md**
+**DATA/NOW/Achat Maison/index.md**
 + | 2026-01-27_Compromis_Signe.pdf | Compromis signé |
 + Statut : Compromis signé → en attente acte définitif
 
-**NOW/Changement Travail/index.md**
+**DATA/NOW/Changement Travail/index.md**
 (à jour)
 
-**PENDING/index.md**
+**DATA/PENDING/index.md**
 - | 2026-01-10_Devis_Travaux.pdf | (déplacé vers ARCHIVE) |
 
-**ARCHIVE/Répertoires/People/index.md**
+**DATA/ARCHIVE/Répertoires/People/index.md**
 + | [[Jean Dupont]] | Notaire |
 
 ---

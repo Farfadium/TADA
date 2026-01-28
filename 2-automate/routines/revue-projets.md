@@ -14,7 +14,7 @@ Faire le point hebdomadaire sur tous les projets actifs pour identifier les bloc
 
 **Actions :**
 
-1. Lister les projets dans `NOW/`
+1. Lister les projets dans `DATA/NOW/`
 2. Pour chaque projet, lire `index.md` et extraire :
    - Statut actuel
    - Dernière activité

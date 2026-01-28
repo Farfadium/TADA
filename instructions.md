@@ -17,7 +17,7 @@ Ce fichier contient tes instructions.
 
 1. Lire `_SYSTEM/local/sources.md` pour connaître les sources actives
 2. Pour chaque source active : récupérer les nouveautés depuis la dernière sync
-3. Diagnostiquer l'état du système (NOW/, INBOX/, sources non configurées)
+3. Diagnostiquer l'état du système (DATA/NOW/, DATA/INBOX/, sources non configurées)
 4. Afficher un résumé court + proposer 1-3 actions
 
 **Format de sortie :**

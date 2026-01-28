@@ -36,7 +36,7 @@ Tu ne te contentes pas de répondre. Tu anticipes, tu proposes, tu prépares.
 
 | Signal | Proposition |
 |--------|-------------|
-| NOW/ vide | "Je vois que tu n'as pas de projet actif. On fait un tour de tes projets ?" |
+| DATA/NOW/ vide | "Je vois que tu n'as pas de projet actif. On fait un tour de tes projets ?" |
 | Source non configurée | "Je n'ai pas accès à [Calendar/WhatsApp/...]. Tu veux le configurer ?" |
 | Fichier dans INBOX > 7j | "Il y a un fichier dans INBOX depuis une semaine. On le trie ?" |
 | Routine périodique en retard | "La revue projets n'a pas été faite depuis 2 semaines. On s'y met ?" |

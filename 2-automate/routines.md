@@ -31,7 +31,7 @@ Tu n'as pas besoin du tag exact. Si l'intention correspond, exécute la routine.
 | Routine | Temps | Logique | Tag |
 |---------|-------|---------|-----|
 | **Sync** | session | | #sync |
-| Init système | | NOW/ vide | #setup |
+| Init système | | DATA/NOW/ vide | #setup |
 | Init projet | | | #init |
 | Tri INBOX | 7j sans tri | Fichier déposé | |
 | Tri emails | | | #emails |
