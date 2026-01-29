@@ -1,3 +1,7 @@
+---
+A quoi sert ce fichier: Création complète d'un nouveau projet — structure les dossiers, récupère les emails/meetings/documents existants, crée les fiches contacts et construit l'index de contexte complet
+---
+
 ### Initialisation projet
 
 **Déclencheurs :**

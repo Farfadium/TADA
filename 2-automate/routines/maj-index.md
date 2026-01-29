@@ -1,3 +1,7 @@
+---
+A quoi sert ce fichier: Synchronisation automatique des index — détecte les fichiers ajoutés ou supprimés dans les dossiers et met à jour tous les fichiers index.md correspondants
+---
+
 ### Mise à jour index
 
 **Déclencheurs :**

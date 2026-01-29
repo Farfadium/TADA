@@ -1,3 +1,7 @@
+---
+A quoi sert ce fichier: Mise à jour d'un projet spécifique — modifie le statut, les tâches et les notes d'un projet suite à un nouvel événement ou information
+---
+
 ### Mise à jour projet
 
 **Déclencheurs :**

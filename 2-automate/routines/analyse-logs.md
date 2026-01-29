@@ -1,3 +1,7 @@
+---
+A quoi sert ce fichier: Analyse mensuelle des conversations — lit entre les lignes des logs pour détecter les frustrations, besoins non exprimés, idées en suspens et propose des améliorations au système TADA
+---
+
 ### Analyse des logs
 
 **Déclencheurs :**

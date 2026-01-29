@@ -1,3 +1,7 @@
+---
+A quoi sert ce fichier: Ajout d'une règle système — modifie les fichiers de _SYSTEM/ pour documenter et systématiser un nouveau comportement demandé par l'utilisateur
+---
+
 ### Ajout règle
 
 **Déclencheurs :**
@@ -18,7 +22,7 @@ Quand l'utilisateur identifie un comportement à systématiser, il demande l'ajo
    - Nouvelle routine → `2-Automate/routines/`
    - Règle de capture → `1-Trust/`
    - Règle de documentation → `3-Document/`
-   - Préférence utilisateur → `4-Adapt/evolution.md`
+   - Préférence utilisateur → `1-Trust/SOUL.md` ou `4-Act/proactivite.md`
 3. Rédiger la modification
 4. Montrer le diff complet
 5. Attendre validation explicite

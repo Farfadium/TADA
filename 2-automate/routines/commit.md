@@ -1,3 +1,7 @@
+---
+A quoi sert ce fichier: Routine git commit et push automatique — stage les fichiers modifiés, crée un commit avec message formaté et push vers le remote sans demander de validation
+---
+
 # Routine : Commit
 
 ## Déclencheur

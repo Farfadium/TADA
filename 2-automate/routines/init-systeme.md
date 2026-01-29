@@ -1,3 +1,7 @@
+---
+A quoi sert ce fichier: Initialisation complète du système TADA — guide la capture initiale de tous les projets actifs, contacts, emails et fichiers d'un nouvel utilisateur pour construire un système opérationnel dès le départ
+---
+
 ### Initialisation système
 
 **Déclencheurs :**

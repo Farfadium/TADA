@@ -1,3 +1,7 @@
+---
+A quoi sert ce fichier: Routine de tri des fichiers en attente — route chaque fichier de DATA/INBOX/ vers sa destination finale avec renommage selon les conventions TADA
+---
+
 ### Tri INBOX
 
 **Déclencheurs :**

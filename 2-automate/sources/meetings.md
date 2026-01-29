@@ -1,3 +1,7 @@
+---
+description: Configuration source Meetings (Fireflies) — récupération transcripts, archivage meetings importants, extraction action items
+---
+
 ### Meetings
 
 > Transcriptions automatiques des réunions via Fireflies.ai.

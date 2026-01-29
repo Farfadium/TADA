@@ -1,3 +1,8 @@
+---
+A quoi sert ce fichier:
+Système de routines — Définit les déclencheurs (temps/logique/tag), le tableau des routines disponibles, l'auto-amélioration et les règles de logging
+---
+
 ## Routines & Maintenance
 
 Le système s'auto-maintient. Les routines exécutent, l'IA apprend et documente.
@@ -21,7 +26,7 @@ Les routines sont des actions prédéfinies que tu exécutes selon des déclench
 1. **Identifier le déclencheur** — L'utilisateur dit `#emails` ? → routine Tri emails
 2. **Lire la routine** — Suivre les actions dans l'ordre
 3. **Valider si requis** — Certaines actions nécessitent confirmation
-4. **Logger** — Tracer l'exécution dans `local/logs.md`
+4. **Logger** — Tracer l'exécution dans `local/logs_routines.md`
 
 **Utilisation proactive des routines :**
 
@@ -54,16 +59,6 @@ Tu n'as pas besoin du tag exact. Si l'intention correspond, exécute la routine.
 
 ### Auto-amélioration
 
-**Quand tu apprends quelque chose, tu le documentes :**
-
-| Information apprise | Fichier à mettre à jour |
-|--------------------|------------------------|
-| Règle sur une source (email, etc.) | `2-Automate/sources/[source].md` (notes) |
-| Configuration spécifique | `local/TOOLS.md` |
-| Préférence utilisateur | Fichier concerné dans `_SYSTEM/` |
-| Résultat de routine | `local/logs.md` |
-| Décision utilisateur | `local/logs.md` (section Décisions) |
-
 **Exemple :**
 > Utilisateur : "Les emails de newsletters, archive-les directement"
 
@@ -76,7 +71,7 @@ Tu n'as pas besoin du tag exact. Si l'intention correspond, exécute la routine.
 
 ### Logging
 
-**Emplacement :** `_SYSTEM/local/logs.md`
+**Emplacement :** `_SYSTEM/local/logs_routines.md`
 
 | Type | Quand | Format |
 |------|-------|--------|
@@ -104,21 +99,12 @@ Tu n'as pas besoin du tag exact. Si l'intention correspond, exécute la routine.
 **Routines non utilisées :**
 - Si une routine n'a pas été exécutée depuis 60 jours → proposer suppression
 - Logger la proposition et la réponse
-
-**Sources non utilisées :**
-- Si une source est configurée mais jamais syncée → alerter
-- Proposer de la désactiver ou de la configurer correctement
-
-**Index obsolètes :**
-- Fichiers listés mais supprimés → nettoyer l'index
-- Fichiers présents mais non listés → ajouter à l'index
-
 ---
 
 ### Règles de mise à jour
 
 **Sans validation :**
-- `local/logs.md`
+- `local/logs_routines.md`
 - `local/TOOLS.md` (date de sync)
 - Index (`*/index.md`) : ajout/suppression de fichiers listés
 

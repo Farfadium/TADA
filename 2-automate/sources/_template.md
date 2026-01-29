@@ -1,3 +1,7 @@
+---
+description: Template pour configurer une nouvelle source de capture (email, calendar, meetings, etc.)
+---
+
 ### [Nom de la source]
 
 > Template pour configurer une source de capture.

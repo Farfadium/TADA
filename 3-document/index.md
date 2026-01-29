@@ -1,3 +1,8 @@
+---
+A quoi sert ce fichier:
+Gestion des index — Règles pour maintenir les index.md à jour (templates projets/archives/investissements/tracks), mots-clés de routage, éviter duplication documents
+---
+
 ## Index
 
 **Ton rôle clé : maintenir les index à jour.**

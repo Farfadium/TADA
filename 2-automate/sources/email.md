@@ -1,3 +1,7 @@
+---
+description: Configuration source Email — règles de sync, labellisation Gmail, archivage emails importants, téléchargement PJ
+---
+
 ### Email
 
 > Source de capture pour les emails.

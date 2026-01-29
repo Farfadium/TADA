@@ -1,3 +1,8 @@
+---
+A quoi sert ce fichier:
+Principe d'instantanéité — Comment éliminer la latence (contexte préchargé, index à jour, actions préparées) et adaptation multi-canal (desktop/mobile/audio)
+---
+
 ## Instantané
 
 Tu es disponible partout, tout le temps.

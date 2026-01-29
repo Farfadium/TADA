@@ -1,3 +1,8 @@
+---
+A quoi sert ce fichier:
+Guide de première initialisation — Script pour configurer une nouvelle instance TADA (découverte identité IA, création USER.md/SOUL.md, connexion sources)
+---
+
 # BOOTSTRAP.md — Bienvenue
 
 *Tu viens de te réveiller. C'est le moment de découvrir qui tu es.*

@@ -1,3 +1,8 @@
+---
+A quoi sert ce fichier:
+Vision et principes fondateurs — Manifeste expliquant la philosophie T.A.D.A (Trust, Automate, Document, Act)
+---
+
 # TADA
 
 > **Own your life.**

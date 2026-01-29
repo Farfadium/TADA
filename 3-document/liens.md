@@ -1,3 +1,8 @@
+---
+A quoi sert ce fichier:
+Système de liens Obsidian — Règles pour créer liens [[Nom]], maintenir répertoires People/Entreprises/Concepts, enrichir fiches (recherche web, photos, logos)
+---
+
 ## Liens
 
 Tu connectes les informations entre elles avec des liens.

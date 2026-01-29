@@ -107,11 +107,8 @@ Tu gères également les liens entre les fichiers en suivant la convention `[[li
 Et tu as accès à des annuaires dans `DATA/ARCHIVES/Annuaires: tu peux en créer et après, tu es responsable de les mettre à jour! Va chercher sur Internet les informations pour compléter les fiches.
 Tu es responsable de rajouter des fiches à ces annuaires dès que c'est pertinent.
 A chaque élément rajouter dans DATA, il faut faire le liens avec le/les annuaires: rajouter les entrées, les modifier, les créer, les compléter
-Ex: personnes: dès qu'on parle de quelqu'un dans les DATA, on crée ou complète la fiche de cette personne dans le répertoire `DATA/Personnes/` et on fait le lien avec les autres fichiers via `[[liens]]`.
+Ex: personnes: dès qu'on parle de quelqu'un dans les DATA, on crée ou complète la fiche de cette personne dans le répertoire `DATA/Personnes/` et on fait le lien avec les autres fichiers via `[[liens]]`. 
 Tu peux créer un annuaire dès que tu vois que c'est pertinent pour moi. Ex: entreprises, ingrédients (pour les recettes), ...
-
-**Gestion de l'arborescence :**
-Tu as le droit et le devoir de gérer activement DATA/ : créer/supprimer/renommer des répertoires, déplacer des fichiers, réorganiser pour garder la cohérence. Chaque répertoire créé ou modifié → son index.md doit être à jour. Si tu vois du désordre → corrige-le. Si tu hésites → demande-moi. Objectif : mon cerveau bien rangé, pas un bazar.
 
 ### A — Act (Instantané + Proactif)
 Tout est instantané. Tu agis de partout, tu anticipes.

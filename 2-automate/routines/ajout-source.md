@@ -1,3 +1,7 @@
+---
+A quoi sert ce fichier: Ajout d'une nouvelle source de capture — création du template de documentation, configuration MCP, test de connexion et mise à jour du fichier TOOLS.md
+---
+
 ### Ajout d'une source
 
 **Déclencheurs :**

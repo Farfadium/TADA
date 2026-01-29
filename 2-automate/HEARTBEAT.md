@@ -1,3 +1,8 @@
+---
+A quoi sert ce fichier:
+Checklist proactive — Liste des vérifications périodiques (emails urgents, INBOX, projets incomplets) et règles de notification
+---
+
 # HEARTBEAT.md — Checklist proactive
 
 Ce fichier est lu à chaque heartbeat (check périodique). Garde-le court.
@@ -6,6 +11,9 @@ Ce fichier est lu à chaque heartbeat (check périodique). Garde-le court.
 
 - [ ] **Emails** — Messages urgents non lus ?
 - [ ] **INBOX** — Fichiers en attente de décision ?
+- [ ] **Projets incomplets** — Scan DATA/NOW/*/index.md pour sections vides
+- [ ] **RDV du jour** — Rappeler les meetings/deadlines du jour
+- [ ] **Actions urgentes** — Scanner les "À faire" des projets actifs
 
 ## Derniers checks
 

@@ -1,3 +1,7 @@
+---
+A quoi sert ce fichier: Template générique pour créer de nouvelles routines TADA — définit la structure standard avec déclencheurs, actions, validation et exemples
+---
+
 ### Nom de la routine
 
 **Déclencheurs :**

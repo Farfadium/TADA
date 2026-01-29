@@ -1,3 +1,7 @@
+---
+A quoi sert ce fichier: Revue hebdomadaire des projets actifs — analyse le statut de chaque projet, identifie les blocages et planifie les actions pour la semaine suivante
+---
+
 ### Revue projets
 
 **Déclencheurs :**

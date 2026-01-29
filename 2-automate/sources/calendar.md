@@ -1,3 +1,7 @@
+---
+description: Configuration source Calendrier — sync événements, rappels échéances, détection conflits
+---
+
 ### Calendar
 
 > Source de capture pour les calendriers.

@@ -1,3 +1,7 @@
+---
+A quoi sert ce fichier: Routine de tri des emails récents — labellisation Gmail, téléchargement des pièces jointes, mise à jour des projets et archivage systématique
+---
+
 ### Tri emails
 
 **Déclencheurs :**

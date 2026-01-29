@@ -1,3 +1,7 @@
+---
+A quoi sert ce fichier: Routine de diagnostic système au démarrage — vérifie l'état de DATA/NOW/, DATA/INBOX/, sources actives et propose actions prioritaires adaptées au contexte
+---
+
 ### Sync
 
 > Diagnostic système + propositions adaptées à l'état actuel.

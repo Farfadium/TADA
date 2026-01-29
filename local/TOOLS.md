@@ -1,3 +1,8 @@
+---
+A quoi sert ce fichier:
+Configuration sources actives (instance) — État de chaque source (email, calendar, meetings, messaging, files), dates dernière vérification, configuration MCP, notes spécifiques utilisateur
+---
+
 # TOOLS.md - Local Notes
 
 Skills define *how* tools work. This file is for *your* specifics — the stuff that's unique to your setup.
@@ -6,7 +11,7 @@ Skills define *how* tools work. This file is for *your* specifics — the stuff 
 
 Things like:
 - Camera names and locations
-- SSH hosts and aliases  
+- SSH hosts and aliases
 - Preferred voices for TTS
 - Speaker/room names
 - Device nicknames

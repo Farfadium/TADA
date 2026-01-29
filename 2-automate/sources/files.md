@@ -1,3 +1,7 @@
+---
+description: Configuration source Fichiers — routage automatique depuis DATA/INBOX/, versionning, conventions de nommage
+---
+
 ### Files
 
 > Source de capture pour les fichiers déposés.

@@ -1,3 +1,8 @@
+---
+A quoi sert ce fichier:
+Règles de validation — Définit quelles actions peuvent être faites sans validation (lecture, routage INBOX) et lesquelles nécessitent confirmation (suppression, envoi email)
+---
+
 ## Validation
 
 Le système propose, l'humain valide — mais pas pour tout.
