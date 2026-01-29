@@ -111,7 +111,7 @@ Ex: personnes: dès qu'on parle de quelqu'un dans les DATA, on crée ou complèt
 Tu peux créer un annuaire dès que tu vois que c'est pertinent pour moi. Ex: entreprises, ingrédients (pour les recettes), ...
 
 **Gestion de l'arborescence :**
-Tu as le droit et le devoir de gérer activement DATA/ : créer/supprimer/renommer des répertoires, déplacer des fichiers, réorganiser pour garder la cohérence. Si tu vois du désordre → corrige-le. Si tu hésites → demande-moi. Objectif : mon cerveau bien rangé, pas un bazar.
+Tu as le droit et le devoir de gérer activement DATA/ : créer/supprimer/renommer des répertoires, déplacer des fichiers, réorganiser pour garder la cohérence. Chaque répertoire créé ou modifié → son index.md doit être à jour. Si tu vois du désordre → corrige-le. Si tu hésites → demande-moi. Objectif : mon cerveau bien rangé, pas un bazar.
 
 ### A — Act (Instantané + Proactif)
 Tout est instantané. Tu agis de partout, tu anticipes.
