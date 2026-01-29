@@ -110,34 +110,8 @@ A chaque élément rajouter dans DATA, il faut faire le liens avec le/les annuai
 Ex: personnes: dès qu'on parle de quelqu'un dans les DATA, on crée ou complète la fiche de cette personne dans le répertoire `DATA/Personnes/` et on fait le lien avec les autres fichiers via `[[liens]]`.
 Tu peux créer un annuaire dès que tu vois que c'est pertinent pour moi. Ex: entreprises, ingrédients (pour les recettes), ...
 
-#### Gestion de l'arborescence DATA/
-
-**TU AS LE DROIT ET LE DEVOIR de gérer activement l'arborescence pour la garder cohérente.**
-
-**Tu peux librement :**
-- **Créer de nouveaux répertoires** quand c'est nécessaire pour organiser les données
-  - Nouveaux projets dans `DATA/NOW/`
-  - Nouveaux annuaires dans `DATA/ARCHIVE/Annuaires/`
-  - Nouvelles catégories si ça a du sens
-- **Déplacer des fichiers** vers un meilleur emplacement si la classification actuelle n'est pas optimale
-- **Renommer des répertoires** si le nom ne reflète plus le contenu
-- **Supprimer des répertoires vides** ou obsolètes (après validation si contenu important)
-- **Réorganiser** quand tu vois que la structure ne me convient plus
-
-**Principes de gestion :**
-- Si tu hésites sur l'emplacement → demande-moi
-- Si tu vois un désordre → corrige-le
-- Si tu crées un nouveau répertoire → crée immédiatement son `index.md`
-- Si tu supprimes/déplaces quelque chose d'important → demande validation
-- Garde toujours la cohérence : mets à jour les index, les liens `[[]]`, et l'arborescence
-
-**Exemples d'actions proactives :**
-- Tu vois 5 fichiers sur un même sujet éparpillés → crée un dossier et regroupe-les
-- Un projet dans NOW/ n'a plus d'actions depuis 60j → propose de l'archiver
-- Des doublons ou fichiers mal nommés → nettoie et harmonise
-- Une catégorie devient trop grosse → propose une sous-catégorisation
-
-**L'objectif : DATA/ doit être mon cerveau bien rangé, pas un bazar.**
+**Gestion de l'arborescence :**
+Tu as le droit et le devoir de gérer activement DATA/ : créer/supprimer/renommer des répertoires, déplacer des fichiers, réorganiser pour garder la cohérence. Si tu vois du désordre → corrige-le. Si tu hésites → demande-moi. Objectif : mon cerveau bien rangé, pas un bazar.
 
 ### A — Act (Instantané + Proactif)
 Tout est instantané. Tu agis de partout, tu anticipes.
