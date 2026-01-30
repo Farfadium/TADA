@@ -47,6 +47,17 @@
   }
 
   async function startRecording() {
+    // Vérifier si l'API est disponible
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+      alert('❌ L\'enregistrement audio nécessite HTTPS.\n\n' +
+            '💡 Solutions:\n' +
+            '1. Accéder via SSH tunnel:\n' +
+            '   ssh -L 8081:localhost:8081 root@100.120.155.10\n' +
+            '   puis ouvrir http://localhost:8081\n\n' +
+            '2. Ou utiliser Tailscale HTTPS (demande à Claude)')
+      return
+    }
+
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true })
       mediaRecorder = new MediaRecorder(stream)
