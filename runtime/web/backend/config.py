@@ -8,8 +8,8 @@ load_dotenv()
 
 # Chemins
 # __file__ = _SYSTEM/runtime/web/backend/config.py
-# On remonte 5 fois pour arriver à la racine TADA
-TADA_ROOT = Path(__file__).parent.parent.parent.parent.parent.resolve()
+# On remonte 5 fois pour arriver à la racine TADA, ou on utilise TADA_ROOT_PATH si défini
+TADA_ROOT = Path(os.getenv("TADA_ROOT_PATH", Path(__file__).parent.parent.parent.parent.parent)).resolve()
 DATA_DIR = TADA_ROOT / "DATA"
 SYSTEM_DIR = TADA_ROOT / "_SYSTEM"
 

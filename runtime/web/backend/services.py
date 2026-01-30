@@ -37,10 +37,10 @@ def get_dashboard_stats() -> Dict[str, Any]:
             if d.is_dir() and not d.name.startswith(".")
         ])
 
-    # Compter PENDING
+    # Compter PENDING (récursivement dans tous les sous-répertoires)
     if config.PENDING_DIR.exists():
         pending_files = [
-            f for f in config.PENDING_DIR.iterdir()
+            f for f in config.PENDING_DIR.rglob("*")
             if f.is_file() and not f.name.startswith(".")
         ]
         stats["pending_items"] = len(pending_files)
@@ -94,13 +94,13 @@ def get_now_projects() -> List[Dict[str, Any]]:
 
 
 def get_pending_items() -> List[Dict[str, Any]]:
-    """Liste les items en PENDING."""
+    """Liste les items en PENDING (récursivement dans tous les sous-répertoires)."""
     items = []
 
     if not config.PENDING_DIR.exists():
         return items
 
-    for item_file in config.PENDING_DIR.iterdir():
+    for item_file in config.PENDING_DIR.rglob("*"):
         if not item_file.is_file() or item_file.name.startswith("."):
             continue
 
@@ -259,10 +259,53 @@ def transcribe_audio(audio_path: Path) -> str:
         return f"_[Erreur lors de la transcription: {str(e)}]_"
 
 
+def process_file_analysis(file_path: Path, md_path: Path, file_type: str, description: str, content_type: str, content_size: int):
+    """Traite l'analyse AI en arrière-plan et met à jour le fichier .md."""
+    try:
+        # Analyser le contenu du fichier (principe TADA: tout doit être lisible)
+        analysis = ""
+        if file_type == "image":
+            analysis = analyze_image(file_path)
+        elif file_type == "audio":
+            analysis = transcribe_audio(file_path)
+
+        # Lire le contenu actuel du .md
+        current_content = md_path.read_text()
+
+        # Ajouter l'analyse avant le fichier original
+        if analysis:
+            if file_type == "image":
+                analysis_section = f"## 👁️ Analyse visuelle\n\n{analysis}\n\n"
+            elif file_type == "audio":
+                analysis_section = f"## 🎤 Transcription\n\n{analysis}\n\n"
+            else:
+                analysis_section = ""
+
+            # Remplacer le placeholder par l'analyse
+            updated_content = current_content.replace(
+                "_[Analyse en cours...]_\n\n",
+                analysis_section
+            )
+            md_path.write_text(updated_content)
+    except Exception as e:
+        # En cas d'erreur, mettre à jour le .md avec l'erreur
+        try:
+            current_content = md_path.read_text()
+            error_section = f"_[Erreur lors de l'analyse: {str(e)}]_\n\n"
+            updated_content = current_content.replace(
+                "_[Analyse en cours...]_\n\n",
+                error_section
+            )
+            md_path.write_text(updated_content)
+        except:
+            pass  # Silently fail if we can't even write the error
+
+
 async def quick_capture_file(file, description: str = "") -> Dict[str, Any]:
     """Capture d'un fichier (audio, image, etc.).
 
     Sauvegarde le fichier dans PENDING/ et crée un fichier .md associé.
+    L'analyse AI se fait en arrière-plan.
     """
     config.PENDING_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -284,14 +327,7 @@ async def quick_capture_file(file, description: str = "") -> Dict[str, Any]:
     content = await file.read()
     file_path.write_bytes(content)
 
-    # Analyser le contenu du fichier (principe TADA: tout doit être lisible)
-    analysis = ""
-    if file_type == "image":
-        analysis = analyze_image(file_path)
-    elif file_type == "audio":
-        analysis = transcribe_audio(file_path)
-
-    # Créer le fichier .md associé
+    # Créer le fichier .md associé immédiatement (sans attendre l'analyse)
     md_path = config.PENDING_DIR / f"{timestamp}_{file_type}.md"
 
     md_content = f"""---
@@ -310,12 +346,9 @@ Capture {file_type} du {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
     if description:
         md_content += f"**Description :** {description}\n\n"
 
-    # Ajouter l'analyse automatique
-    if analysis:
-        if file_type == "image":
-            md_content += f"## 👁️ Analyse visuelle\n\n{analysis}\n\n"
-        elif file_type == "audio":
-            md_content += f"## 🎤 Transcription\n\n{analysis}\n\n"
+    # Ajouter un placeholder pour l'analyse en cours
+    if file_type in ["image", "audio"]:
+        md_content += "_[Analyse en cours...]_\n\n"
 
     md_content += f"## Fichier original\n\n![[{file_path.name}]]\n"
 
@@ -327,4 +360,14 @@ Capture {file_type} du {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
         "file": str(file_path.relative_to(config.DATA_DIR)),
         "md_file": str(md_path.relative_to(config.DATA_DIR)),
         "type": file_type,
+        "analysis_pending": file_type in ["image", "audio"],
+        # Les paramètres pour le background task
+        "_bg_params": {
+            "file_path": file_path,
+            "md_path": md_path,
+            "file_type": file_type,
+            "description": description,
+            "content_type": content_type,
+            "content_size": len(content),
+        }
     }

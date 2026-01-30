@@ -2,6 +2,7 @@
   import Login from './components/Login.svelte'
   import Dashboard from './components/Dashboard.svelte'
   import { onMount } from 'svelte'
+  import { API_BASE } from './config.js'
 
   let token = localStorage.getItem('tada_token')
   let isAuthenticated = !!token
@@ -21,7 +22,7 @@
   onMount(() => {
     // Vérifier si le token est toujours valide
     if (token) {
-      fetch('http://localhost:8080/dashboard', {
+      fetch(`${API_BASE}/dashboard`, {
         headers: { Authorization: `Bearer ${token}` }
       })
       .then(res => {

@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from typing import Optional
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, Depends, status, UploadFile, File, Form
+from fastapi import FastAPI, HTTPException, Depends, status, UploadFile, File, Form, BackgroundTasks
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -15,6 +15,7 @@ from services import (
     get_dashboard_stats,
     quick_capture,
     quick_capture_file,
+    process_file_analysis,
     get_pending_items,
     get_now_projects,
 )
@@ -133,12 +134,22 @@ async def capture(req: CaptureRequest, current_user: str = Depends(get_current_u
 
 @app.post("/capture/file")
 async def capture_file_route(
+    background_tasks: BackgroundTasks,
     file: UploadFile = File(...),
     description: str = Form(""),
     current_user: str = Depends(get_current_user)
 ):
     """Capture d'un fichier (audio, image, etc.)."""
     result = await quick_capture_file(file, description)
+
+    # Si une analyse est nécessaire, la lancer en arrière-plan
+    if result.get("analysis_pending") and "_bg_params" in result:
+        bg_params = result.pop("_bg_params")
+        background_tasks.add_task(
+            process_file_analysis,
+            **bg_params
+        )
+
     return result
 
 

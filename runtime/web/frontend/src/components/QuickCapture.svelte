@@ -1,6 +1,7 @@
 <script>
   import { createEventDispatcher } from 'svelte'
   import { fade, slide } from 'svelte/transition'
+  import { API_BASE } from '../config.js'
 
   export let token
 
@@ -18,7 +19,7 @@
     loading = true
 
     try {
-      const response = await fetch('http://localhost:8080/capture', {
+      const response = await fetch(`${API_BASE}/capture`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -101,7 +102,7 @@
     formData.append('description', description)
 
     try {
-      const response = await fetch('http://localhost:8080/capture/file', {
+      const response = await fetch(`${API_BASE}/capture/file`, {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`,

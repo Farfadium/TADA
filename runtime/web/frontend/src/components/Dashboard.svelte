@@ -1,6 +1,7 @@
 <script>
   import { onMount, createEventDispatcher } from 'svelte'
   import QuickCapture from './QuickCapture.svelte'
+  import { API_BASE } from '../config.js'
 
   export let token
 
@@ -13,11 +14,8 @@
     last_sync: null,
   }
   let projects = []
-  let pendingItems = []
   let loading = true
   let error = ''
-
-  const API_BASE = 'http://localhost:8080'
 
   async function fetchData() {
     loading = true
@@ -26,19 +24,17 @@
     try {
       const headers = { Authorization: `Bearer ${token}` }
 
-      const [statsRes, projectsRes, pendingRes] = await Promise.all([
+      const [statsRes, projectsRes] = await Promise.all([
         fetch(`${API_BASE}/dashboard`, { headers }),
         fetch(`${API_BASE}/projects`, { headers }),
-        fetch(`${API_BASE}/pending`, { headers }),
       ])
 
-      if (!statsRes.ok || !projectsRes.ok || !pendingRes.ok) {
+      if (!statsRes.ok || !projectsRes.ok) {
         throw new Error('Erreur de chargement')
       }
 
       stats = await statsRes.json()
       projects = await projectsRes.json()
-      pendingItems = await pendingRes.json()
     } catch (err) {
       error = err.message
       if (err.message.includes('401')) {
@@ -104,20 +100,6 @@
             <div class="project-card">
               <span class="status">{project.status || '⚪'}</span>
               <span class="name">{project.name}</span>
-            </div>
-          {/each}
-        </div>
-      </section>
-    {/if}
-
-    {#if pendingItems.length > 0}
-      <section class="section">
-        <h2>En attente</h2>
-        <div class="pending-list">
-          {#each pendingItems as item}
-            <div class="pending-item" class:old={item.is_old}>
-              <span class="name">{item.name}</span>
-              <span class="age">{item.age_days.toFixed(1)}j</span>
             </div>
           {/each}
         </div>
@@ -234,29 +216,6 @@
 
   .name {
     font-size: 16px;
-  }
-
-  .pending-list {
-    display: grid;
-    gap: 8px;
-  }
-
-  .pending-item {
-    background: #1a1a1a;
-    padding: 12px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .pending-item.old {
-    border-left: 3px solid #ff6b6b;
-  }
-
-  .age {
-    color: #888;
-    font-size: 14px;
   }
 
   .loading, .error {
