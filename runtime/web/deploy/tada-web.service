@@ -1,0 +1,22 @@
+[Unit]
+Description=TADA Web API
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/TADA/_SYSTEM/runtime/web/backend
+Environment="PATH=/root/TADA/_SYSTEM/runtime/web/backend/venv/bin"
+Environment="TADA_SECRET_KEY=CHANGE_ME_IN_PRODUCTION"
+Environment="TADA_API_HOST=0.0.0.0"
+Environment="TADA_API_PORT=8080"
+Environment="TADA_ADMIN_USER=yvan"
+Environment="TADA_ADMIN_PASSWORD_HASH="
+Environment="ANTHROPIC_API_KEY="
+Environment="OPENAI_API_KEY="
+ExecStart=/root/TADA/_SYSTEM/runtime/web/backend/venv/bin/python main.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
