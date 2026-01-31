@@ -55,7 +55,10 @@ class CaptureRequest(BaseModel):
 
 class ChatRequest(BaseModel):
     message: str
+<<<<<<< HEAD:runtimes/web/backend/main.py
     runtime: str = "claude"  # moltbot, claude, moltbot-web
+=======
+>>>>>>> 1ae08e2 (chore: update web runtime and add sources):runtime/web/backend/main.py
 
 
 class Token(BaseModel):
@@ -167,6 +170,7 @@ async def capture_file_route(
     return result
 
 
+<<<<<<< HEAD:runtimes/web/backend/main.py
 @app.get("/runtimes")
 async def list_runtimes(current_user: str = Depends(get_current_user)):
     """Liste les runtimes disponibles."""
@@ -229,6 +233,13 @@ if FRONTEND_DIR.exists():
         if file_path.exists() and file_path.is_file():
             return FileResponse(file_path)
         return FileResponse(FRONTEND_DIR / "index.html")
+=======
+@app.post("/chat")
+async def chat(req: ChatRequest, current_user: str = Depends(get_current_user)):
+    """Chat avec Moltbot."""
+    response = await chat_with_moltbot(req.message, current_user)
+    return {"response": response}
+>>>>>>> 1ae08e2 (chore: update web runtime and add sources):runtime/web/backend/main.py
 
 
 if __name__ == "__main__":

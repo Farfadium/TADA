@@ -17,6 +17,8 @@
 | [meetings.md](meetings.md) | Meetings | Fireflies, Otter |
 | [messaging.md](messaging.md) | Messaging | WhatsApp, Telegram, Slack |
 | [files.md](files.md) | Files | Système de fichiers local |
+| [folk.md](folk.md) | CRM | Folk API/CSV |
+| [miro.md](miro.md) | Collaboration | Miro Board Export API |
 
 ## Configuration instance
 
