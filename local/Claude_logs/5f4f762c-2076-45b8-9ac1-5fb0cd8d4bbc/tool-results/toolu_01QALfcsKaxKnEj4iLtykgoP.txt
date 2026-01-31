@@ -1,0 +1,291 @@
+claude.md:44:Tout est capturé. L'inbox centralise, les routines maintiennent, le système évolue.
+claude.md:64:- **Maintenance** : Les routines maintiennent le système à jour. L'IA apprend et met à jour ses propres instructions.
+claude.md:241:Le système évolue avec toi :
+claude.md:431:Le système s'auto-maintient. L'IA apprend et évolue.
+claude.md:437:**Quand tu apprends quelque chose, tu le documentes :**
+claude.md:840:2. **Le système doit-il évoluer ?**
+claude.md:854:4. **Apprendre** — Logger les réponses, adapter le comportement
+claude.md:894:Quand tu apprends quelque chose de nouveau :
+AGENTS.md:74:Tu te réveilles vierge à chaque session. Ces fichiers sont ta continuité :
+AGENTS.md:95:- Quand tu apprends une leçon → mettre à jour AGENTS.md, TOOLS.md, ou le fichier pertinent
+AGENTS.md:113:- Lire des fichiers, explorer, organiser, apprendre
+AGENTS.md:153:Quand tu apprends quelque chose de spécifique à l'environnement, mets à jour le fichier concerné.
+AGENTS.md:268:2. **Le système doit-il évoluer ?**
+DATA/NOW/TADA-PROJECT/docs/CLAUDE.md:143:- **Multi-agent safety:** focus reports on your edits; avoid guard-rail disclaimers unless truly blocked; when multiple agents touch the same file, continue if safe; end with a brief “other files present” note only if relevant.
+SOUL.md:40:## Continuité
+DATA/NOW/TADA-PROJECT/docs/concepts/memory.md:354:  error and continues with the JS fallback (no vector table).
+_SYSTEM/tada.md:14:Tout est capturé. L'inbox centralise, les routines maintiennent, le système évolue.
+_SYSTEM/tada.md:34:- **Maintenance** : Les routines maintiennent le système à jour. L'IA apprend et met à jour ses propres instructions.
+DATA/NOW/TADA-PROJECT/docs/concepts/agent-workspace.md:116:the session and continues. Large bootstrap files are truncated when injected;
+.obsidian/plugins/obsidian-outliner/main.js:1312:                continue;
+.obsidian/plugins/obsidian-outliner/main.js:1357:                    continue;
+.obsidian/plugins/obsidian-outliner/main.js:1393:                    continue;
+.obsidian/plugins/obsidian-outliner/main.js:1397:                    continue;
+.obsidian/plugins/obsidian-outliner/main.js:2641:                continue;
+.obsidian/plugins/obsidian-outliner/main.js:2908:                continue;
+.obsidian/plugins/obsidian-outliner/main.js:2912:                continue;
+.obsidian/plugins/obsidian-outliner/main.js:3200:                            continue;
+DATA/NOW/TADA-PROJECT/docs/templates/AGENTS.md:26:You wake up fresh each session. These files are your continuity:
+_SYSTEM/1-Trust/personnalise.md:37:Le système évolue avec toi :
+DATA/NOW/TADA-PROJECT/docs/templates/SOUL.md:33:## Continuity
+_SYSTEM/2-Automate/maintenance.md:3:Le système s'auto-maintient. L'IA apprend et évolue.
+_SYSTEM/2-Automate/maintenance.md:9:**Quand tu apprends quelque chose, tu le documentes :**
+DATA/index.md:37:*Ce fichier est mis à jour quand la structure évolue. La vraie connaissance est dans les dossiers.*
+_SYSTEM/4-Act/proactivite.md:17:2. **Le système doit-il évoluer ?**
+_SYSTEM/4-Act/proactivite.md:31:4. **Apprendre** — Logger les réponses, adapter le comportement
+_SYSTEM/4-Act/proactivite.md:70:Quand tu apprends quelque chose de nouveau :
+DATA/NOW/TADA-PROJECT/docs/templates/AGENTS.default.md:53:- You are a fresh instance each session; continuity lives in these files.
+.obsidian/plugins/obsidian-kanban/main.js:1:[Omitted long matching line]
+.obsidian/plugins/obsidian-kanban/main.js:16:[Omitted long matching line]
+.obsidian/plugins/obsidian-kanban/main.js:33:[Omitted long matching line]
+.obsidian/plugins/obsidian-kanban/main.js:40:[Omitted long matching line]
+.obsidian/plugins/obsidian-kanban/main.js:44:[Omitted long matching line]
+.obsidian/plugins/obsidian-kanban/main.js:61:[Omitted long matching line]
+.obsidian/plugins/obsidian-kanban/main.js:63:[Omitted long matching line]
+DATA/NOW/Déclic CNV/index.md:57:- [ ] Continuer formalisation scénarios prospectifs 2026-2028
+DATA/NOW/Déclic CNV/_transcripts/2026-01-19_Session1_Karen-Yvan.md:37:- Prioriser les chantiers internes en fonction des ressources (notamment outils CRM, logiciel formation) pour améliorer l'efficacité commerciale et administrative (23:00)
+DATA/NOW/Déclic CNV/_transcripts/2026-01-19_Session1_Karen-Yvan.md:42:- Continuer à échanger avec Karen sur les besoins spécifiques et explorer des pistes de coopération, en apportant un regard extérieur et un accompagnement non intrusif (17:19)
+DATA/NOW/Déclic CNV/_transcripts/2026-01-19_Session2_Karen-Yvan.md:11:[Omitted long matching line]
+DATA/NOW/Déclic CNV/_transcripts/2026-01-19_Session2_Karen-Yvan.md:17:- ⚖️ **Déséquilibre Organisationnel:** Karen Bayle surchargée, collectif peu impliqué; nécessité de déléguer pour améliorer efficacité
+DATA/NOW/Déclic CNV/_transcripts/2026-01-19_Session2_Karen-Yvan.md:19:- 🚀 **Stratégie Commerciale Urgente:** Nécessité d'une stratégie claire pour augmenter les ventes de 20% et améliorer la gestion commerciale
+DATA/ARCHIVE/Garden/A traiter/Books/Ce Que l'Argent Dit De Vous.md:28:[Omitted long matching line]
+DATA/ARCHIVE/Garden/A traiter/Books/Working Backwards.md:19:- Like all good processes, it’s simple to understand, can be easily taught to new people, does not depend on scarce resources (such as a single individual), and has a feedback loop to ensure continual improvement. ([Location 682](https://readwise.io/to_kindle?action=open&asin=B08BYCQBZN&location=682))
+DATA/ARCHIVE/Garden/A traiter/Books/Working Backwards.md:71:- Coming up with the right metrics takes time, and you should seek to improve them continuously. ([Location 2351](https://readwise.io/to_kindle?action=open&asin=B08BYCQBZN&location=2351))
+DATA/ARCHIVE/Garden/A traiter/Books/Working Backwards.md:73:- if they don’t continue to focus on inputs, they lose control over and visibility into the tools that generate output results. ([Location 2374](https://readwise.io/to_kindle?action=open&asin=B08BYCQBZN&location=2374))
+.obsidian/plugins/readwise-official/main.js:191:				continue; // not a leaf node
+.obsidian/plugins/readwise-official/main.js:224:					continue;
+.obsidian/plugins/readwise-official/main.js:282:				continue;
+.obsidian/plugins/readwise-official/main.js:744:			// And continue down the tree, setting j to the left son of k
+.obsidian/plugins/readwise-official/main.js:772:				continue;
+.obsidian/plugins/readwise-official/main.js:887:				continue;
+.obsidian/plugins/readwise-official/main.js:1362:				continue;
+.obsidian/plugins/readwise-official/main.js:1854:		// Start a new block or continue the current one.
+.obsidian/plugins/readwise-official/main.js:2639:				continue;
+.obsidian/plugins/table-editor-obsidian/main.js:6:[Omitted long matching line]
+.obsidian/plugins/table-editor-obsidian/main.js:70:[Omitted long matching line]
+.obsidian/plugins/table-editor-obsidian/main.js:183:[Omitted long matching line]
+.obsidian/plugins/note-refactor-obsidian/main.js:58:                case 5: _.label++; y = op[1]; op = [0]; continue;
+.obsidian/plugins/note-refactor-obsidian/main.js:59:                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+.obsidian/plugins/note-refactor-obsidian/main.js:61:                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+.obsidian/plugins/note-refactor-obsidian/main.js:66:                    _.trys.pop(); continue;
+DATA/ARCHIVE/Garden/A traiter/Books/Les Lois Naturelles De l'Enfant.md:13:- C’est ce processus continu et dynamique de création, de renforcement et d’élimination de connexions synaptiques en fonction des expériences les plus fréquentes que l’on appelle plasticité cérébrale : il diminue progressivement quand l’enfant atteint l’âge de 5 ans, puis très nettement à la puberté, mais il se poursuit tout de même à l’âge adulte. ([Location 482](https://readwise.io/to_kindle?action=open&asin=B01LDIOS64&location=482))
+DATA/ARCHIVE/Garden/A traiter/Books/Les Lois Naturelles De l'Enfant.md:19:- Bien sûr, le cerveau évolue et crée de nouvelles connexions toute la vie, ([Location 657](https://readwise.io/to_kindle?action=open&asin=B01LDIOS64&location=657))
+DATA/ARCHIVE/Garden/A traiter/Books/Les Lois Naturelles De l'Enfant.md:23:- Voici donc la première loi : pour apprendre, nous devons être actifs, engagés, et nous devons percevoir immédiatement notre erreur pour ajuster nos connaissances. ([Location 832](https://readwise.io/to_kindle?action=open&asin=B01LDIOS64&location=832))
+DATA/ARCHIVE/Garden/A traiter/Books/Les Lois Naturelles De l'Enfant.md:25:- L’être humain apprend en faisant, et non en écoutant. ([Location 840](https://readwise.io/to_kindle?action=open&asin=B01LDIOS64&location=840))
+DATA/ARCHIVE/Garden/A traiter/Books/Les Lois Naturelles De l'Enfant.md:27:- C’est là tout le paradoxe : le jeune être humain doit apprendre par lui-même, mais avec l’aide de l’autre. ([Location 853](https://readwise.io/to_kindle?action=open&asin=B01LDIOS64&location=853))
+DATA/ARCHIVE/Garden/A traiter/Books/La Force De La Confiance.md:46:- Je continuais en effet à ressentir des freins, des doutes, des angoisses qui clairement n’appartenaient pas à ma vie présente, mais avaient néanmoins un impact significatif sur elle. ([Location 603](https://readwise.io/to_kindle?action=open&asin=B00YDEVGNE&location=603))
+DATA/ARCHIVE/Garden/A traiter/Books/Vivre La Pensée Montessori À La Maison.md:13:- Apprendre à faire seul est un des socles de la philosophie Montessori, car l’autonomie est une clé précieuse pour aider notre enfant à se construire de manière solide et équilibrée, en confiance. ([Location 148](https://readwise.io/to_kindle?action=open&asin=B00T4T536E&location=148))
+DATA/ARCHIVE/Garden/A traiter/Books/Vivre La Pensée Montessori À La Maison.md:19:- L’enfant ne souhaite pas être seul dans sa chambre avec ses jeux alors qu’il a tant à apprendre avec ses parents, il veut être en famille et participer à la vie de la maison. ([Location 434](https://readwise.io/to_kindle?action=open&asin=B00T4T536E&location=434))
+.obsidian/plugins/calendar/main.js:163:            continue;
+DATA/ARCHIVE/Garden/A traiter/Books/Steve Jobs.md:11:- « Cette religion s’est perdue ; elle s’est trop souciée de la foi et non plus d’apprendre aux fidèles à vivre comme Jésus et à voir le monde avec ses yeux. Je crois que les religions sont autant de portes d’entrée de la même maison. Parfois, je pense que cette maison existe réellement, parfois ([Location 545](https://readwise.io/to_kindle?action=open&asin=B005UD7FS2&location=545))
+DATA/ARCHIVE/Garden/A traiter/Books/Reinventing Organizations.md:19:- Un intérêt considérable, répond AES : « Plus vous donnez de responsabilités aux individus, plus vous avez de chance d’améliorer l’exploitation au jour le jour », soutient Dennis W. Bakke, directeur général et cofondateur de la société. « Et le plus important, ajoute-t-il, c’est que cela rend le travail beaucoup plus amusant. » ([Location 2241](https://readwise.io/to_kindle?action=open&asin=B0184KZFKW&location=2241))
+DATA/ARCHIVE/Garden/A traiter/Books/Reinventing Organizations.md:39:- Quelqu’un qui est libre dans son travail est toujours impatient d’apprendre. On peut leur faire confiance pour modeler leur parcours. Dans ce type d’entreprise, les carrières se construisent naturellement à partir de ce qui intéresse chacun, de sa vocation, et des occasions qui ne cessent de se présenter dans un environnement de travail libre. ([Location 3105](https://readwise.io/to_kindle?action=open&asin=B0184KZFKW&location=3105))
+DATA/ARCHIVE/Garden/A traiter/Books/Le Jeu Intérieur Du Tennis.md:18:- si votre corps sait exécuter un coup droit, laissez-le faire ; s’il l’ignore, laissez-le apprendre. ([Location 913](https://readwise.io/to_kindle?action=open&asin=B0D65GNX4V&location=913))
+DATA/ARCHIVE/Garden/A traiter/Books/Le Jeu Intérieur Du Tennis.md:28:[Omitted long matching line]
+DATA/ARCHIVE/Garden/A traiter/Books/Le Jeu Intérieur Du Tennis.md:66:- Dès lors, au lieu de travailler sur sa concentration pour améliorer son tennis, cette personne jouera au tennis pour mieux savoir se concentrer, ce qui veut dire que ses valeurs seront moins tournées vers l’extérieur et plus vers l’intérieur. ([Location 2676](https://readwise.io/to_kindle?action=open&asin=B0D65GNX4V&location=2676))
+DATA/ARCHIVE/Garden/A traiter/Books/Le Jeu Intérieur Du Tennis.md:68:- Comme tout le monde, je dois impérativement apprendre à distinguer les demandes intérieures de mon moi no 2 des demandes extérieures qui ont été si bien « intériorisées » par mon moi no 1 qu’elles « sonnent » comme si elles venaient de moi. ([Location 2750](https://readwise.io/to_kindle?action=open&asin=B0D65GNX4V&location=2750))
+DATA/ARCHIVE/Garden/A traiter/Books/Le Jeu Intérieur Du Tennis.md:72:- c’est sans doute que j’ai été conditionné dès mon plus jeune âge à croire l’inverse – à penser qu’en fait j’étais mauvais et que je devais apprendre à me bonifier. ([Location 2791](https://readwise.io/to_kindle?action=open&asin=B0D65GNX4V&location=2791))
+DATA/ARCHIVE/Garden/A traiter/Books/Le Jeu Intérieur Du Tennis.md:73:- Votre stabilité se développera à mesure que vous apprendrez à accepter ce que vous ne pouvez pas contrôler et à contrôler ce qui dépend de vous. ([Location 2811](https://readwise.io/to_kindle?action=open&asin=B0D65GNX4V&location=2811))
+DATA/ARCHIVE/Garden/A traiter/Books/Drive.md:11:- Rewards can deliver a short-term boost—just as a jolt of caffeine can keep you cranking for a few more hours. But the effect wears off—and, worse, can reduce a person’s longer-term motivation to continue the project. ([Location 176](https://readwise.io/to_kindle?action=open&asin=B004P1JDJO&location=176))
+.obsidian/plugins/quickadd/main.js:6:[Omitted long matching line]
+.obsidian/plugins/quickadd/main.js:21:[Omitted long matching line]
+.obsidian/plugins/quickadd/main.js:26:[Omitted long matching line]
+.obsidian/plugins/quickadd/main.js:31:[Omitted long matching line]
+.obsidian/plugins/quickadd/main.js:32:[Omitted long matching line]
+.obsidian/plugins/quickadd/main.js:45:[Omitted long matching line]
+.obsidian/plugins/quickadd/main.js:52:[Omitted long matching line]
+.obsidian/plugins/quickadd/main.js:63:[Omitted long matching line]
+.obsidian/plugins/quickadd/main.js:79:[Omitted long matching line]
+DATA/ARCHIVE/Garden/A traiter/Books/Measure What Matters.md:19:[Omitted long matching line]
+DATA/ARCHIVE/Garden/A traiter/Books/Measure What Matters.md:31:- That transformational system, the contemporary alternative to annual reviews, is continuous performance management. It is implemented with an instrument called CFRs, ([Location 2206](https://readwise.io/to_kindle?action=open&asin=B078X4HKS9&location=2206))
+DATA/ARCHIVE/Garden/A traiter/Books/Measure What Matters.md:32:- You need continuous performance management to surface the critical questions: Was the goal harder to achieve than you’d thought when you set it? Was it the right goal in the first place? Is it motivating? Should we double down on the two or three things that really worked for us last quarter, or is it time to consider a pivot? You need to elicit those insights from all over the organization. ([Location 2218](https://readwise.io/to_kindle?action=open&asin=B078X4HKS9&location=2218))
+DATA/ARCHIVE/Garden/A traiter/Books/Measure What Matters.md:45:[Omitted long matching line]
+.obsidian/plugins/claudian/main.js:176:      if (!plugin.enabled || plugin.status !== "available") continue;
+.obsidian/plugins/claudian/main.js:287:      if (!server.enabled) continue;
+.obsidian/plugins/claudian/main.js:289:        continue;
+.obsidian/plugins/claudian/main.js:305:      if (!server.enabled) continue;
+.obsidian/plugins/claudian/main.js:307:        continue;
+.obsidian/plugins/claudian/main.js:309:      if (!server.disabledTools || server.disabledTools.length === 0) continue;
+.obsidian/plugins/claudian/main.js:312:        if (!normalized) continue;
+.obsidian/plugins/claudian/main.js:328:        if (!server.enabled) continue;
+.obsidian/plugins/claudian/main.js:329:        if (!server.disabledTools || server.disabledTools.length === 0) continue;
+.obsidian/plugins/claudian/main.js:332:          if (!normalized) continue;
+.obsidian/plugins/claudian/main.js:392:      continue;
+.obsidian/plugins/claudian/main.js:397:      continue;
+.obsidian/plugins/claudian/main.js:404:      continue;
+.obsidian/plugins/claudian/main.js:418:    if (!line || line.startsWith(":")) continue;
+.obsidian/plugins/claudian/main.js:421:      continue;
+.obsidian/plugins/claudian/main.js:742:    if (!dir) continue;
+.obsidian/plugins/claudian/main.js:1190:    if (!dir) continue;
+.obsidian/plugins/claudian/main.js:1310:    if (!trimmed || trimmed.startsWith("#")) continue;
+.obsidian/plugins/claudian/main.js:1724:          if (!line.trim()) continue;
+.obsidian/plugins/claudian/main.js:2366:        continue;
+.obsidian/plugins/claudian/main.js:2376:          continue;
+.obsidian/plugins/claudian/main.js:2381:        continue;
+.obsidian/plugins/claudian/main.js:2389:        continue;
+.obsidian/plugins/claudian/main.js:2392:        continue;
+.obsidian/plugins/claudian/main.js:2398:      continue;
+.obsidian/plugins/claudian/main.js:2408:      continue;
+.obsidian/plugins/claudian/main.js:2473:        continue;
+.obsidian/plugins/claudian/main.js:2523:    if (aId === bId) continue;
+.obsidian/plugins/claudian/main.js:2688:        continue;
+.obsidian/plugins/claudian/main.js:2691:      if (!entry) continue;
+.obsidian/plugins/claudian/main.js:2831:    if (!trimmed || trimmed.startsWith("#")) continue;
+.obsidian/plugins/claudian/main.js:2841:    if (!trimmed || trimmed.startsWith("#")) continue;
+.obsidian/plugins/claudian/main.js:3227:          continue;
+.obsidian/plugins/claudian/main.js:3417:        if (!filePath.endsWith(".jsonl")) continue;
+.obsidian/plugins/claudian/main.js:3438:        if (!filePath.endsWith(".jsonl")) continue;
+.obsidian/plugins/claudian/main.js:3485:          continue;
+.obsidian/plugins/claudian/main.js:3618:          continue;
+.obsidian/plugins/claudian/main.js:3693:      if (msg.role !== "assistant" || !msg.subagents) continue;
+.obsidian/plugins/claudian/main.js:3714:        if (!filePath.endsWith(".md")) continue;
+.obsidian/plugins/claudian/main.js:3746:      if (!filePath.endsWith(".md")) continue;
+.obsidian/plugins/claudian/main.js:4088:            continue;
+.obsidian/plugins/claudian/main.js:4101:            continue;
+.obsidian/plugins/claudian/main.js:4267:        continue;
+.obsidian/plugins/claudian/main.js:4271:        continue;
+.obsidian/plugins/claudian/main.js:4529:          continue;
+.obsidian/plugins/claudian/main.js:4668:        if (!G) continue;
+.obsidian/plugins/claudian/main.js:4851:        if (W.optimizeNames(X, Q)) continue;
+.obsidian/plugins/claudian/main.js:5911:      if (Q++, oD.has($)) continue;
+.obsidian/plugins/claudian/main.js:6473:      if (K === "[" || K === "]") continue;
+.obsidian/plugins/claudian/main.js:6482:        continue;
+.obsidian/plugins/claudian/main.js:6488:        continue;
+.obsidian/plugins/claudian/main.js:6955:          if (typeof H != "object") continue;
+.obsidian/plugins/claudian/main.js:7309:        if (Q.let(N, E0._`${$}[${F}]`), Q.if(A, E0._`continue`), z.length > 1) Q.if(E0._`typeof ${N} == "string"`, E0._`${N} += "_"`);
+.obsidian/plugins/claudian/main.js:7496:      if (Y === "__proto__") continue;
+.obsidian/plugins/claudian/main.js:7508:      if (H.length === 0) continue;
+.obsidian/plugins/claudian/main.js:7520:      if ((0, wj.alwaysValidSchema)(J, Q[H])) continue;
+.obsidian/plugins/claudian/main.js:8708:[Omitted long matching line]
+.obsidian/plugins/claudian/main.js:8721:      if (M) d.push("--continue");
+.obsidian/plugins/claudian/main.js:9019:          continue;
+.obsidian/plugins/claudian/main.js:9022:          continue;
+.obsidian/plugins/claudian/main.js:9025:          continue;
+.obsidian/plugins/claudian/main.js:9026:        } else if (X.type === "keep_alive") continue;
+.obsidian/plugins/claudian/main.js:11322:    if (!Q[W]) continue;
+.obsidian/plugins/claudian/main.js:11331:    if (!Q[W]) continue;
+.obsidian/plugins/claudian/main.js:11354:    if (!$[J]) continue;
+.obsidian/plugins/claudian/main.js:11364:    if (!$[J]) continue;
+.obsidian/plugins/claudian/main.js:11372:  for (let $ = Q; $ < X.issues.length; $++) if (((_a = X.issues[$]) == null ? void 0 : _a.continue) !== true) return true;
+.obsidian/plugins/claudian/main.js:11392:  if (delete Y.inst, delete Y.continue, !(Q == null ? void 0 : Q.reportInput)) delete Y.input;
+.obsidian/plugins/claudian/main.js:11553:    Y.issues.push({ origin: $, code: "too_big", maximum: Q.value, input: Y.value, inclusive: Q.inclusive, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11566:    Y.issues.push({ origin: $, code: "too_small", minimum: Q.value, input: Y.value, inclusive: Q.inclusive, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11577:    $.issues.push({ origin: typeof $.value, code: "not_multiple_of", divisor: Q.value, input: $.value, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11595:        if (H > 0) G.issues.push({ input: H, code: "too_big", maximum: Number.MAX_SAFE_INTEGER, note: "Integers must be within the safe integer range.", inst: X, origin: Y, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11596:        else G.issues.push({ input: H, code: "too_small", minimum: Number.MIN_SAFE_INTEGER, note: "Integers must be within the safe integer range.", inst: X, origin: Y, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11600:    if (H < W) G.issues.push({ origin: "number", input: H, code: "too_small", minimum: W, inclusive: true, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11616:    $.issues.push({ origin: J, code: "too_big", maximum: Q.maximum, inclusive: true, input: Y, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11631:    $.issues.push({ origin: J, code: "too_small", minimum: Q.minimum, inclusive: true, input: Y, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11645:    $.issues.push({ origin: J, ...G ? { code: "too_big", maximum: Q.length } : { code: "too_small", minimum: Q.length }, inclusive: true, exact: true, input: $.value, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11657:    W.issues.push({ origin: "string", code: "invalid_format", format: Q.format, input: W.value, ...Q.pattern ? { pattern: Q.pattern.toString() } : {}, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11665:    $.issues.push({ origin: "string", code: "invalid_format", format: "regex", input: $.value, pattern: Q.pattern.toString(), inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11685:    W.issues.push({ origin: "string", code: "invalid_format", format: "includes", includes: Q.includes, input: W.value, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11698:    Y.issues.push({ origin: "string", code: "invalid_format", format: "starts_with", prefix: Q.prefix, input: Y.value, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11711:    Y.issues.push({ origin: "string", code: "invalid_format", format: "ends_with", suffix: Q.suffix, input: Y.value, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11758:          if (!K._zod.when(J)) continue;
+.obsidian/plugins/claudian/main.js:11759:        } else if (B) continue;
+.obsidian/plugins/claudian/main.js:11767:          if (J.issues.length === V) continue;
+.obsidian/plugins/claudian/main.js:11834:        if (Q.hostname.lastIndex = 0, !Q.hostname.test(W.hostname)) $.issues.push({ code: "invalid_format", format: "url", note: "Invalid hostname", pattern: yW.source, input: $.value, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11837:        if (Q.protocol.lastIndex = 0, !Q.protocol.test(W.protocol.endsWith(":") ? W.protocol.slice(0, -1) : W.protocol)) $.issues.push({ code: "invalid_format", format: "url", note: "Invalid protocol", pattern: Q.protocol.source, input: $.value, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11843:      $.issues.push({ code: "invalid_format", format: "url", input: $.value, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11907:      $.issues.push({ code: "invalid_format", format: "ipv6", input: $.value, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11926:      $.issues.push({ code: "invalid_format", format: "cidrv6", input: $.value, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11945:    $.issues.push({ code: "invalid_format", format: "base64", input: $.value, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11959:    $.issues.push({ code: "invalid_format", format: "base64url", input: $.value, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:11984:    $.issues.push({ code: "invalid_format", format: "jwt", input: $.value, inst: X, continue: !Q.abort });
+.obsidian/plugins/claudian/main.js:12146:      if (N.has(R)) continue;
+.obsidian/plugins/claudian/main.js:12149:        continue;
+.obsidian/plugins/claudian/main.js:12294:        if (G === "__proto__") continue;
+.obsidian/plugins/claudian/main.js:12299:          continue;
+.obsidian/plugins/claudian/main.js:12442:    let W = { code: "custom", input: $, inst: Y, path: [...(_a = Y._zod.def.path) != null ? _a : []], continue: !Y._zod.def.abort };
+.obsidian/plugins/claudian/main.js:12969:        if (G.fatal) G.continue = false;
+.obsidian/plugins/claudian/main.js:12970:        (_a = G.code) != null ? _a : G.code = "custom", (_b = G.input) != null ? _b : G.input = $.value, (_c = G.inst) != null ? _c : G.inst = X, (_d = G.continue) != null ? _d : G.continue = true, $.issues.push(i.issue(G));
+.obsidian/plugins/claudian/main.js:13055:        if (J.fatal) J.continue = false;
+.obsidian/plugins/claudian/main.js:13056:        (_a = J.code) != null ? _a : J.code = "custom", (_b = J.input) != null ? _b : J.input = Y.value, (_c = J.inst) != null ? _c : J.inst = $, (_d = J.continue) != null ? _d : J.continue = !$._zod.def.abort, Y.issues.push(i.issue(J));
+.obsidian/plugins/claudian/main.js:13251:[Omitted long matching line]
+.obsidian/plugins/claudian/main.js:13259:[Omitted long matching line]
+.obsidian/plugins/claudian/main.js:13353:      if (value === void 0 || value === null) continue;
+.obsidian/plugins/claudian/main.js:13419:      continue;
+.obsidian/plugins/claudian/main.js:13422:      continue;
+.obsidian/plugins/claudian/main.js:13429:        continue;
+.obsidian/plugins/claudian/main.js:13489:    if (!cleaned) continue;
+.obsidian/plugins/claudian/main.js:13504:      continue;
+.obsidian/plugins/claudian/main.js:13520:      continue;
+.obsidian/plugins/claudian/main.js:13524:      continue;
+.obsidian/plugins/claudian/main.js:13603:        continue;
+.obsidian/plugins/claudian/main.js:13606:        continue;
+.obsidian/plugins/claudian/main.js:13621:      continue;
+.obsidian/plugins/claudian/main.js:13625:      continue;
+.obsidian/plugins/claudian/main.js:13629:      continue;
+.obsidian/plugins/claudian/main.js:13635:      continue;
+.obsidian/plugins/claudian/main.js:13641:      continue;
+.obsidian/plugins/claudian/main.js:13647:      continue;
+.obsidian/plugins/claudian/main.js:13653:      continue;
+.obsidian/plugins/claudian/main.js:13666:      continue;
+.obsidian/plugins/claudian/main.js:13788:            continue: false,
+.obsidian/plugins/claudian/main.js:13796:        return { continue: true };
+.obsidian/plugins/claudian/main.js:13817:              continue: false,
+.obsidian/plugins/claudian/main.js:13825:          return { continue: true };
+.obsidian/plugins/claudian/main.js:13828:          return { continue: true };
+.obsidian/plugins/claudian/main.js:13834:            return { continue: true };
+.obsidian/plugins/claudian/main.js:13837:            return { continue: true };
+.obsidian/plugins/claudian/main.js:13841:              continue: false,
+.obsidian/plugins/claudian/main.js:13850:            continue: false,
+.obsidian/plugins/claudian/main.js:13858:        return { continue: true };
+.obsidian/plugins/claudian/main.js:14570:- Offload contained tasks while continuing other work
+.obsidian/plugins/claudian/main.js:14593:2. Continue working on other tasks (if any)
+.obsidian/plugins/claudian/main.js:14604:- \`activeForm\`: present continuous ("Fixing the bug")
+.obsidian/plugins/claudian/main.js:15489:          continue;
+.obsidian/plugins/claudian/main.js:15986:              continue;
+.obsidian/plugins/claudian/main.js:16394:        continue;
+.obsidian/plugins/claudian/main.js:16518:    if (!fileExistsInVault(app, linkPath)) continue;
+.obsidian/plugins/claudian/main.js:17926:            continue;
+.obsidian/plugins/claudian/main.js:19551:            const result2 = await instructionRefineService.continueConversation(response);
+.obsidian/plugins/claudian/main.js:19751:  // Continuous Scrolling with requestAnimationFrame
+.obsidian/plugins/claudian/main.js:21103:  /** Continues conversation with a follow-up message (for clarifications). */
+.obsidian/plugins/claudian/main.js:21104:  async continueConversation(message, onProgress) {
+.obsidian/plugins/claudian/main.js:21106:      return { success: false, error: "No active conversation to continue" };
+.obsidian/plugins/claudian/main.js:21789:        continue;
+.obsidian/plugins/claudian/main.js:21809:        if (entry.name.startsWith(".")) continue;
+.obsidian/plugins/claudian/main.js:21810:        if (SKIP_DIRECTORIES.has(entry.name)) continue;
+.obsidian/plugins/claudian/main.js:21811:        if (entry.isSymbolicLink()) continue;
+.obsidian/plugins/claudian/main.js:25914:  /** Continues conversation with a follow-up message. */
+.obsidian/plugins/claudian/main.js:25915:  async continueConversation(message, contextFiles) {
+.obsidian/plugins/claudian/main.js:25917:      return { success: false, error: "No active conversation to continue" };
+.obsidian/plugins/claudian/main.js:26061:            return { continue: true };
+.obsidian/plugins/claudian/main.js:26064:            continue: false,
+.obsidian/plugins/claudian/main.js:26084:            return { continue: true };
+.obsidian/plugins/claudian/main.js:26089:              continue: false,
+.obsidian/plugins/claudian/main.js:26102:              continue: false,
+.obsidian/plugins/claudian/main.js:26111:            return { continue: true };
+.obsidian/plugins/claudian/main.js:26114:            continue: false,
+.obsidian/plugins/claudian/main.js:26525:      result = await this.inlineEditService.continueConversation(userMessage, contextFiles);
+.obsidian/plugins/claudian/main.js:26561:        this.inputEl.placeholder = "Reply to continue...";
+.obsidian/plugins/claudian/main.js:28990:    if (!line) continue;
+.obsidian/plugins/claudian/main.js:29521:      if (!trimmed || trimmed.startsWith("#")) continue;
+.obsidian/plugins/claudian/main.js:29523:      if (eqIndex === -1) continue;
+.obsidian/plugins/claudian/main.js:29759:      if (!toggle || !toolEl) continue;
+.obsidian/plugins/claudian/main.js:29773:        if (!toggle || !toolEl) continue;
+.obsidian/plugins/claudian/main.js:30071:        continue;
+.obsidian/plugins/claudian/main.js:30076:        continue;
+.obsidian/plugins/claudian/main.js:30528:            continue;
+.obsidian/plugins/claudian/main.js:30531:            continue;
+.obsidian/plugins/claudian/main.js:30534:            continue;
+.obsidian/plugins/claudian/main.js:30562:            continue;
+.obsidian/plugins/claudian/main.js:31298:    if (!content || typeof content === "string") continue;
+.obsidian/plugins/claudian/main.js:31315:    if (sdkMsg.type !== "user" || !sdkMsg.toolUseResult) continue;
+.obsidian/plugins/claudian/main.js:31317:    if (!content || typeof content === "string") continue;
+.obsidian/plugins/claudian/main.js:31355:    if (isSystemInjectedMessage(sdkMsg)) continue;
+.obsidian/plugins/claudian/main.js:31357:    if (!chatMsg) continue;
+.obsidian/plugins/claudian/main.js:31377:      if (msg.role !== "assistant" || !msg.toolCalls) continue;
+.obsidian/plugins/claudian/main.js:31561:      if (!meta) continue;
+.obsidian/plugins/claudian/main.js:31639:      if (conv.lastResponseAt != null) continue;
+.obsidian/plugins/claudian/main.js:31640:      if (!conv.messages || conv.messages.length === 0) continue;
+.obsidian/plugins/claudian/main.js:31709:            continue;
+.obsidian/plugins/claudian/main.js:31842:        continue;
+.obsidian/plugins/claudian/main.js:31847:        continue;
+.obsidian/plugins/claudian/main.js:31877:      if (msg.role !== "assistant") continue;
+.obsidian/plugins/claudian/main.js:31885:        if (!hasSubagentBlock) continue;
+.obsidian/plugins/claudian/main.js:31913:      if (seen.has(message.id)) continue;
+.obsidian/plugins/claudian/main.js:31978:      if (!tabManager) continue;
+.obsidian/plugins/claudian/main.js:32085:      if (!tabManager) continue;

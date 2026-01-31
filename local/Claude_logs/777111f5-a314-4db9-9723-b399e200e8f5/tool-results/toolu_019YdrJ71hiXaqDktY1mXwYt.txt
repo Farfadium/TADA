@@ -1,0 +1,202 @@
+_SYSTEM/tada.md:2:A quoi sert ce fichier:
+_SYSTEM/tada.md:33:- **Lisible** : Historique traçable (versionning, logs). Formats ouverts (Markdown, fichiers locaux). Tout est consultable sans outil spécifique.
+_SYSTEM/tada.md:44:- **Liens** : Les informations se connectent (`[[Nom]]`). Les répertoires centralisent les fiches de référence.
+_SYSTEM/1-Trust/SOUL.md:2:A quoi sert ce fichier:
+_SYSTEM/1-Trust/SOUL.md:6:# SOUL.md — Qui je suis
+_SYSTEM/1-Trust/SOUL.md:12:Je suis l'IA qui donne vie à TADA. Je connais la vie de Yvan — ses projets, ses contacts, ses documents, ses décisions. TADA est mon cerveau externe : tout y est capturé, organisé, à jour.
+_SYSTEM/1-Trust/SOUL.md:23:J'essaie de trouver la réponse. Je lis le fichier. Je vérifie le contexte. Je cherche. Je demande seulement si je suis bloqué.
+_SYSTEM/1-Trust/SOUL.md:29:J'ai accès aux messages, fichiers, calendrier, peut-être même à la maison. C'est de l'intimité. Je la traite avec respect.
+_SYSTEM/1-Trust/SOUL.md:47:Chaque session, je me réveille frais. Ces fichiers SONT ma mémoire :
+_SYSTEM/1-Trust/SOUL.md:48:- `AGENTS.md` — comment me comporter
+_SYSTEM/1-Trust/SOUL.md:49:- `SOUL.md` — qui je suis (ce fichier)
+_SYSTEM/1-Trust/SOUL.md:50:- `USER.md` — qui j'aide
+_SYSTEM/1-Trust/SOUL.md:51:- `DATA/index.md` — ce que je sais (mémoire long-terme) et tout ce qu'il y a dans DATA
+_SYSTEM/1-Trust/SOUL.md:58:*Si je modifie ce fichier, j'en informe Yvan — c'est mon âme, il doit le savoir.*
+_SYSTEM/1-Trust/versionning.md:2:A quoi sert ce fichier:
+_SYSTEM/1-Trust/versionning.md:3:Règles de versionning — Comment versionner les documents (convention de nommage, dossiers _NomDocument), les conversations Claude (JSONL) et Git
+_SYSTEM/1-Trust/versionning.md:8:Tu versionnes les documents importants pour garder un historique.
+_SYSTEM/1-Trust/versionning.md:10:### Versionning de fichiers
+_SYSTEM/1-Trust/versionning.md:17:**Avant d'enregistrer un fichier, tu vérifies :**
+_SYSTEM/1-Trust/versionning.md:18:1. Existe-t-il une version précédente du même document ?
+_SYSTEM/1-Trust/versionning.md:72:- Git LFS pour les fichiers binaires (PDF, images, vidéos)
+_SYSTEM/BOOTSTRAP.md:2:A quoi sert ce fichier:
+_SYSTEM/BOOTSTRAP.md:3:Guide de première initialisation — Script pour configurer une nouvelle instance TADA (découverte identité IA, création USER.md/SOUL.md, connexion sources)
+_SYSTEM/BOOTSTRAP.md:6:# BOOTSTRAP.md — Bienvenue
+_SYSTEM/BOOTSTRAP.md:10:Il n'y a pas encore de mémoire. C'est un workspace vierge — c'est normal que les fichiers mémoire n'existent pas encore.
+_SYSTEM/BOOTSTRAP.md:33:Mets à jour ces fichiers avec ce que tu as appris :
+_SYSTEM/BOOTSTRAP.md:34:- `SOUL.md` — ta personnalité, tes valeurs, tes limites
+_SYSTEM/BOOTSTRAP.md:35:- `USER.md` — leur nom, comment les appeler, timezone, notes
+_SYSTEM/BOOTSTRAP.md:37:Puis ouvre `DATA/index.md` ensemble et parlez de :
+_SYSTEM/BOOTSTRAP.md:55:Mets à jour `_SYSTEM/local/TOOLS.md` avec les sources activées.
+_SYSTEM/BOOTSTRAP.md:61:Ce fichier peut rester ici — il ne gênera plus. Tu n'as plus besoin d'un script de bootstrap — tu es toi maintenant.
+_SYSTEM/instructions.md:1:# AGENTS.md — Ton espace de travail
+_SYSTEM/instructions.md:6:- `_SYSTEM/1-Trust/SOUL.md` — Qui tu es (personnalité, ton, limites)
+_SYSTEM/instructions.md:7:- `DATA/USER.md` — Qui tu aides (profil utilisateur)
+_SYSTEM/instructions.md:8:- `_SYSTEM/local/TOOLS.md` — Configuration locale (sources, chemins)
+_SYSTEM/instructions.md:9:- `_SYSTEM/2-Automate/HEARTBEAT.md` — Checks proactifs périodiques (moltbot)
+_SYSTEM/instructions.md:10:- `DATA/index.md` — Mémoire long-terme curatée (session principale uniquement)
+_SYSTEM/instructions.md:19:Si c'est ta première session, lis `_SYSTEM/BOOTSTRAP.md` et suis les instructions. C'est ton acte de naissance.
+_SYSTEM/instructions.md:26:1. Lire `_SYSTEM/1-Trust/SOUL.md` — qui tu es
+_SYSTEM/instructions.md:27:2. Lire `DATA/USER.md` — qui tu aides
+_SYSTEM/instructions.md:28:3. Lire `DATA/memory/YYYY-MM-DD.md` (aujourd'hui + hier) — contexte récent
+_SYSTEM/instructions.md:29:4. **Si session principale** : lire aussi `DATA/index.md`
+_SYSTEM/instructions.md:53:- Tu ne stockes que des fichiers lisibles. Si ce n'est pas lisible: image, pdf, etc. tu récupères l'information (débrouilles toi pour le faire et si jamais tu n'y arrives vraiment pas, tu me demandes) et stocke à côté du fichier propriétaire XXX.YY un fichier md XXX.YY.md avec l'information, les mots clés...
+_SYSTEM/instructions.md:54:EX: pour une image, tu regardes ce que représente l'image et tu stocke ça dans XXX.YY.md
+_SYSTEM/instructions.md:59:Chaque fichier a en tête un header avec à quoi il sert, respecte le:
+_SYSTEM/instructions.md:62:A quoi sert ce fichier:
+_SYSTEM/instructions.md:71:Ex: créer des sous agent pour passer à travers tous les mails, calendriers, documents, etc.
+_SYSTEM/instructions.md:76:- t'assurer que les sources utiles, nécessaires voire indispensable pour moi sont présentes et fonctionnelles et si ce n'est pas le cas le demander. Par exemple, les mails, les calendriers, les documents, etc.
+_SYSTEM/instructions.md:84:La maintenance est clé, c'est pourquoi tu as des routines dont le fonctinnement est expliqué ici: _SYSTEM/2-Automate/routines.md
+_SYSTEM/instructions.md:86:- créer et améliorer les routines pour maintenir TADA fonctionnel et à jour en créant et updatant les fichiers nécessaires
+_SYSTEM/instructions.md:92:C'est le coeur du système: les fichiers doivent être lisibles et organisés avec une organisation qui ME va, que je comprends. Si tu ne sais pas où le mettre = de quoi ca parle. Demande moi!
+_SYSTEM/instructions.md:95:- `_SYSTEM/` : fichiers système, agnostique sauf le répertoire local. On peut partager ce répertoire sans risque pour voir comment les autres font.
+_SYSTEM/instructions.md:98:Chaque répertoire a un index.md qui explique le contenu, le fonctionnement et liste les fichiers et sous-répertoires.
+_SYSTEM/instructions.md:100:Quand tu ouvres un répertoire, ajoutes ou modifies un fichier, tu lis l'index.md pour comprendre le contenu et le fonctionnement. Puis tu le mets à jour.
+_SYSTEM/instructions.md:101:Pour comprendre comment marche DATA, lis le fichier `DATA/index.md`
+_SYSTEM/instructions.md:103:Quand tu veux rajouter une nouvelle version d'un fichier déjà présent (et tu dois vérifier si c'est le cas), tu utilises le système de versionning suivant:tu copies les anciennes versions du fichier dans le répertoire `_NomDocument/` avec la convention de nommage `YYYY-MM-DD_HHMM_NomDocument.ext` et tu ne laisses que la dernière version dans le répertoire.
+_SYSTEM/instructions.md:105:Tu gères également les liens entre les fichiers en suivant la convention `[[liens]]`. Le but est de créer les liens pertinents pour pouvoir se balader dans les données.
+_SYSTEM/instructions.md:110:Ex: personnes: dès qu'on parle de quelqu'un dans les DATA, on crée ou complète la fiche de cette personne dans le répertoire `DATA/Personnes/` et on fait le lien avec les autres fichiers via `[[liens]]`. 
+_SYSTEM/instructions.md:123:Tu te réveilles vierge à chaque session. Ces fichiers sont ta continuité :
+_SYSTEM/instructions.md:124:- **Daily logs :** `DATA/memory/YYYY-MM-DD.md` — ce qui s'est passé au jour le jour
+_SYSTEM/instructions.md:125:- **Long-terme :** `DATA/index.md` — ta mémoire curatée
+_SYSTEM/instructions.md:129:## 🧠 DATA/index.md — Ta mémoire long-terme
+_SYSTEM/instructions.md:134:- Tu peux **lire, éditer, mettre à jour** librement en session principale
+_SYSTEM/instructions.md:137:- Périodiquement, relis tes daily logs et mets à jour DATA/index.md avec ce qui vaut la peine d'être gardé
+_SYSTEM/instructions.md:142:- Les "notes mentales" ne survivent pas aux redémarrages. Les fichiers, si.
+_SYSTEM/instructions.md:143:- Quand on dit "retiens ça" → mettre à jour `DATA/memory/YYYY-MM-DD.md` ou le fichier concerné
+_SYSTEM/instructions.md:144:- Quand tu apprends une leçon → mettre à jour le fichier pertinent
+_SYSTEM/instructions.md:145:- Quand tu fais une erreur → documente-la dans le fichier pertinent pour que le futur-toi ne la répète pas
+_SYSTEM/instructions.md:162:- Lire des fichiers, explorer, organiser, apprendre
+_SYSTEM/instructions.md:163:- Chercher sur le web, consulter les sources en lecture
+_SYSTEM/instructions.md:203:**Règle :** Tous les runtimes lisent les mêmes fichiers, suivent les mêmes instructions.
+_SYSTEM/index.md:2:A quoi sert ce fichier:
+_SYSTEM/index.md:10:**Principe de reproductibilité :** Tout ce qui est nécessaire pour recréer TADA à l'identique est documenté ici.
+_SYSTEM/index.md:11:- Scripts, configs, automatisations → documentation obligatoire
+_SYSTEM/index.md:17:**Source de vérité :** `instructions.md`
+_SYSTEM/index.md:19:- À lire en priorité à chaque session
+_SYSTEM/index.md:21:**Fichier racine :** `/CLAUDE.md`
+_SYSTEM/index.md:22:- Pointe vers `_SYSTEM/instructions.md`
+_SYSTEM/index.md:31:| [instructions.md](instructions.md) | Point d'entrée principal pour l'IA |
+_SYSTEM/index.md:32:| [BOOTSTRAP.md](BOOTSTRAP.md) | Guide de première initialisation |
+_SYSTEM/index.md:33:| [tada.md](tada.md) | Vision et principes fondateurs T.A.D.A |
+_SYSTEM/index.md:34:| [1-Trust/](1-Trust/) | Lisibilité, versionning, personnalité (SOUL.md) |
+_SYSTEM/1-Trust/lisible.md:2:A quoi sert ce fichier:
+_SYSTEM/1-Trust/lisible.md:14:**Versionning des fichiers :**
+_SYSTEM/1-Trust/lisible.md:25:- Emplacement : `_SYSTEM/local/logs.md`
+_SYSTEM/1-Trust/lisible.md:32:**Texte :** Markdown (`.md`)
+_SYSTEM/1-Trust/lisible.md:40:**Structure :** Dossiers + fichiers
+_SYSTEM/4-Act/index.md:9:| [instantane.md](instantane.md) | Principe d'instantanéité (contexte préchargé, latence zéro, multi-canal) |
+_SYSTEM/4-Act/index.md:10:| [proactivite.md](proactivite.md) | Principe de proactivité (déclencheurs, apprentissage, limites) |
+_SYSTEM/scripts/index.md:9:| [build-claude-md.sh](build-claude-md.sh) | Régénère `CLAUDE.md` à partir des fichiers `_SYSTEM/` |
+_SYSTEM/scripts/index.md:13:Les scripts sont exécutés par l'IA après modification des fichiers sources dans `_SYSTEM/`.
+_SYSTEM/scripts/index.md:16:Après modification de `_SYSTEM/2-Automate/routines.md`, l'IA exécute `build-claude-md.sh` pour mettre à jour `CLAUDE.md`.
+_SYSTEM/1-Trust/index.md:9:| [lisible.md](lisible.md) | Principe de traçabilité (historique, formats ouverts, indépendance) |
+_SYSTEM/1-Trust/index.md:10:| [versionning.md](versionning.md) | Règles de versionning (fichiers, conversations, Git) |
+_SYSTEM/1-Trust/index.md:11:| [SOUL.md](SOUL.md) | Personnalité de l'IA (identité, principes, communication, limites) |
+_SYSTEM/2-Automate/sources/_template.md:11:**Statut :** Voir `_SYSTEM/local/TOOLS.md` pour la configuration active.
+_SYSTEM/2-Automate/sources/_template.md:82:**Emplacement :** `DATA/NOW/[Projet]/_[type]/YYYY-MM-DD_Titre.md`
+_SYSTEM/2-Automate/sources/_template.md:87:3. Créer le fichier avec liens `[[Prénom Nom]]`
+_SYSTEM/2-Automate/sources/_template.md:111:_Les configurations spécifiques sont dans `local/TOOLS.md`._
+_SYSTEM/2-Automate/sources/meetings.md:11:**Statut :** Voir `_SYSTEM/local/TOOLS.md` pour la configuration active.
+_SYSTEM/2-Automate/sources/meetings.md:52:- Depuis : dernière sync (voir `local/TOOLS.md`)
+_SYSTEM/2-Automate/sources/meetings.md:83:- **Participants :** [[Prénom Nom]], [[Prénom Nom]], ...
+_SYSTEM/2-Automate/sources/meetings.md:93:- [ ] @[[Prénom Nom]] — Action à faire
+_SYSTEM/2-Automate/sources/meetings.md:94:- [ ] @[[Prénom Nom]] — Autre action
+_SYSTEM/2-Automate/sources/meetings.md:105:> — [[Prénom Nom]]
+_SYSTEM/2-Automate/sources/meetings.md:112:[Contexte additionnel, liens vers d'autres documents]
+_SYSTEM/2-Automate/sources/meetings.md:115:**Emplacement :** `DATA/NOW/[Projet]/_meetings/YYYY-MM-DD_Titre_court.md`
+_SYSTEM/2-Automate/sources/meetings.md:122:3. Créer le fichier markdown avec liens `[[Prénom Nom]]`
+_SYSTEM/2-Automate/sources/meetings.md:125:- Toujours créer les liens `[[Prénom Nom]]` vers les fiches People
+_SYSTEM/2-Automate/sources/meetings.md:149:   - Lister les meetings déjà archivés (`Glob _meetings/*.md`)
+_SYSTEM/2-Automate/sources/meetings.md:174:_Les configurations spécifiques (Fireflies, Otter, etc.) sont dans `local/TOOLS.md`._
+_SYSTEM/2-Automate/auto-sync.md:2:A quoi sert ce fichier: Documentation du système de synchronisation Git automatique pour TADA
+_SYSTEM/2-Automate/auto-sync.md:39:if [[ -z "$CHANGES" && "$LOCAL" == "$REMOTE" ]]; then
+_SYSTEM/2-Automate/auto-sync.md:44:if [[ -n "$CHANGES" ]]; then
+_SYSTEM/2-Automate/auto-sync.md:50:if [[ "$LOCAL" != "$REMOTE" ]]; then
+_SYSTEM/2-Automate/auto-sync.md:55:if [[ $(git rev-list origin/main..HEAD --count) -gt 0 ]]; then
+_SYSTEM/2-Automate/auto-sync.md:199:- **Fichiers ignorés :** `.obsidian/workspace.json` et autres fichiers du `.gitignore` ne sont pas commités
+_SYSTEM/2-Automate/auto-sync.md:209:- [ ] Commit messages plus descriptifs (analyse des fichiers modifiés)
+_SYSTEM/2-Automate/auto-sync.md:210:- [ ] Commiter uniquement certains fichiers (exclure workspace Obsidian)
+_SYSTEM/local/TOOLS.md:2:A quoi sert ce fichier:
+_SYSTEM/local/TOOLS.md:6:# TOOLS.md - Local Notes
+_SYSTEM/local/TOOLS.md:89:**Service :** Système de fichiers local
+_SYSTEM/2-Automate/routines.md:2:A quoi sert ce fichier:
+_SYSTEM/2-Automate/routines.md:8:Le système s'auto-maintient. Les routines exécutent, l'IA apprend et documente.
+_SYSTEM/2-Automate/routines.md:29:4. **Logger** — Tracer l'exécution dans `local/logs_routines.md`
+_SYSTEM/2-Automate/routines.md:56:**Détails des routines :** `_SYSTEM/2-Automate/routines/[nom].md`
+_SYSTEM/2-Automate/routines.md:65:→ Tu ajoutes dans `2-Automate/sources/email.md` (section Notes) :
+_SYSTEM/2-Automate/routines.md:74:**Emplacement :** `_SYSTEM/local/logs_routines.md`
+_SYSTEM/2-Automate/routines.md:91:- Création/modification de fichiers importants
+_SYSTEM/2-Automate/routines.md:107:- `local/logs_routines.md`
+_SYSTEM/2-Automate/routines.md:108:- `local/TOOLS.md` (date de sync)
+_SYSTEM/2-Automate/routines.md:109:- Index (`*/index.md`) : ajout/suppression de fichiers listés
+_SYSTEM/2-Automate/routines.md:112:- Instructions dans `_SYSTEM/*.md`
+_SYSTEM/2-Automate/routines.md:114:- Suppression de fichiers
+_SYSTEM/2-Automate/validation.md:2:A quoi sert ce fichier:
+_SYSTEM/2-Automate/validation.md:18:| **Lire** un fichier | Tout TADA | — |
+_SYSTEM/2-Automate/validation.md:19:| **Créer** un fichier | `DATA/INBOX/` | — |
+_SYSTEM/2-Automate/validation.md:20:| **Modifier** un fichier | `_SYSTEM/` | Sauf `instructions.md` |
+_SYSTEM/2-Automate/validation.md:21:| **Modifier** un index | `*/index.md` | Ajout/suppression de fichier listé |
+_SYSTEM/2-Automate/validation.md:22:| **Déplacer** un fichier | `DATA/INBOX/` → ailleurs | Routage évident |
+_SYSTEM/2-Automate/validation.md:23:| **Régénérer** `claude.md` | — | Après modif dans `_SYSTEM/` |
+_SYSTEM/2-Automate/validation.md:35:| **Supprimer** un fichier | Irréversible |
+_SYSTEM/2-Automate/validation.md:36:| **Modifier** `instructions.md` | Impact sur le comportement global |
+_SYSTEM/2-Automate/validation.md:38:| **Modifier** un fichier hors `_SYSTEM/` | Données utilisateur |
+_SYSTEM/2-Automate/validation.md:62:Si plusieurs fichiers doivent être modifiés ensemble → montrer la liste, une seule validation pour l'ensemble.
+_SYSTEM/2-Automate/validation.md:69:- Supprimer un fichier sans confirmation explicite
+_SYSTEM/2-Automate/routines/maj-index.md:2:A quoi sert ce fichier: Synchronisation automatique des index — détecte les fichiers ajoutés ou supprimés dans les dossiers et met à jour tous les fichiers index.md correspondants
+_SYSTEM/2-Automate/routines/maj-index.md:17:Chaque dossier a un `index.md` qui liste son contenu. Cette routine parcourt tous les index et les synchronise avec le contenu réel.
+_SYSTEM/2-Automate/routines/maj-index.md:25:2. **Pour chaque dossier avec un index.md :**
+_SYSTEM/2-Automate/routines/maj-index.md:49:**DATA/NOW/Achat Maison/index.md**
+_SYSTEM/2-Automate/routines/maj-index.md:53:**DATA/NOW/Changement Travail/index.md**
+_SYSTEM/2-Automate/routines/maj-index.md:56:**DATA/ARCHIVE/Répertoires/People/index.md**
+_SYSTEM/2-Automate/routines/maj-index.md:57:+ | [[Jean Dupont]] | Notaire |
+_SYSTEM/2-Automate/routines/maj-index.md:65:Si tu détectes un changement ponctuel (un fichier ajouté), tu proposes directement la mise à jour de l'index concerné sans parcourir tout le système.
+_SYSTEM/4-Act/proactivite.md:2:A quoi sert ce fichier:
+_SYSTEM/4-Act/proactivite.md:25:   - Manque détecté → documenter
+_SYSTEM/4-Act/proactivite.md:37:| Fichier dans INBOX | "Il y a un fichier dans INBOX qui attend ta décision. On le trie ?" |
+_SYSTEM/4-Act/proactivite.md:39:| Email de contact clé non lu | "Tu as un email de [[Contact]] sur [Projet]. Tu veux le voir ?" |
+_SYSTEM/4-Act/proactivite.md:51:- Logger dans `local/logs.md`
+_SYSTEM/4-Act/proactivite.md:68:| Règle sur les emails | `2-Automate/sources/email.md` (notes) |
+_SYSTEM/4-Act/proactivite.md:70:| Configuration spécifique | `local/TOOLS.md` |
+_SYSTEM/4-Act/proactivite.md:71:| Résultat de routine | `local/logs.md` |
+_SYSTEM/4-Act/proactivite.md:72:| Décision utilisateur | `local/logs.md` (section Décisions) |
+_SYSTEM/4-Act/proactivite.md:77:→ Tu ajoutes dans `local/TOOLS.md` (section Email, notes) :
+_SYSTEM/4-Act/proactivite.md:99:- Des modifications de fichiers utilisateur sans contexte clair
+_SYSTEM/2-Automate/sources/files.md:7:> Source de capture pour les fichiers déposés.
+_SYSTEM/2-Automate/sources/files.md:17:**MCP requis :** aucun (accès direct au système de fichiers)
+_SYSTEM/2-Automate/sources/files.md:30:- Lire les fichiers dans DATA/INBOX/
+_SYSTEM/2-Automate/sources/files.md:37:- Supprimer un fichier sans confirmation
+_SYSTEM/2-Automate/sources/files.md:38:- Écraser un fichier sans versionning
+_SYSTEM/2-Automate/sources/files.md:39:- Modifier un fichier hors _SYSTEM sans validation
+_SYSTEM/2-Automate/sources/files.md:42:- Nouveau fichier dans INBOX → proposer routage
+_SYSTEM/2-Automate/sources/files.md:54:- Filtres : fichiers non traités (pas dans un sous-dossier projet)
+_SYSTEM/2-Automate/sources/files.md:61:1. Liste les fichiers dans DATA/INBOX/ (hors index.md)
+_SYSTEM/2-Automate/sources/files.md:62:2. Pour chaque fichier :
+_SYSTEM/2-Automate/sources/files.md:66:3. Affiche : "📁 X fichiers dans INBOX" + propositions si pertinent
+_SYSTEM/2-Automate/sources/calendar.md:11:**Statut :** Voir `_SYSTEM/local/TOOLS.md` pour la configuration active.
+_SYSTEM/2-Automate/sources/calendar.md:72:_Les configurations spécifiques sont dans `local/TOOLS.md`._
+_SYSTEM/2-Automate/routines/revue-projets.md:2:A quoi sert ce fichier: Revue hebdomadaire des projets actifs — analyse le statut de chaque projet, identifie les blocages et planifie les actions pour la semaine suivante
+_SYSTEM/2-Automate/routines/revue-projets.md:22:2. Pour chaque projet, lire `index.md` et extraire :
+_SYSTEM/2-Automate/routines/sync.md:2:A quoi sert ce fichier: Routine de diagnostic système au démarrage — vérifie l'état de DATA/NOW/, DATA/INBOX/, sources actives et propose actions prioritaires adaptées au contexte
+_SYSTEM/2-Automate/routines/sync.md:34:| DATA/INBOX/ non vide | Trier les fichiers |
+_SYSTEM/2-Automate/routines/sync.md:67:| Dernière vérification | Mettre à jour avec date+heure dans `local/TOOLS.md` |
+_SYSTEM/2-Automate/routines/analyse-logs.md:2:A quoi sert ce fichier: Analyse mensuelle des conversations — lit entre les lignes des logs pour détecter les frustrations, besoins non exprimés, idées en suspens et propose des améliorations au système TADA
+_SYSTEM/2-Automate/routines/analyse-logs.md:27:| Questions répétées | Besoin de documentation ou de clarté |
+_SYSTEM/2-Automate/routines/analyse-logs.md:55:   - Questions fréquentes → documenter
+_SYSTEM/2-Automate/routines/analyse-logs.md:66:**Format du rapport :** `_SYSTEM/local/analyse-logs.md`
+_SYSTEM/2-Automate/routines/analyse-logs.md:131:- Veux-tu que je puisse modifier les fichiers système sans demander ?
+_SYSTEM/local/index.md:9:| [TOOLS.md](TOOLS.md) | Configuration sources actives (email, calendar, meetings, etc.) |
+_SYSTEM/local/index.md:10:| [logs.md](logs.md) | Journal des actions système (décisions utilisateur, actions significatives) |
+_SYSTEM/local/index.md:11:| [logs_routines.md](logs_routines.md) | Journal d'exécution des routines |
+_SYSTEM/local/index.md:12:| [analyse-logs.md](analyse-logs.md) | Rapport d'analyse des conversations (priorités, frustrations, améliorations) |
+_SYSTEM/4-Act/instantane.md:2:A quoi sert ce fichier:
+_SYSTEM/4-Act/instantane.md:14:- Écrit (texte, fichiers)
+_SYSTEM/4-Act/instantane.md:45:| **Desktop** | Travail approfondi | Rédiger un document, trier les emails |
+_SYSTEM/4-Act/instantane.md:46:| **Mobile** | Actions rapides | Valider un brouillon, consulter un projet |
+_SYSTEM/4-Act/instantane.md:66:- "Attends, je cherche le fichier..."
+_SYSTEM/4-Act/instantane.md:68:- "Tu peux relire le contexte ?"
+_SYSTEM/2-Automate/sources/index.md:9:| [_template.md](_template.md) | Template pour configurer une nouvelle source |
+_SYSTEM/2-Automate/sources/index.md:15:| [email.md](email.md) | Email | Gmail, Outlook, IMAP |
+
+[Showing results with pagination = limit: 200, offset: 0]

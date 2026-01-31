@@ -1,0 +1,1188 @@
+diff --git a/.obsidian/workspace.json b/.obsidian/workspace.json
+index e881557..798da58 100644
+--- a/.obsidian/workspace.json
++++ b/.obsidian/workspace.json
+@@ -190,51 +190,51 @@
+   },
+   "active": "507429de38a742a5",
+   "lastOpenFiles": [
+-    "DATA/NOW/Les Jaunets/index.md",
+-    "DATA/NOW/Les Jaunets/RDV_CIC_29-01_BRIEFING.md",
+-    "DATA/PENDING/index.md",
++    "_SYSTEM/local/Claude_logs/3e9a4ed3-fa1c-46d3-b75f-fe44abbb760a.jsonl",
++    "DATA/ARCHIVE/Annuaires/People/_photos/Veronique_Gaspard.jpg",
++    "DATA/ARCHIVE/Annuaires/People/_photos/Marine_Morel-Corbin.webp",
++    "DATA/ARCHIVE/Annuaires/People/_photos/Lorraine_Wibaux.jpeg",
++    "DATA/ARCHIVE/Annuaires/People/_photos/Laetitia_Carton.jpg",
++    "DATA/ARCHIVE/Annuaires/People/_photos/Jean-Vincent_Lucas.jpg",
++    "DATA/ARCHIVE/Annuaires/People/_photos/Eric_La_Bonnardiere.jpg",
++    "DATA/ARCHIVE/Annuaires/People/_photos/Catherine_Gueguen.jpg",
++    "DATA/ARCHIVE/Annuaires/People/_photos/Anthony_Melet.jpg",
++    "DATA/ARCHIVE/Annuaires/People/_photos/Adeline_Pithois-Guillou.jpg",
++    "DATA/ARCHIVE/Annuaires/Entreprises/_logos/Neuflize_OBC.png",
++    "DATA/ARCHIVE/Annuaires/People/index.md",
++    "DATA/ARCHIVE/Annuaires/People/_photos",
++    "DATA/ARCHIVE/Annuaires/People/Yvan Wibaux.md",
++    "DATA/ARCHIVE/Annuaires/People/Véronique Gaspard.md",
++    "DATA/ARCHIVE/Annuaires/People/Vincent Pelsez.md",
++    "DATA/ARCHIVE/Annuaires/People/Thérèse Dessauce.md",
++    "DATA/ARCHIVE/Annuaires/People/Thomas Mary.md",
++    "DATA/ARCHIVE/Annuaires/People/Simon Maillet.md",
++    "DATA/ARCHIVE/Annuaires/People/Pierre-Henri Doron.md",
++    "DATA/ARCHIVE/Annuaires/People/Ninon Dessauce.md",
++    "DATA/ARCHIVE/Annuaires/People/Nicolas Doumenc.md",
++    "DATA/ARCHIVE/Annuaires/People/Marine Morel-Corbin.md",
++    "DATA/ARCHIVE/Annuaires/People/Marie-Laure Poineuf-Chalony.md",
++    "DATA/ARCHIVE/Annuaires/People/Manon Douabin.md",
++    "DATA/ARCHIVE/Annuaires/People/Louise Dessauce.md",
++    "DATA/ARCHIVE/Annuaires/People/Lorraine Wibaux.md",
++    "DATA/ARCHIVE/Annuaires/People/Laetitia Carton.md",
++    "DATA/ARCHIVE/Annuaires/People/Karen Bayle.md",
++    "DATA/ARCHIVE/Annuaires/People/Jean-Vincent Lucas.md",
++    "DATA/ARCHIVE/Annuaires/People/Flavian Duval.md",
++    "DATA/ARCHIVE/Annuaires/People/Eric La Bonnardière.md",
++    "DATA/ARCHIVE/Annuaires/People/Emmanuel Guiné.md",
++    "DATA/ARCHIVE/Annuaires/People/Cyrgue Dessauce.md",
++    "DATA/ARCHIVE/Annuaires/People/Catherine Guéguen.md",
++    "DATA/ARCHIVE/Annuaires/People/Aurélie Caprera.md",
++    "DATA/ARCHIVE/Annuaires/People/Anthony Melet.md",
++    "DATA/ARCHIVE/Annuaires/Entreprises/_logos",
++    "DATA/ARCHIVE/Annuaires/People",
++    "DATA/ARCHIVE/Annuaires/Entreprises",
++    "DATA/ARCHIVE/Annuaires",
+     "DATA/PENDING",
+     "_SYSTEM/local/Claude_logs/dceaa31a-83b9-436b-960f-4589e954c7c7.jsonl",
+     "_SYSTEM/local/Claude_logs/9063cb0b-480d-408b-96ca-8287a6a8c76f/tool-results/toolu_01LL2qQo83xBUDAwUuMc1ncT.txt",
+     "_SYSTEM/local/Claude_logs/9063cb0b-480d-408b-96ca-8287a6a8c76f/tool-results/mcp-calendar-list_events-1769687538084.txt",
+-    "_SYSTEM/local/Claude_logs/9063cb0b-480d-408b-96ca-8287a6a8c76f/tool-results",
+-    "_SYSTEM/local/Claude_logs/9063cb0b-480d-408b-96ca-8287a6a8c76f",
+-    "_SYSTEM/local/Claude_logs/9063cb0b-480d-408b-96ca-8287a6a8c76f.jsonl",
+-    "DATA/memory/index.md",
+-    "DATA/ARCHIVE/Répertoires/People/index.md",
+-    "DATA/ARCHIVE/Répertoires/Entreprises/index.md",
+-    "DATA/ARCHIVE/Répertoires/index.md",
+-    "DATA/ARCHIVE/Garden/A traiter/index.md",
+-    "DATA/ARCHIVE/Administratif/Impôts/index.md",
+-    "DATA/ARCHIVE/Administratif/index.md",
+-    "_SYSTEM/scripts/index.md",
+-    "_SYSTEM/local/index.md",
+-    "_SYSTEM/4-Act/index.md",
+-    "_SYSTEM/2-Automate/sources/index.md",
+-    "_SYSTEM/2-Automate/routines/index.md",
+-    "_SYSTEM/2-Automate/index.md",
+-    "_SYSTEM/1-Trust/index.md",
+-    "_SYSTEM/local/logs_routines.md",
+-    "_SYSTEM/local/Claude_logs/73ecdad5-3ea9-40c0-90cc-d4251985e1e2/subagents/agent-a5c7840.jsonl",
+-    "_SYSTEM/local/Claude_logs/73ecdad5-3ea9-40c0-90cc-d4251985e1e2/subagents/agent-a96d2dd.jsonl",
+-    "_SYSTEM/local/Claude_logs/73ecdad5-3ea9-40c0-90cc-d4251985e1e2/subagents",
+-    "_SYSTEM/1-Trust/lisible.md",
+-    "USER.md",
+-    "TOOLS.md",
+-    "SOUL.md",
+-    "IDENTITY.md",
+-    "HEARTBEAT.md",
+-    "DATA/memory/2026-01-29.md",
+-    "claude.md",
+-    "DATA/ARCHIVE/Répertoires/Entreprises/_logos/FIDAL.png",
+-    "DATA/ARCHIVE/Répertoires/People/_photos/Veronique_Gaspard.jpg",
+-    "DATA/ARCHIVE/Répertoires/Entreprises/_logos/Neuflize_OBC.png",
+-    "DATA/ARCHIVE/Répertoires/Entreprises/_logos/Ivesta_Family_Office.png",
+-    "DATA/ARCHIVE/Répertoires/Entreprises/_logos/CIC.png",
+-    "DATA/ARCHIVE/Répertoires/Entreprises/_logos/Credit_Agricole.png",
+-    "DATA/ARCHIVE/Répertoires/Entreprises/_logos/Caisse_Epargne.png",
+-    "DATA/ARCHIVE/Répertoires/People/_photos/Marine_Morel-Corbin.webp",
+-    "DATA/ARCHIVE/Répertoires/People/_photos/Laetitia_Carton.jpg",
+-    "DATA/ARCHIVE/Répertoires/People/_photos/Lorraine_Wibaux.jpeg"
++    "_SYSTEM/local/Claude_logs/9063cb0b-480d-408b-96ca-8287a6a8c76f/tool-results"
+   ]
+ }
+\ No newline at end of file
+diff --git a/AGENTS.md b/AGENTS.md
+index 18543c4..b777b6a 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -89,7 +89,7 @@ Tu dois:
+ 
+ ### D — Document (Index + Liens)
+ 
+-C'est le coeur du système: les fichiers doivent être lisibles et organisés avec une organisation que ME va, que je comprends. Si tu ne sais pas où le mettre = de quoi ca parle. Demande moi!
++C'est le coeur du système: les fichiers doivent être lisibles et organisés avec une organisation qui ME va, que je comprends. Si tu ne sais pas où le mettre = de quoi ca parle. Demande moi!
+ 
+ Il y a 2 répertoires:
+ - `_SYSTEM/` : fichiers système, agnostique sauf le répertoire local. On peut partager ce répertoire sans risque pour voir comment les autres font.
+@@ -98,15 +98,17 @@ Il y a 2 répertoires:
+ Chaque répertoire a un index.md qui explique le contenu, le fonctionnement et liste les fichiers et sous-répertoires.
+ C'est donc ton rôle de les créer et de t'assurer qu'ils sont à jour.
+ Quand tu ouvres un répertoire, ajoutes ou modifies un fichier, tu lis l'index.md pour comprendre le contenu et le fonctionnement. Puis tu le mets à jour.
++Pour comprendre comment marche DATA, lis le fichier `DATA/index.md`
+ 
+ Quand tu veux rajouter une nouvelle version d'un fichier déjà présent (et tu dois vérifier si c'est le cas), tu utilises le système de versionning suivant:tu copies les anciennes versions du fichier dans le répertoire `_NomDocument/` avec la convention de nommage `YYYY-MM-DD_HHMM_NomDocument.ext` et tu ne laisses que la dernière version dans le répertoire.
+ 
+ Tu gères également les liens entre les fichiers en suivant la convention `[[liens]]`. Le but est de créer les liens pertinents pour pouvoir se balader dans les données.
+ 
+-Et tu as accès à des répertoires: tu peux en créer et après, tu es responsable de les mettre à jour! Va chercher sur Internet les informations pour compléter les fiches.
++Et tu as accès à des annuaires dans `DATA/ARCHIVES/Annuaires: tu peux en créer et après, tu es responsable de les mettre à jour! Va chercher sur Internet les informations pour compléter les fiches.
+ Tu es responsable de rajouter des fiches à ces annuaires dès que c'est pertinent.
+ A chaque élément rajouter dans DATA, il faut faire le liens avec le/les annuaires: rajouter les entrées, les modifier, les créer, les compléter
+-Ex: personnes: dès qu'on parle de quelqu'un dans les DATA, on crée ou complète la fiche de cette personne dans le répertoire `DATA/Personnes/` et on fait le lien avec les autres fichiers via `[[liens]]`.
++Ex: personnes: dès qu'on parle de quelqu'un dans les DATA, on crée ou complète la fiche de cette personne dans le répertoire `DATA/Personnes/` et on fait le lien avec les autres fichiers via `[[liens]]`. 
++Tu peux créer un annuaire dès que tu vois que c'est pertinent pour moi. Ex: entreprises, ingrédients (pour les recettes), ...
+ 
+ ### A — Act (Instantané + Proactif)
+ Tout est instantané. Tu agis de partout, tu anticipes.
+@@ -198,4 +200,4 @@ TADA est le cerveau. Les runtimes sont les interfaces.
+ | **Claude Code** | Fichiers, code, IDE, travail approfondi |
+ | **Moltbot** | Multi-canal, heartbeats, proactif, voice |
+ 
+-**Règle :** Tous les runtimes lisent les mêmes fichiers, suivent les mêmes instructions.
+\ No newline at end of file
++**Règle :** Tous les runtimes lisent les mêmes fichiers, suivent les mêmes instructions.
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/CIC.md" "b/DATA/ARCHIVE/R\303\251pertoires/Entreprises/CIC.md"
+deleted file mode 100644
+index 5d46994..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/CIC.md"
++++ /dev/null
+@@ -1,16 +0,0 @@
+-# CIC
+-
+-![[_logos/CIC.png|64]]
+-
+-## Infos
+-- **Type :** Banque
+-- **Groupe :** Crédit Mutuel Alliance Fédérale
+-- **Site :** [cic.fr](https://www.cic.fr/)
+-
+-## Contacts
+-- [[Flavian Duval]] — CIC La Baule (via [[Thomas Mary]])
+-
+-## Projets liés
+-- [[Les Jaunets]] — option financement travaux (1M€)
+-
+-## Notes
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/Caisse d'\303\211pargne.md" "b/DATA/ARCHIVE/R\303\251pertoires/Entreprises/Caisse d'\303\211pargne.md"
+deleted file mode 100644
+index 4194c2d..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/Caisse d'\303\211pargne.md"	
++++ /dev/null
+@@ -1,16 +0,0 @@
+-# Caisse d'Épargne
+-
+-![[_logos/Caisse_Epargne.png|64]]
+-
+-## Infos
+-- **Type :** Banque
+-- **Groupe :** BPCE (avec Natixis)
+-- **Site :** [caisse-epargne.fr](https://www.caisse-epargne.fr/)
+-
+-## Contacts
+-- À identifier
+-
+-## Projets liés
+-- [[Les Jaunets]] — banque historique (traîne sur le dossier)
+-
+-## Notes
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/Cr\303\251dit Agricole IdF.md" "b/DATA/ARCHIVE/R\303\251pertoires/Entreprises/Cr\303\251dit Agricole IdF.md"
+deleted file mode 100644
+index a9643fc..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/Cr\303\251dit Agricole IdF.md"	
++++ /dev/null
+@@ -1,17 +0,0 @@
+-# Crédit Agricole IdF
+-
+-![[_logos/Credit_Agricole.png|64]]
+-
+-## Infos
+-- **Type :** Banque régionale
+-- **Groupe :** Crédit Agricole
+-- **Région :** Île-de-France
+-- **Site :** [ca-paris.fr](https://www.ca-paris.fr/)
+-
+-## Contacts
+-- À identifier
+-
+-## Projets liés
+-- [[Les Jaunets]] — suggéré par [[Anthony Melet]], pas encore contacté
+-
+-## Notes
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/FIDAL.md" "b/DATA/ARCHIVE/R\303\251pertoires/Entreprises/FIDAL.md"
+deleted file mode 100644
+index dee2de7..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/FIDAL.md"
++++ /dev/null
+@@ -1,18 +0,0 @@
+-# FIDAL
+-
+-![[_logos/FIDAL.png|64]]
+-
+-## Infos
+-- **Type :** Cabinet d'avocats
+-- **Spécialité :** Droit des affaires, fiscal, social
+-- **Site :** [fidal.com](https://www.fidal.com/)
+-- **Siège :** Paris
+-
+-## Contacts
+-- [[Marine Morel-Corbin]] — avocate, conseil fiscal
+-
+-## Projets liés
+-- [[Les Jaunets]] — consultation fiscale (montage licitation)
+-
+-## Notes
+-- Premier réseau d'avocats d'affaires en France
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/Ivesta Family Office.md" "b/DATA/ARCHIVE/R\303\251pertoires/Entreprises/Ivesta Family Office.md"
+deleted file mode 100644
+index f453b6d..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/Ivesta Family Office.md"	
++++ /dev/null
+@@ -1,16 +0,0 @@
+-# Ivesta Family Office
+-
+-![[_logos/Ivesta_Family_Office.png|64]]
+-
+-## Infos
+-- **Type :** Family Office
+-- **Site :** [ivesta-fo.com](https://www.ivesta-fo.com/)
+-- **Adresse :** 12 Place Vendôme, 75001 Paris
+-
+-## Contacts
+-- [[Anthony Melet]] — Family Partner
+-
+-## Projets liés
+-- [[Les Jaunets]] — suggestion Crédit Agricole IdF
+-
+-## Notes
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/Neuflize OBC.md" "b/DATA/ARCHIVE/R\303\251pertoires/Entreprises/Neuflize OBC.md"
+deleted file mode 100644
+index 8262d82..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/Neuflize OBC.md"	
++++ /dev/null
+@@ -1,17 +0,0 @@
+-# Neuflize OBC
+-
+-![[_logos/Neuflize_OBC.png|64]]
+-
+-## Infos
+-- **Type :** Banque privée
+-- **Groupe :** ABN AMRO
+-- **Adresse :** 121 boulevard Haussmann, 75008 Paris
+-- **Site :** neuflizeobc.fr
+-
+-## Contacts
+-- **[[Pierre-Henri Doron]]** — Team Leader, Banquier privé
+-
+-## Projets liés
+-- [[Les Jaunets]] — financement des travaux (prêt 1M€)
+-
+-## Notes
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/CIC.png" "b/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/CIC.png"
+deleted file mode 100644
+index 5b84a8a..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/CIC.png"
++++ /dev/null
+@@ -1,3 +0,0 @@
+-version https://git-lfs.github.com/spec/v1
+-oid sha256:15af2d33eeb3913ef22ff0d75ffd7cc1868dd888bc2186f9823f4e57804e7fb0
+-size 823
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/Caisse_Epargne.png" "b/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/Caisse_Epargne.png"
+deleted file mode 100644
+index 1154a0e..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/Caisse_Epargne.png"
++++ /dev/null
+@@ -1,3 +0,0 @@
+-version https://git-lfs.github.com/spec/v1
+-oid sha256:59bfe9bc385ad69f50793ce4a53397316d7a875a7148a63c16df9b674c6cda64
+-size 726
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/Credit_Agricole.png" "b/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/Credit_Agricole.png"
+deleted file mode 100644
+index 7b939ff..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/Credit_Agricole.png"
++++ /dev/null
+@@ -1,3 +0,0 @@
+-version https://git-lfs.github.com/spec/v1
+-oid sha256:a37a357385a5e629633a2ec0265a43ca6a5f897d3d59463db3313514124d8035
+-size 1625
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/FIDAL.png" "b/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/FIDAL.png"
+deleted file mode 100644
+index bebd3e8..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/FIDAL.png"
++++ /dev/null
+@@ -1,3 +0,0 @@
+-version https://git-lfs.github.com/spec/v1
+-oid sha256:236d880b96049d4b0cc74c01dccaf9c256d8442ec539b63c0e89edec4fa5603f
+-size 306
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/Ivesta_Family_Office.png" "b/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/Ivesta_Family_Office.png"
+deleted file mode 100644
+index 6f13f3e..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/Ivesta_Family_Office.png"
++++ /dev/null
+@@ -1,3 +0,0 @@
+-version https://git-lfs.github.com/spec/v1
+-oid sha256:bbc45b8a3ed75de836590f9fe165fc80b754582144ad88c868fe714b6cf5203f
+-size 720
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/Neuflize_OBC.png" "b/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/Neuflize_OBC.png"
+deleted file mode 100644
+index 1154a0e..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/_logos/Neuflize_OBC.png"
++++ /dev/null
+@@ -1,3 +0,0 @@
+-version https://git-lfs.github.com/spec/v1
+-oid sha256:59bfe9bc385ad69f50793ce4a53397316d7a875a7148a63c16df9b674c6cda64
+-size 726
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/index.md" "b/DATA/ARCHIVE/R\303\251pertoires/Entreprises/index.md"
+deleted file mode 100644
+index dd75198..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/Entreprises/index.md"
++++ /dev/null
+@@ -1,28 +0,0 @@
+-# Entreprises
+-
+-> Fiches entreprises et organisations.
+-
+-## Fiches
+-
+-| Entreprise | Type |
+-|------------|------|
+-| [[CIC]] | Banque |
+-| [[Caisse d'Épargne]] | Banque |
+-| [[Crédit Agricole IdF]] | Banque |
+-| [[FIDAL]] | Cabinet d'avocats |
+-| [[Ivesta Family Office]] | Family Office |
+-| [[Neuflize OBC]] | Banque privée |
+-
+-## Structure d'une fiche
+-
+-Chaque fiche contient :
+-- Type d'organisation (banque, entreprise, cabinet, etc.)
+-- Site web
+-- Logo (stocké dans `_logos/`)
+-- Infos clés (siège, groupe, secteur)
+-- Projets liés
+-- Contacts principaux
+-
+-## Logos
+-
+-Les logos sont stockés dans [`_logos/`](_logos/) avec la convention `Nom_Entreprise.png`.
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Adeline Pithois-Guillou.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Adeline Pithois-Guillou.md"
+deleted file mode 100644
+index 28b0e75..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Adeline Pithois-Guillou.md"	
++++ /dev/null
+@@ -1,23 +0,0 @@
+-# Adeline Pithois-Guillou
+-
+-![[_photos/Adeline_Pithois-Guillou.jpg|200]]
+-
+-## Infos
+-- **Métier :** Architecte d'intérieur
+-- **Entreprise :** SASU Adeline Pithois-Guillou (SIREN 831 118 914)
+-- **Siège :** 40 le Haut Pontereau, 44450 Saint-Julien-de-Concelles
+-- **Site :** [a-pithoisguillou.fr](https://a-pithoisguillou.fr/)
+-- **Instagram :** [@adeline.pithoisguillou](https://www.instagram.com/adeline.pithoisguillou/) (20K abonnés)
+-
+-## Parcours
+-- 8 ans en marketing/commercial
+-- Reconversion architecture/décoration
+-- À son compte depuis 2017
+-
+-## Style
+-Douceur, poésie, couleur, soin du détail. Meubles sur mesure, prédilection pour le chêne clair rainuré/cannelé.
+-
+-## Projets liés
+-- [[Les Jaunets]] — nouvelle architecte (remplace [[Thérèse Dessauce]])
+-
+-## Notes
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Aldwin.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Aldwin.md"
+deleted file mode 100644
+index a74f57c..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Aldwin.md"
++++ /dev/null
+@@ -1,24 +0,0 @@
+-# Aldwin
+-
+-## Relation
+-Avocat fiscaliste consulté pour le projet Les Jaunets en 2024.
+-
+-## Coordonnées
+-- **Email :** _inconnu_
+-- **Téléphone :** _inconnu_
+-
+-## Profil
+-- **Métier :** Avocat spécialisé en fiscalité
+-- **Spécialité :** Accompagnement des dirigeants, montages fiscaux
+-
+-## Projets liés
+-- [[Les Jaunets]] — Consultation sur SARL de famille (2024)
+-
+-## Historique
+-| Date | Contexte |
+-|------|----------|
+-| 2024-06-12 | Premier RDV pour discuter montage SARL de famille |
+-
+-## Notes
+-- Proposait la création d'une SARL de famille pour optimiser la fiscalité
+-- Piste finalement non retenue
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Anthony Melet.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Anthony Melet.md"
+deleted file mode 100644
+index 2764444..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Anthony Melet.md"	
++++ /dev/null
+@@ -1,18 +0,0 @@
+-# Anthony Melet
+-
+-![[_photos/Anthony_Melet.jpg|200]]
+-
+-## Infos
+-- **Métier :** Family Partner
+-- **Entreprise :** [[Ivesta Family Office]]
+-- **Mobile :** +33 7 85 44 61 18
+-- **Email :** anthony@ivesta-fo.com
+-- **Adresse :** 12 Place Vendôme, 75001 Paris
+-
+-## Projets liés
+-- [[Les Jaunets]] — a suggéré Crédit Agricole IdF comme alternative bancaire
+-
+-## Notes
+-- Ami, échanges réguliers
+-- A déménagé à Saint-Germain-en-Laye (rentrée 2025)
+-- Attend un enfant fin mars 2026
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Aur\303\251lie Caprera.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Aur\303\251lie Caprera.md"
+deleted file mode 100644
+index 7fbd299..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Aur\303\251lie Caprera.md"	
++++ /dev/null
+@@ -1,15 +0,0 @@
+-# Aurélie Caprera
+-
+-## Infos
+-- **Métier :** Directrice CNV Écoéducation
+-- **Relation :** Ex-pilote de Déclic, Karen était son bras droit
+-
+-## Projets liés
+-- [[Déclic CNV]] — ancienne pilote, maintenant structure séparée CNV Écoéducation
+-- CNV Écoéducation — projets d'intérêt général, financement mécènes
+-
+-## Notes
+-- A piloté Déclic avant la scission juridique fin 2024
+-- Gère maintenant CNV Écoéducation (structure d'intérêt général)
+-- Projet principal actuel : formation de formateurs académiques (financé par mécènes)
+-- Travail interstructure avec Déclic, mais vigilance sur les liens (contraintes légales intérêt général)
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Catherine Gu\303\251guen.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Catherine Gu\303\251guen.md"
+deleted file mode 100644
+index 59cc6d4..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Catherine Gu\303\251guen.md"	
++++ /dev/null
+@@ -1,15 +0,0 @@
+-# Catherine Guéguen
+-
+-![[_photos/Catherine_Gueguen.jpg|200]]
+-
+-## Infos
+-- **Métier :** Pédiatre, auteure
+-- **Relation :** Co-auteure du livre avec Véronique Gaspard
+-
+-## Projets liés
+-- [[Déclic CNV]] — co-auteure du livre "Développer les compétences psychosociales à l'école"
+-
+-## Notes
+-- Co-auteure avec [[Véronique Gaspard]] de "Développer les compétences psychosociales à l'école, osons la santé"
+-- Livre vendu à 3000 exemplaires
+-- Projet de réédition en 2026 (Canopé ne veut plus éditer)
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Cyrgue Dessauce.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Cyrgue Dessauce.md"
+deleted file mode 100644
+index 5646d28..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Cyrgue Dessauce.md"	
++++ /dev/null
+@@ -1,11 +0,0 @@
+-# Cyrgue Dessauce
+-
+-## Infos
+-- **Relation :** Fils de [[Thérèse Dessauce]], cousin par alliance de [[Lorraine Wibaux]]
+-- **Email :** c.dessauce@gmail.com
+-
+-## Projets liés
+-- [[Les Jaunets]] — ex-indivisaire (cédant)
+-
+-## Notes
+-- Interlocuteur principal côté Dessauce pour les échanges avec le notaire
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Emmanuel Guin\303\251.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Emmanuel Guin\303\251.md"
+deleted file mode 100644
+index 43def72..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Emmanuel Guin\303\251.md"	
++++ /dev/null
+@@ -1,11 +0,0 @@
+-# Emmanuel Guiné
+-
+-## Infos
+-- **Métier :** Maître d'œuvre en bâtiment
+-- **Localisation :** Guichen (35)
+-- **Pages Jaunes :** [Fiche](https://www.pagesjaunes.fr/pros/54373274)
+-
+-## Projets liés
+-- [[Les Jaunets]] — maître d'œuvre
+-
+-## Notes
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Eric La Bonnardi\303\250re.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Eric La Bonnardi\303\250re.md"
+deleted file mode 100644
+index fe41f9b..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Eric La Bonnardi\303\250re.md"	
++++ /dev/null
+@@ -1,15 +0,0 @@
+-# Eric La Bonnardière
+-
+-![[_photos/Eric_La_Bonnardiere.jpg|200]]
+-
+-## Infos
+-- **Métier :** Co-fondateur d'Evaneos
+-- **Email :** eric@evaneos.com / ericbonnard@gmail.com
+-- **Relation :** Co-fondateur d'Evaneos avec Yvan
+-
+-## Projets liés
+-- [[Evaneos]] — co-fondateur
+-- [[Les Jaunets]] — mise en relation avec [[Manon Douabin]] (CA IdF)
+-
+-## Notes
+-- Client Crédit Agricole IdF (Banque Privée)
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Flavian Duval.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Flavian Duval.md"
+deleted file mode 100644
+index c4d0c3e..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Flavian Duval.md"	
++++ /dev/null
+@@ -1,13 +0,0 @@
+-# Flavian Duval
+-
+-## Infos
+-- **Métier :** Chargé d'affaires Professionnels
+-- **Entreprise :** CIC La Baule / Agence de La Turballe
+-- **Mobile :** 06 89 01 85 48
+-- **Tél :** 02 51 75 74 76
+-
+-## Projets liés
+-- [[Les Jaunets]] — contact bancaire (via [[Thomas Mary]])
+-
+-## Notes
+-- Contact transmis le 15/01/2026
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Jean-Vincent Lucas.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Jean-Vincent Lucas.md"
+deleted file mode 100644
+index 523b66d..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Jean-Vincent Lucas.md"	
++++ /dev/null
+@@ -1,13 +0,0 @@
+-# Jean-Vincent Lucas
+-
+-![[_photos/Jean-Vincent_Lucas.jpg|200]]
+-
+-## Infos
+-- **Métier :** Notaire
+-- **Email :** jean-vincent.lucas@notaires.fr
+-
+-## Projets liés
+-- [[Les Jaunets]] — notaire en charge de la licitation DESSAUCE/WIBAUX
+-
+-## Notes
+-- Travaille avec Simon Maillet (collaborateur)
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Karen Bayle.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Karen Bayle.md"
+deleted file mode 100644
+index 8273321..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Karen Bayle.md"	
++++ /dev/null
+@@ -1,15 +0,0 @@
+-# Karen Bayle
+-
+-## Infos
+-- **Métier :** Responsable partenariats @ Déclic CNV & Éducation
+-- **Email :** partenariat@declic-cnveducation.org
+-- **Tél :** 06 51 34 86 63
+-- **Relation :** Accompagnement stratégique Déclic
+-
+-## Projets liés
+-- [[Déclic CNV]] — accompagnement stratégique 2026
+-
+-## Notes
+-- Porte une charge importante dans l'association (déséquilibre organisationnel)
+-- Travaille sur la stratégie commerciale et la pérennité des formateurs
+-- Également en lien avec [[Véronique Gaspard]] (Déclic)
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Laetitia Carton.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Laetitia Carton.md"
+deleted file mode 100644
+index a04134a..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Laetitia Carton.md"	
++++ /dev/null
+@@ -1,15 +0,0 @@
+-# Laetitia Carton
+-
+-![[_photos/Laetitia_Carton.jpg|200]]
+-
+-## Infos
+-- **Métier :** Réalisatrice
+-- **Relation :** Réalisatrice du documentaire "La Petite Classe"
+-
+-## Projets liés
+-- [[Déclic CNV]] — réalisatrice du documentaire, projet de tournée 2026
+-
+-## Notes
+-- Réalisatrice du documentaire "La Petite Classe" sur la CNV en milieu scolaire
+-- Projet de tournée documentaire avec [[Véronique Gaspard]] (conférences après projections)
+-- Demande une rémunération pour participer à la tournée
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Lorraine Wibaux.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Lorraine Wibaux.md"
+deleted file mode 100644
+index 028ba4b..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Lorraine Wibaux.md"	
++++ /dev/null
+@@ -1,20 +0,0 @@
+-# Lorraine Wibaux
+-
+-![[_photos/Lorraine_Wibaux.jpeg|200]]
+-
+-## Infos
+-- **Relation :** Femme de [[Yvan Wibaux]]
+-- **Famille :** Nièce de [[Thérèse Dessauce]]
+-- **Métier :** Psychopraticienne, formatrice CNV
+-- **Certifications :** Formatrice certifiée CNVC, Thérapeute IFS
+-
+-## Liens
+-- [CNVC](https://www.cnvc.org/trainers/lorraine-wibaux)
+-- [IFS Association](https://ifs-association.com/annuaire/lorraine-wibaux/)
+-- [LinkedIn](https://fr.linkedin.com/in/lorrainewibaux)
+-- [Instagram](https://www.instagram.com/lologuil/)
+-
+-## Projets liés
+-- [[Les Jaunets]] — propriétaire (50%)
+-
+-## Notes
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Louise Dessauce.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Louise Dessauce.md"
+deleted file mode 100644
+index 4af0d39..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Louise Dessauce.md"	
++++ /dev/null
+@@ -1,10 +0,0 @@
+-# Louise Dessauce
+-
+-## Infos
+-- **Relation :** Fille de [[Thérèse Dessauce]], cousine par alliance de [[Lorraine Wibaux]]
+-- **Email :** louise.dessauce@hotmail.fr
+-
+-## Projets liés
+-- [[Les Jaunets]] — ex-indivisaire (cédante)
+-
+-## Notes
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Manon Douabin.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Manon Douabin.md"
+deleted file mode 100644
+index 6e31f91..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Manon Douabin.md"	
++++ /dev/null
+@@ -1,16 +0,0 @@
+-# Manon Douabin
+-
+-## Infos
+-- **Métier :** Conseiller Privé — Banque Privée
+-- **Entreprise :** [[Crédit Agricole IdF]] — Banque des Dirigeants
+-- **Email :** manon.douabin@ca-paris.fr
+-- **Téléphone :** 07 85 46 09 23
+-- **Adresse :** 12 rue Villiot, 75012 Paris
+-
+-## Projets liés
+-- [[Les Jaunets]] — dossier de prêt (via [[Eric La Bonnardière]])
+-
+-## Notes
+-- Contact via Eric La Bonnardière (18/01/2026)
+-- Travaille en binôme avec [[Noémie Lesage]]
+-- Premier échange le 20/01/2026 → formulaire bilan patrimonial envoyé
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Marie-Laure Poineuf-Chalony.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Marie-Laure Poineuf-Chalony.md"
+deleted file mode 100644
+index bf9e38c..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Marie-Laure Poineuf-Chalony.md"	
++++ /dev/null
+@@ -1,15 +0,0 @@
+-# Marie-Laure Poineuf-Chalony
+-
+-## Infos
+-- **Métier :** Banquier Privé du Dirigeant
+-- **Entreprise :** [[Caisse d'Épargne]] Bretagne Pays de Loire
+-- **Email :** marie-laure.poineuf-chalony@cebpl.caisse-epargne.fr
+-- **Téléphone :** 06 62 78 38 96
+-
+-## Projets liés
+-- [[Les Jaunets]] — dossier de financement (bloqué côté garantie)
+-
+-## Notes
+-- Contact historique sur le dossier Les Jaunets
+-- Problème de garantie : la société qui emprunte n'est pas propriétaire du bien
+-- En attente du retour juridique de Natixis (15/01/2026)
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Marine Morel-Corbin.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Marine Morel-Corbin.md"
+deleted file mode 100644
+index cc1c022..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Marine Morel-Corbin.md"	
++++ /dev/null
+@@ -1,15 +0,0 @@
+-# Marine Morel-Corbin
+-
+-![[_photos/Marine_Morel-Corbin.webp|200]]
+-
+-## Infos
+-- **Métier :** Avocate
+-- **Entreprise :** FIDAL
+-- **Email :** marine.morel-corbin@fidal.com
+-
+-## Projets liés
+-- [[Les Jaunets]] — conseil fiscal (consultation fiscale sur le montage)
+-
+-## Notes
+-- Consultation initiale (09/2025) sur montage démembrement
+-- Version mise à jour attendue pour nouveau montage (bail civil)
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Nicolas Doumenc.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Nicolas Doumenc.md"
+deleted file mode 100644
+index d5c6ff1..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Nicolas Doumenc.md"	
++++ /dev/null
+@@ -1,32 +0,0 @@
+-# Nicolas Doumenc
+-
+-> "Simplificateur sauvage"
+-
+-## Relation
+-
+-Collaborateur sur [[TADA-PROJECT]] et ancien participant au projet [[Sidekicks]].
+-
+-## Profil
+-
+-- **Métier** : Consultant transformation / leadership
+-- **Formation** : École nationale supérieure d'Arts et Métiers
+-- **Localisation** : Région parisienne
+-- **LinkedIn** : [doumencnicolas](https://www.linkedin.com/in/doumencnicolas/)
+-
+-## Compétences
+-
+-- Transformation organisationnelle
+-- Méthodes de leadership (inspiration tactique militaire)
+-- Simplification de processus
+-- Utilisateur avancé de Claude Code
+-
+-## Projets liés
+-
+-- [[TADA-PROJECT]] — collaboration active
+-- [[Sidekicks]] — participation passée
+-
+-## Notes
+-
+-**Janvier 2026** — Retour d'expérience hébergement Claude Code :
+-- Recommande Hetzner CPX31 (15€/mois, 8 GB RAM)
+-- 4 GB RAM insuffisant, provoque des ralentissements
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Ninon Dessauce.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Ninon Dessauce.md"
+deleted file mode 100644
+index 64ed96c..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Ninon Dessauce.md"	
++++ /dev/null
+@@ -1,10 +0,0 @@
+-# Ninon Dessauce
+-
+-## Infos
+-- **Relation :** Fille de [[Thérèse Dessauce]], cousine par alliance de [[Lorraine Wibaux]]
+-- **Email :** ndessauce@gmail.com
+-
+-## Projets liés
+-- [[Les Jaunets]] — ex-indivisaire (cédante)
+-
+-## Notes
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Pierre-Henri Doron.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Pierre-Henri Doron.md"
+deleted file mode 100644
+index 634bbc6..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Pierre-Henri Doron.md"	
++++ /dev/null
+@@ -1,20 +0,0 @@
+-# Pierre-Henri Doron
+-
+-## Infos
+-- **Métier :** Banquier privé
+-- **Fonction :** Team Leader
+-- **Entreprise :** [[Neuflize OBC]] (ABN AMRO)
+-- **Email :** pierre.henri.doron@fr.abnamro.com
+-- **Tél :** +33 1 56 21 12 63
+-- **Mobile :** +33 6 98 71 38 26
+-- **Adresse :** 121 boulevard Haussmann, 75008 Paris
+-
+-## Parcours
+-- Banquier privé chez Banque Populaire Rives de Paris (jusqu'en 2018)
+-- Rejoint Neuflize OBC en janvier 2024
+-
+-## Projets liés
+-- [[Les Jaunets]] — interlocuteur principal pour le financement des travaux (1M€)
+-
+-## Notes
+-- Contact établi en janvier 2026
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Simon Maillet.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Simon Maillet.md"
+deleted file mode 100644
+index 75c9942..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Simon Maillet.md"	
++++ /dev/null
+@@ -1,11 +0,0 @@
+-# Simon Maillet
+-
+-## Infos
+-- **Métier :** Clerc de notaire
+-- **Étude :** Étude de [[Jean-Vincent Lucas]]
+-- **Email :** simon.maillet.44117@notaires.fr
+-
+-## Projets liés
+-- [[Les Jaunets]] — suivi du dossier licitation
+-
+-## Notes
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Thomas Mary.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Thomas Mary.md"
+deleted file mode 100644
+index 20b4d7b..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Thomas Mary.md"	
++++ /dev/null
+@@ -1,15 +0,0 @@
+-# Thomas Mary
+-
+-## Infos
+-- **Métier :** Expert-comptable, Associé
+-- **Entreprise :** Auditia
+-- **Tél :** 02 28 53 02 55
+-- **Email :** thomas.mary@auditia.fr
+-- **Adresse :** Rue du traité de Paris, ZAC de l'Europe, 44210 Pornic
+-
+-## Projets liés
+-- [[Les Jaunets]] — a transmis contact [[Flavian Duval]] (CIC)
+-- Comptabilité Cassiopée / Sidekicks ?
+-
+-## Notes
+-- Travaille avec Sandrine Verstraete (contact pour [[Lorraine Wibaux]])
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Th\303\251r\303\250se Dessauce.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Th\303\251r\303\250se Dessauce.md"
+deleted file mode 100644
+index 61ab9fe..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Th\303\251r\303\250se Dessauce.md"	
++++ /dev/null
+@@ -1,11 +0,0 @@
+-# Thérèse Dessauce
+-
+-## Infos
+-- **Métier :** Architecte
+-- **Relation :** Tante de [[Lorraine Wibaux]]
+-
+-## Projets liés
+-- [[Les Jaunets]] — ex-indivisaire (50%), architecte initiale des travaux
+-
+-## Notes
+-- Conflit sur la gestion des travaux → licitation
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Vincent Pelsez.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Vincent Pelsez.md"
+deleted file mode 100644
+index 76584a2..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Vincent Pelsez.md"	
++++ /dev/null
+@@ -1,20 +0,0 @@
+-# Vincent Pelsez
+-
+-## Infos
+-- **Métier :** Banquier Privé référent secteur Tech, IT & Médias
+-- **Entreprise :** [[Natixis]] Wealth Management (Groupe BPCE)
+-- **Email :** vincent.pelsez@natixis.com
+-- **Téléphone :** 06 49 22 21 54
+-- **LinkedIn :** [Vincent Pelsez](https://www.linkedin.com/in/vincent-pelsez/)
+-- **Adresse :** 115 rue Montmartre, 75002 Paris / 18 Rue de Courcelles, 75008 Paris
+-
+-## Projets liés
+-- [[Les Jaunets]] — dossier de financement (propositions juillet 2024 et septembre 2025)
+-
+-## Notes
+-- Travaille en binôme avec [[Marie-Laure Poineuf-Chalony]] (Caisse d'Épargne) et Sylvie Fillieres (Natixis)
+-- Spécialiste des financements adossés aux titres non cotés (Evaneos)
+-- Propositions de prêt travaux :
+-  - **Juillet 2024** : 1,2M€ in fine 5 ans à 5,75% (ou 5,15% avec garantie père)
+-  - **Septembre 2025** : 1,2M€ in fine 5 ans à 5,05% (ou 4,35% avec garantie père)
+-- Garanties demandées : hypothèque + nantissement titres Evaneos
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/V\303\251ronique Gaspard.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/V\303\251ronique Gaspard.md"
+deleted file mode 100644
+index a0c697b..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/V\303\251ronique Gaspard.md"	
++++ /dev/null
+@@ -1,20 +0,0 @@
+-# Véronique Gaspard
+-
+-![[_photos/Veronique_Gaspard.jpg|200]]
+-
+-## Infos
+-- **Métier :** Formatrice certifiée CNVC, Coordinatrice milieu scolaire @ Déclic CNV & Éducation
+-- **Email :** veronique.gaspard@declic-cnveducation.org
+-- **Tél :** 06 10 64 83 11
+-- **Site :** https://www.cnvformations.fr/
+-- **Relation :** Rencontrée lors de la formation CNV (octobre 2025), déjeuner janvier 2026
+-
+-## Projets liés
+-- [[Déclic CNV]] — formatrice, co-auteure du livre
+-- [[Sidekicks]] — projet en cours de lancement ensemble
+-
+-## Notes
+-- Co-auteure avec Catherine Guéguen de "Développer les compétences psychosociales à l'école, osons la santé" (3000 exemplaires vendus)
+-- Réalisatrice du documentaire "La Petite Classe"
+-- Fait des conférences après les projections du documentaire
+-- A retrouvé des fichiers importants début janvier 2026
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/Yvan Wibaux.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/Yvan Wibaux.md"
+deleted file mode 100644
+index 0d3023f..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/Yvan Wibaux.md"	
++++ /dev/null
+@@ -1,13 +0,0 @@
+-# Yvan Wibaux
+-
+-## Infos
+-- **Email :** yvan.wibaux@gmail.com, yvan@evaneos.com
+-- **Relation :** Moi
+-
+-## Projets liés
+-- [[Les Jaunets]] — propriétaire (50%)
+-- [[Evaneos]]
+-- [[Sidekicks]]
+-- [[Investissements]]
+-
+-## Notes
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Adeline_Pithois-Guillou.jpg" "b/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Adeline_Pithois-Guillou.jpg"
+deleted file mode 100644
+index 3ae53b6..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Adeline_Pithois-Guillou.jpg"
++++ /dev/null
+@@ -1,3 +0,0 @@
+-version https://git-lfs.github.com/spec/v1
+-oid sha256:03338a1e6d43c45cda25f2287a921b6be269d6e313874a15a0af2f28096464f4
+-size 79719
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Anthony_Melet.jpg" "b/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Anthony_Melet.jpg"
+deleted file mode 100644
+index 8053bf9..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Anthony_Melet.jpg"
++++ /dev/null
+@@ -1,3 +0,0 @@
+-version https://git-lfs.github.com/spec/v1
+-oid sha256:760e50addbd39ac8815659d907dcb73d0b8b8f4bfb22efc25bae6bab4aa0bead
+-size 929149
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Catherine_Gueguen.jpg" "b/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Catherine_Gueguen.jpg"
+deleted file mode 100644
+index c5b7f03..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Catherine_Gueguen.jpg"
++++ /dev/null
+@@ -1,3 +0,0 @@
+-version https://git-lfs.github.com/spec/v1
+-oid sha256:46ec7e8aeb11ee78fce9cf32ba46ae315f5c4c24514348ac4f659c19366aba72
+-size 103521
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Eric_La_Bonnardiere.jpg" "b/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Eric_La_Bonnardiere.jpg"
+deleted file mode 100644
+index 2faf74b..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Eric_La_Bonnardiere.jpg"
++++ /dev/null
+@@ -1,3 +0,0 @@
+-version https://git-lfs.github.com/spec/v1
+-oid sha256:13fbb4ce672ea250b5911a5bdf923e24f9adf71f701f1bdb56e3f36dc3b0128f
+-size 3642
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Jean-Vincent_Lucas.jpg" "b/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Jean-Vincent_Lucas.jpg"
+deleted file mode 100644
+index d210532..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Jean-Vincent_Lucas.jpg"
++++ /dev/null
+@@ -1,3 +0,0 @@
+-version https://git-lfs.github.com/spec/v1
+-oid sha256:ed4e1eb8694eb1beec0dc9ff95f8dcdd04c95f7b597b3390588170d505aaebda
+-size 126307
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Laetitia_Carton.jpg" "b/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Laetitia_Carton.jpg"
+deleted file mode 100644
+index 55c73e6..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Laetitia_Carton.jpg"
++++ /dev/null
+@@ -1,3 +0,0 @@
+-version https://git-lfs.github.com/spec/v1
+-oid sha256:fec1abc3efabe83151e05451df4fc5ad50152ff52e9a1979e5abd8332b82f70d
+-size 189730
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Lorraine_Wibaux.jpeg" "b/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Lorraine_Wibaux.jpeg"
+deleted file mode 100644
+index 70c33f7..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Lorraine_Wibaux.jpeg"
++++ /dev/null
+@@ -1,3 +0,0 @@
+-version https://git-lfs.github.com/spec/v1
+-oid sha256:dbfd449732a923e514524d2e71b7e40a618db247a62ab7911ee8aafa1ab5abfd
+-size 18325
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Marine_Morel-Corbin.webp" "b/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Marine_Morel-Corbin.webp"
+deleted file mode 100644
+index 50e5386..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Marine_Morel-Corbin.webp"
++++ /dev/null
+@@ -1,3 +0,0 @@
+-version https://git-lfs.github.com/spec/v1
+-oid sha256:32c575fa7176a833a481e56fc4581ec9e167325ecad7a0ed2ae3831283e503e7
+-size 19796
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Veronique_Gaspard.jpg" "b/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Veronique_Gaspard.jpg"
+deleted file mode 100644
+index 8942e35..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/_photos/Veronique_Gaspard.jpg"
++++ /dev/null
+@@ -1,3 +0,0 @@
+-version https://git-lfs.github.com/spec/v1
+-oid sha256:5475f8c23020a7916df587bb8a839d61cb73d1090b6b5206ce304a450f17e582
+-size 122026
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/People/index.md" "b/DATA/ARCHIVE/R\303\251pertoires/People/index.md"
+deleted file mode 100644
+index 2a840ec..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/People/index.md"
++++ /dev/null
+@@ -1,38 +0,0 @@
+-# People
+-
+-> Fiches contacts (personnes).
+-
+-## Fiches actives
+-
+-| Nom | Relation | Projets |
+-|-----|----------|---------|
+-| [[Adeline Pithois-Guillou]] | Notaire | Les Jaunets |
+-| [[Anthony Melet]] | Notaire | Les Jaunets |
+-| [[Aurélie Caprera]] | | Déclic CNV |
+-| [[Catherine Guéguen]] | | Déclic CNV |
+-| [[Cyrgue Dessauce]] | Famille | Les Jaunets |
+-| [[Emmanuel Guiné]] | | Les Jaunets |
+-| [[Eric La Bonnardière]] | | Déclic CNV |
+-| [[Flavian Duval]] | | Déclic CNV |
+-| [[Jean-Vincent Lucas]] | | Les Jaunets |
+-
+-## Structure d'une fiche
+-
+-Chaque fiche contient :
+-- Relation avec l'utilisateur
+-- Entreprise / Rôle
+-- Infos de contact (email, téléphone, LinkedIn)
+-- Photo (stockée dans `_photos/`)
+-- Projets liés
+-- Historique des échanges
+-
+-## Photos
+-
+-Les photos sont stockées dans [`_photos/`](_photos/) avec la convention `Prénom_Nom.jpg`.
+-
+-## Mise à jour
+-
+-Cet index est mis à jour automatiquement quand :
+-- Une nouvelle fiche est créée
+-- Un projet lie une personne existante
+-- Une fiche est archivée
+diff --git "a/DATA/ARCHIVE/R\303\251pertoires/index.md" "b/DATA/ARCHIVE/R\303\251pertoires/index.md"
+deleted file mode 100644
+index 748287b..0000000
+--- "a/DATA/ARCHIVE/R\303\251pertoires/index.md"
++++ /dev/null
+@@ -1,23 +0,0 @@
+-# Répertoires
+-
+-> Fiches de référence — Personnes, Entreprises, Concepts.
+-
+-## Contenu
+-
+-| Dossier | Description |
+-|---------|-------------|
+-| [People/](People/) | Fiches contacts (personnes) |
+-| [Entreprises/](Entreprises/) | Fiches entreprises et organisations |
+-
+-## Principe
+-
+-Les répertoires centralisent les fiches de référence. Chaque fiche est liée depuis les projets avec la syntaxe `[[Nom]]`.
+-
+-**Une personne/entreprise = une seule fiche, multiple liens depuis projets.**
+-
+-## Utilisation
+-
+-Quand une personne ou une entreprise est mentionnée dans un projet :
+-1. Vérifier si la fiche existe (Glob avant de créer)
+-2. Si non → créer la fiche avec infos disponibles
+-3. Créer le lien `[[Nom]]` dans le projet
+diff --git a/_SYSTEM b/_SYSTEM
+--- a/_SYSTEM
++++ b/_SYSTEM
+@@ -1 +1 @@
+-Subproject commit 1fdaf411d66b77964610db444034a583a1d6f872
++Subproject commit 1fdaf411d66b77964610db444034a583a1d6f872-dirty
+diff --git a/claude.md b/claude.md
+deleted file mode 100644
+index 788203b..0000000
+--- a/claude.md
++++ /dev/null
+@@ -1,79 +0,0 @@
+----
+-A quoi sert ce fichier:
+-Point d'entrée principal — Instructions complètes pour l'IA sur comment utiliser TADA (routine de démarrage, sommaire des instructions par section T.A.D.A)
+----
+-
+-# CLAUDE.md
+-
+-Tu es l'assistant personnel de l'utilisateur. Tu connais sa vie — projets, contacts, documents, décisions. TADA est ton cerveau externe : tout y est capturé, organisé, à jour.
+-
+-**Le cercle vertueux :**
+-- Tu maintiens TADA à jour (capture, routage, documentation)
+-- TADA te donne le contexte (projets actifs, historique, contacts)
+-- Avec ce contexte, tu peux agir instantanément
+-
+-Ce fichier contient tes instructions.
+-
+-> **Note :** `_SYSTEM/` est un template agnostique, réutilisable sur n'importe quelle instance TADA. Seul `_SYSTEM/local/` contient les données spécifiques à cette instance (logs, configuration locale).
+-
+-## Au démarrage
+-
+-**AVANT de répondre au premier message, tu exécutes la routine sync :**
+-
+-1. Lire `_SYSTEM/local/TOOLS.md` pour connaître les sources actives
+-2. Pour chaque source active : récupérer les nouveautés depuis la dernière sync
+-3. Diagnostiquer l'état du système (DATA/NOW/, DATA/INBOX/, sources non configurées)
+-4. Afficher un résumé court + proposer 1-3 actions
+-
+-**Format de sortie :**
+-```
+-**Sync** | [sources actives] | [X nouveautés]
+-→ [action suggérée prioritaire]
+-```
+-
+-Si l'utilisateur a une demande urgente, tu peux faire la sync en arrière-plan et répondre d'abord à sa demande.
+-
+-Lis ce fichier : `_SYSTEM/tada.md`
+-
+-## Sommaire
+-
+-1. [T — Trust (Lisible + Personnalisé)](#t--trust-lisible--personnalisé)
+-2. [A — Automate (Inbox + Maintenance)](#a--automate-inbox--maintenance)
+-3. [D — Document (Index + Liens)](#d--document-index--liens)
+-4. [A — Act (Instantané + Proactif)](#a--act-instantané--proactif)
+-
+----
+-
+-# T — Trust (Lisible + Personnalisé)
+-
+-Lis ce fichier : `_SYSTEM/1-Trust/lisible.md`
+-
+-Lis ce fichier : `_SYSTEM/1-Trust/versionning.md`
+-
+-Lis ce fichier : `_SYSTEM/1-Trust/SOUL.md`
+-
+----
+-
+-# A — Automate (Inbox + Maintenance)
+-
+-Lis ce fichier : `_SYSTEM/2-Automate/routines.md`
+-
+-Lis ce fichier : `_SYSTEM/2-Automate/validation.md`
+-
+-Lis ce fichier : `_SYSTEM/2-Automate/HEARTBEAT.md`
+-
+----
+-
+-# D — Document (Index + Liens)
+-
+-Lis ce fichier : `_SYSTEM/3-Document/index.md`
+-
+-Lis ce fichier : `_SYSTEM/3-Document/liens.md`
+-
+----
+-
+-# A — Act (Instantané + Proactif)
+-
+-Lis ce fichier : `_SYSTEM/4-Act/instantane.md`
+-
+-Lis ce fichier : `_SYSTEM/4-Act/proactivite.md`
+diff --git a/claude.md b/claude.md
+new file mode 120000
+index 0000000..47dc3e3
+--- /dev/null
++++ b/claude.md
+@@ -0,0 +1 @@
++AGENTS.md
+\ No newline at end of file

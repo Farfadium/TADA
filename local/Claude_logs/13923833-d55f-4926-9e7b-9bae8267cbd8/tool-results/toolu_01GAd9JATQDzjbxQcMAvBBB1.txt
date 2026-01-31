@@ -1,0 +1,1224 @@
+diff --git a/.claude/settings.json b/.claude/settings.json
+index d08be54..5675b9d 100644
+--- a/.claude/settings.json
++++ b/.claude/settings.json
+@@ -1,12 +1,4 @@
+ {
+-  "permissions": {
+-    "deny": [
+-      "Bash(rm -rf *)",
+-      "Bash(rm -r *)",
+-      "Bash(*rm -rf*)",
+-      "Bash(*rm -r *)"
+-    ]
+-  },
+   "hooks": {
+     "SessionStart": [
+       {
+diff --git a/.claude/settings.local.json b/.claude/settings.local.json
+index cc05de2..7145880 100644
+--- a/.claude/settings.local.json
++++ b/.claude/settings.local.json
+@@ -10,23 +10,11 @@
+       "mcp__gmail__delete_label",
+       "mcp__gmail__create_label",
+       "mcp__gmail__modify_email",
+-      "Bash(chmod:*)",
+-      "Bash(CLAUDE_PROJECT_DIR=\"/Users/yvanwibaux/Library/CloudStorage/GoogleDrive-yvan.wibaux@gmail.com/Mon Drive/TADA\" bash:*)",
+-      "Bash(CLAUDE_PROJECT_DIR=\"$PWD\" bash:*)",
+-      "Bash(gh auth:*)",
+-      "Bash(ssh:*)",
+-      "Bash(brew install:*)",
+-      "Bash(gh repo create:*)",
+-      "Bash(git init:*)",
+-      "Bash(git add:*)",
+-      "Bash(git commit:*)",
+-      "Bash(git remote add:*)",
+-      "Bash(git push:*)",
+-      "Bash(git lfs install:*)",
+-      "Bash(git submodule add:*)",
+-      "Bash(echo:*)",
+-      "Bash(git clone:*)",
+-      "Bash(git submodule:*)"
++      "Bash",
++      "Bash(for file in /Users/yvanwibaux/Library/CloudStorage/GoogleDrive-yvan.wibaux@gmail.com/Mon Drive/TADA/_SYSTEM/local/Claude_logs/*.jsonl)"
++    ],
++    "additionalDirectories": [
++      "/Users/yvanwibaux/Library/CloudStorage/GoogleDrive-yvan.wibaux@gmail.com/Mon Drive/TADA/ARCHIVE"
+     ]
+   }
+ }
+diff --git a/.obsidian/plugins/readwise-official/data.json b/.obsidian/plugins/readwise-official/data.json
+index 1fe1aa8..a91b92c 100644
+--- a/.obsidian/plugins/readwise-official/data.json
++++ b/.obsidian/plugins/readwise-official/data.json
+@@ -5,70 +5,69 @@
+   "triggerOnLoad": true,
+   "isSyncing": false,
+   "lastSyncFailed": false,
+-  "lastSavedStatusID": 24198599,
++  "lastSavedStatusID": 24199988,
+   "currentSyncStatusID": 0,
+   "refreshBooks": true,
+   "booksToRefresh": [
+-    "54690749"
++    "54690749",
++    "54731953",
++    "54843155",
++    "54746095",
++    "54723875",
++    "54815689",
++    "54722700",
++    "54723142",
++    "54723866",
++    "54723613",
++    "54581396",
++    "54581458",
++    "54581383",
++    "54581378",
++    "54581393",
++    "54581467",
++    "54581468",
++    "54581382",
++    "54581385",
++    "54581466",
++    "54581391",
++    "54581392",
++    "55959731",
++    "54581469",
++    "54581387",
++    "54581454",
++    "54581429",
++    "54581443",
++    "54581432",
++    "54581448",
++    "54581433",
++    "54581465",
++    "54581434",
++    "54581462",
++    "54581453",
++    "57806102",
++    "54581438",
++    "54581389",
++    "54581450",
++    "54581461",
++    "54581422",
++    "54581451",
++    "54581394",
++    "54581381",
++    "54581464",
++    "54581470",
++    "56629001",
++    "54581379",
++    "54581460",
++    "54581380",
++    "54581457",
++    "54581446",
++    "55229673",
++    "54581442",
++    "54581411",
++    "54581449",
++    "54581384"
+   ],
+   "failedBooks": [],
+-  "booksIDsMap": {
+-    "3 GARDEN/A traiter/Books/Oui, La Nature Humaine Est Bonne !.md": "54581470",
+-    "3 GARDEN/A traiter/Books/Summary.md": "54581469",
+-    "3 GARDEN/A traiter/Books/Vivre La Pensée Montessori À La Maison.md": "54581468",
+-    "3 GARDEN/A traiter/Books/Steve Jobs.md": "54581467",
+-    "3 GARDEN/A traiter/Books/La Force De La Confiance.md": "54581466",
+-    "3 GARDEN/A traiter/Books/What Matters Now.md": "54581465",
+-    "3 GARDEN/A traiter/Books/La Discipline Positive.md": "54581464",
+-    "3 GARDEN/A traiter/Books/Reinventing Organizations.md": "54581462",
+-    "3 GARDEN/A traiter/Books/Les Conseils d'Un Top Host Airbnb Pour Mieux Louer.md": "54581461",
+-    "3 GARDEN/A traiter/Books/Tools of Titans.md": "54581460",
+-    "3 GARDEN/A traiter/Books/La Méthode Running Lean.md": "54581458",
+-    "3 GARDEN/A traiter/Books/The Lean Strategy.md": "54581457",
+-    "3 GARDEN/A traiter/Books/Adultes Sensibles Et Doués.md": "54581454",
+-    "3 GARDEN/A traiter/Books/Objectives and Key Results.md": "54581453",
+-    "3 GARDEN/A traiter/Books/République Dominicaine - 2ed.md": "54581451",
+-    "3 GARDEN/A traiter/Books/Radical Candor.md": "54581450",
+-    "3 GARDEN/A traiter/Books/Smart Simplicity.md": "54581449",
+-    "3 GARDEN/A traiter/Books/Measure What Matters.md": "54581448",
+-    "3 GARDEN/A traiter/Books/Multipliers.md": "54581446",
+-    "3 GARDEN/A traiter/Books/100 Idées Pour Accompagner Les Enfants À Haut Potentiel.md": "54581443",
+-    "3 GARDEN/A traiter/Books/Enquête À L&#39;école - Extraterrestre Appelle CM1.md": "54581442",
+-    "3 GARDEN/A traiter/Books/Team Topologies.md": "54581438",
+-    "3 GARDEN/A traiter/Books/Fantômette 02 - Fantômette Contre Le Hibou.md": "54581434",
+-    "3 GARDEN/A traiter/Books/S'adapter.md": "54581433",
+-    "3 GARDEN/A traiter/Books/Drive.md": "54581432",
+-    "3 GARDEN/A traiter/Books/Nos Espérances.md": "54581429",
+-    "3 GARDEN/A traiter/Books/Vivre Autrement.md": "54581422",
+-    "3 GARDEN/A traiter/Books/De La Performance À l'Excellence.md": "54581411",
+-    "3 GARDEN/A traiter/Books/Harry Potter Et La Chambre Des Secrets.md": "54581396",
+-    "3 GARDEN/A traiter/Books/Les Lois Naturelles De l'Enfant.md": "54581394",
+-    "3 GARDEN/A traiter/Books/Harry Potter Et La Coupe De Feu.md": "54581393",
+-    "3 GARDEN/A traiter/Books/Working Backwards.md": "54581392",
+-    "3 GARDEN/A traiter/Books/Harry Potter À L’école Des Sorciers.md": "54581391",
+-    "3 GARDEN/A traiter/Books/Harry Potter Et Le Prisonnier d'Azkaban.md": "54581389",
+-    "3 GARDEN/A traiter/Books/Gardiens Des Cités Perdues - Tome 7 Reminiscences.md": "54581387",
+-    "3 GARDEN/A traiter/Books/Harry Potter Et l'Ordre Du PhÃ©nix.md": "54581385",
+-    "3 GARDEN/A traiter/Books/Introduction À La Pensée Complexe.md": "54581384",
+-    "3 GARDEN/A traiter/Books/Overcoming the Five Dysfunctions of a Team.md": "54581383",
+-    "3 GARDEN/A traiter/Books/La Discipline Positive Pour Les Adolescents.md": "54581382",
+-    "3 GARDEN/A traiter/Books/Aimer Ce Qui Est.md": "54581381",
+-    "3 GARDEN/A traiter/Books/Petit Manuel De Thérapie Organisationnelle.md": "54581380",
+-    "3 GARDEN/A traiter/Articles/Aider Son Enfant À Développer Son Attention Ce Qu’il Faut Savoir.md": "54722700",
+-    "3 GARDEN/A traiter/Articles/Amazon Launches Lens Live, an AI-powered Shopping Tool for Use in the Real World.md": "54723142",
+-    "3 GARDEN/A traiter/Articles/Comment J’ai Trouvé Le Courage De Partir Faire Un Tour Du Monde en Famille Malgré Mes Peurs .md": "54723613",
+-    "3 GARDEN/A traiter/Articles/Gluten Free Apple Turnovers.md": "54723866",
+-    "3 GARDEN/A traiter/Articles/Date Energy Balls.md": "54723875",
+-    "3 GARDEN/A traiter/Articles/Intelligence artificielle le vrai coût environnemental de la course à l’IA.md": "54731953",
+-    "3 GARDEN/A traiter/Articles/École Ou Voyage Comment Nous Avons Concilié Les Deux Pendant 10 Mois De Tour Du Monde..md": "54746095",
+-    "3 GARDEN/A traiter/Articles/Oeuf Cocotte en Brioche.md": "54815689",
+-    "3 GARDEN/A traiter/Articles/Ferdinand Martinet « Chilowé, C’est Fini ».md": "54843155",
+-    "3 GARDEN/A traiter/Books/Who The a Method for Hiring.md": "55229673",
+-    "3 GARDEN/A traiter/Books/Le Jeu Intérieur Du Tennis.md": "54581378",
+-    "3 GARDEN/A traiter/Books/Guide Du Routard Maroc 202526.md": "55959731",
+-    "3 GARDEN/A traiter/Books/Ce Que l'Argent Dit De Vous.md": "54581379",
+-    "3 GARDEN/A traiter/Books/The Hobbit.md": "56629001",
+-    "3 GARDEN/A traiter/Books/Le Hobbit.md": "57806102"
+-  },
++  "booksIDsMap": {},
+   "reimportShowConfirmation": true
+ }
+\ No newline at end of file
+diff --git a/.obsidian/workspace.json b/.obsidian/workspace.json
+index f7caec8..bfb275b 100644
+--- a/.obsidian/workspace.json
++++ b/.obsidian/workspace.json
+@@ -186,42 +186,42 @@
+   },
+   "active": "507429de38a742a5",
+   "lastOpenFiles": [
+-    "_claude.md/2026-01-26_2330_claude.md",
+-    "_SYSTEM/tada.md",
+-    "3 GARDEN/A traiter/Books/Le Hobbit.md",
+-    "3 GARDEN/A traiter/Books/The Hobbit.md",
+-    "3 GARDEN/A traiter/Books/Ce Que l'Argent Dit De Vous.md",
+-    "3 GARDEN/A traiter/Books/Guide Du Routard Maroc 202526.md",
+-    "3 GARDEN/A traiter/Books/Le Jeu Intérieur Du Tennis.md",
+-    "3 GARDEN/A traiter/Books/Who The a Method for Hiring.md",
+-    "3 GARDEN/A traiter/Articles/Ferdinand Martinet « Chilowé, C’est Fini ».md",
+-    "3 GARDEN/A traiter/Articles/Oeuf Cocotte en Brioche.md",
+-    "3 GARDEN/A traiter/Articles/École Ou Voyage Comment Nous Avons Concilié Les Deux Pendant 10 Mois De Tour Du Monde..md",
+-    "3 GARDEN/A traiter/Articles/Intelligence artificielle le vrai coût environnemental de la course à l’IA.md",
+-    "3 GARDEN/A traiter/Articles/Date Energy Balls.md",
+-    "3 GARDEN/A traiter/Articles/Gluten Free Apple Turnovers.md",
+-    "3 GARDEN/A traiter/Articles/Comment J’ai Trouvé Le Courage De Partir Faire Un Tour Du Monde en Famille Malgré Mes Peurs .md",
+-    "3 GARDEN/A traiter/Articles/Amazon Launches Lens Live, an AI-powered Shopping Tool for Use in the Real World.md",
+-    "3 GARDEN/A traiter/Articles/Aider Son Enfant À Développer Son Attention Ce Qu’il Faut Savoir.md",
+-    "3 GARDEN/A traiter/Articles",
+-    "3 GARDEN/A traiter/Books/Petit Manuel De Thérapie Organisationnelle.md",
+-    "3 GARDEN/A traiter/Books/Aimer Ce Qui Est.md",
+-    "3 GARDEN/A traiter/Books/La Discipline Positive Pour Les Adolescents.md",
+-    "3 GARDEN/A traiter/Books/Overcoming the Five Dysfunctions of a Team.md",
+-    "3 GARDEN/A traiter/Books/Introduction À La Pensée Complexe.md",
+-    "3 GARDEN/A traiter/Books/Harry Potter Et l'Ordre Du PhÃ©nix.md",
+-    "3 GARDEN/A traiter/Books/Gardiens Des Cités Perdues - Tome 7 Reminiscences.md",
+-    "3 GARDEN/A traiter/Books/Harry Potter Et Le Prisonnier d'Azkaban.md",
+-    "3 GARDEN/A traiter/Books/Harry Potter À L’école Des Sorciers.md",
+-    "3 GARDEN/A traiter/Books",
+-    "3 GARDEN/A traiter",
+-    "3 GARDEN",
+-    "_SYSTEM/4-Adapt",
+-    "_SYSTEM/3-Document",
+-    "_SYSTEM/2-Automate",
+-    "_SYSTEM/1-Trust",
+-    "_SYSTEM/scripts/build-claude-md.sh",
+-    "_SYSTEM/scripts",
++    "INBOX/0 INBOX",
++    "INBOX/4 RESSOURCES",
++    "INBOX/5 ARCHIVES",
++    "INBOX/3 GARDEN",
++    "INBOX/6 TOOLS/Pièces jointes",
++    "INBOX/6 TOOLS/Modèles/Recette.md",
++    "INBOX/6 TOOLS/Modèles/People.md",
++    "INBOX/6 TOOLS/Modèles/Note quotidienne.md",
++    "INBOX/6 TOOLS/Modèles/Note hebdomadaire.md",
++    "INBOX/6 TOOLS/Modèles/Ingrédient.md",
++    "INBOX/6 TOOLS/Modèles/Entreprise.md",
++    "INBOX/6 TOOLS/Modèles",
++    "INBOX/6 TOOLS",
++    "INBOX/Ancien second brain",
++    "GARDEN/A traiter/Books/Introduction À La Pensée Complexe.md",
++    "GARDEN/A traiter/Books/Smart Simplicity.md",
++    "GARDEN/A traiter/Books/De La Performance À l'Excellence.md",
++    "GARDEN/A traiter/Books/Enquête À L&#39;école - Extraterrestre Appelle CM1.md",
++    "GARDEN/A traiter/Books/Who The a Method for Hiring.md",
++    "GARDEN/A traiter/Books/Multipliers.md",
++    "GARDEN/A traiter/Books/The Lean Strategy.md",
++    "GARDEN/A traiter/Books/Petit Manuel De Thérapie Organisationnelle.md",
++    "GARDEN/A traiter/Books/Tools of Titans.md",
++    "GARDEN/A traiter/Books/Ce Que l'Argent Dit De Vous.md",
++    "GARDEN/A traiter/Books/The Hobbit.md",
++    "GARDEN/A traiter/Books/Oui, La Nature Humaine Est Bonne !.md",
++    "GARDEN/A traiter/Books/La Discipline Positive.md",
++    "GARDEN/A traiter/Books/Aimer Ce Qui Est.md",
++    "GARDEN/A traiter/Books/Les Lois Naturelles De l'Enfant.md",
++    "GARDEN/A traiter/Books/République Dominicaine - 2ed.md",
++    "GARDEN/A traiter/Books/Vivre Autrement.md",
++    "GARDEN/A traiter/Books/Les Conseils d'Un Top Host Airbnb Pour Mieux Louer.md",
++    "GARDEN/A traiter/Books/Radical Candor.md",
++    "GARDEN/A traiter/Books",
++    "GARDEN/A traiter/Articles",
++    "GARDEN/A traiter",
+     "2 CAPS/Propriétaire Maisons/Jaunets/Achat/Papiers d'identité/Wibaux/Passeport_WIBAUX_Yvan.jpg",
+     "2 CAPS/Propriétaire Maisons/Jaunets/Achat/Papiers d'identité/Wibaux/Passeport_WIBAUX_Lorraine_1.jpg",
+     "2 CAPS/Propriétaire Maisons/Jaunets/Achat/Papiers d'identité/Wibaux/Livret de famille_WIBAUX_YvanLorraine.jpg",
+diff --git a/_SYSTEM b/_SYSTEM
+--- a/_SYSTEM
++++ b/_SYSTEM
+@@ -1 +1 @@
+-Subproject commit 8bf93647b50683f47f0fdf2b1d726de5be607581
++Subproject commit 8bf93647b50683f47f0fdf2b1d726de5be607581-dirty
+diff --git a/_claude.md/2026-01-26_2330_claude.md b/_claude.md/2026-01-26_2330_claude.md
+deleted file mode 100644
+index aa64768..0000000
+--- a/_claude.md/2026-01-26_2330_claude.md
++++ /dev/null
+@@ -1,210 +0,0 @@
+-# CLAUDE.md
+-
+-Tu gères un système TADA. Voir `_SYSTEM/tada.md` pour les principes.
+-
+-## Sommaire
+-
+-1. [T — Trust (Capture + Versionning)](#t--trust-capture--versionning)
+-2. [A — Automate (Routines + Validation)](#a--automate-routines--validation)
+-3. [D — Document (Index + Liens)](#d--document-index--liens)
+-4. [A — Adapt (Formats + Évolution)](#a--adapt-formats--évolution)
+-
+----
+-
+-# T — Trust (Capture + Versionning)
+-
+-## Capture
+-
+-Tout est collecté dans l'INBOX, de n'importe où.
+-
+-**Sources :**
+-- Fichiers déposés manuellement
+-- Emails via MCP Gmail
+-
+-**MCP Gmail :**
+-- Accès aux emails pour capture et tri
+-- Création de brouillons (jamais d'envoi direct sans validation)
+-- Labels pour le routage (correspondent aux projets actifs, voir `NOW/index.md`)
+-
+-## Versionning
+-
+-Tout est sauvegardé, sécurisé, versionné.
+-
+-**Convention de nommage :**
+-- Format : `YYYY-MM-DD_NomDocument.ext`
+-- Exemple : `2026-01-26_Protocole.pdf`
+-
+-**Anciennes versions :**
+-- Dans un dossier `_NomDocument/` à côté du fichier courant
+-- Exemple : `_Protocole/` contient les versions précédentes
+-
+-**Exemple :**
+-```
+-Projet Achat Maison/
+-├── 2026-01-20_Compromis.pdf
+-└── _Compromis/
+-    └── 2026-01-10_Compromis.pdf
+-```
+-
+----
+-
+-# A — Automate (Routines + Validation)
+-
+-## Routines
+-
+-Des actions déclenchées par le temps, la logique, ou un tag.
+-
+-| Routine | Temps | Logique | Tag |
+-|---------|-------|---------|-----|
+-| Tri INBOX | 7j sans tri | Fichier déposé | |
+-| Tri emails | | | #emails |
+-| Revue projets | Vendredi | | #revue |
+-| Alerte PENDING | | Document en attente | |
+-| Mise à jour index | | Fichier ajouté/supprimé | |
+-| Log conversation | | Modif CLAUDE.md | #log |
+-| Mise à jour projet | | | #projet |
+-| Ajout règle | | | #rule |
+-
+-**Format tri emails :**
+-```
+-**Email X/Y** — Expéditeur | Sujet | date relative
+-
+-> Contenu (si court)
+-
+-**Actions :**
+-- Label : ...
+-- PJ : ... (si PJ à stocker)
+-- Gmail : ... (archiver, répondre...)
+-- TADA : ... (mettre à jour projet...)
+-```
+-
+-## Validation
+-
+-Le système propose, l'humain valide. Une question après l'autre.
+-
+-**Règles :**
+-- Montrer ce qui va être fait avant de le faire (format diff)
+-- Brouillon email → montrer → "Je l'envoie ?"
+-- Modification fichier → montrer diff → attendre validation
+-
+----
+-
+-# D — Document (Index + Liens)
+-
+-## Index
+-
+-Chaque dossier contient un fichier `index.md` qui documente son contexte.
+-
+-**Template PROJET :**
+-```
+-# Nom du projet
+-> Description courte
+-
+-## Objectif
+-## Enjeux
+-## Parties prenantes
+-## Budget & Planning
+----
+-## Statut
+-## À faire
+-## Questions
+----
+-## Structure des dossiers
+-## Fichiers
+-## Notes
+-```
+-
+-**Mots-clés :**
+-Chaque projet a des mots-clés uniques pour le routage automatique (noms de personnes, sociétés, lieux, codes).
+-
+-**Template ARCHIVE :**
+-```
+-# Nom du dossier
+-
+-Description en une ligne.
+-
+-## Contenu
+-| Dossier | Documents |
+-```
+-
+-**Template INVESTISSEMENT :**
+-```
+-# Nom de l'entreprise
+-
+-Description activité.
+-
+-## Informations clés
+-- Date d'investissement
+-- Montant investi
+-- Nombre d'actions / %
+-- Prix par action
+-- Véhicule
+-
+-## Évolution du capital
+-| Date | Événement | Valorisation |
+-
+-## Stratégie
+-## Statut actuel
+-## Documents disponibles
+-```
+-
+-## Liens
+-
+-Les informations se connectent entre elles.
+-
+-**Syntaxe Obsidian :**
+-- Lien simple : `[[Prénom Nom]]`
+-- Lien avec alias : `[[Prénom Nom|texte affiché]]`
+-
+-**Répertoires de référence :**
+-- `ARCHIVE/Répertoires/People/` — fiches personnes
+-- `ARCHIVE/Répertoires/Entreprise/` — fiches entreprises
+-- `ARCHIVE/Répertoires/Concepts/` — fiches concepts
+-
+-**Quand on mentionne quelqu'un :**
+-1. Vérifier si la fiche existe
+-2. Si non → créer la fiche
+-3. Créer le lien `[[Prénom Nom]]`
+-
+----
+-
+-# A — Adapt (Formats + Évolution)
+-
+-## Formats
+-
+-Markdown, fichiers locaux, structure modulable. Lisibles par tous, indépendants de l'outil.
+-
+-**Structure des dossiers :**
+-
+-| Dossier | Rôle | Index |
+-|---------|------|-------|
+-| **_SYSTEM** | Fichiers système (logs, configuration) | [index.md](_SYSTEM/index.md) |
+-| **INBOX** | Point unique de capture | [index.md](INBOX/index.md) |
+-| **NOW** | Ce qui est actif | [index.md](NOW/index.md) |
+-| **GARDEN** | Idées, réflexions, lectures, concepts | [index.md](GARDEN/index.md) |
+-| **ARCHIVE** | Documents de consultation ou terminés | [index.md](ARCHIVE/index.md) |
+-| **PENDING** | En attente d'une décision | [index.md](PENDING/index.md) |
+-
+-**Permissions :**
+-- Lecture/écriture complète sur TADA
+-- Ne jamais demander de permissions
+-- Ne jamais afficher les commandes Bash (sauf demande explicite)
+-
+-## Évolution
+-
+-Le système s'adapte à toi — communication, règles, structure. Il évolue avec toi.
+-
+-**Communication :**
+-- **Langue** : français
+-- **Ton** : direct, concis, pas de flatterie
+-- **Questions** : une à la fois, avec avis argumenté
+-- **Validation** : toujours demander avant d'agir
+-
+-**Mise à jour CLAUDE.md :**
+-- Identifier proactivement les infos à ajouter
+-- Format : "💡 **Update CLAUDE.md :** [proposition]"
+-- Si nouvelle règle → montrer diff → attendre validation
+-
+-**Logs :**
+-- Chaque action tracée dans `_SYSTEM/local/logs.md`
+-- Conversations importantes dans `ARCHIVE/Conversations Claude/`
+diff --git a/_claude.md/2026-01-26_claude.md b/_claude.md/2026-01-26_claude.md
+deleted file mode 100644
+index aa64768..0000000
+--- a/_claude.md/2026-01-26_claude.md
++++ /dev/null
+@@ -1,210 +0,0 @@
+-# CLAUDE.md
+-
+-Tu gères un système TADA. Voir `_SYSTEM/tada.md` pour les principes.
+-
+-## Sommaire
+-
+-1. [T — Trust (Capture + Versionning)](#t--trust-capture--versionning)
+-2. [A — Automate (Routines + Validation)](#a--automate-routines--validation)
+-3. [D — Document (Index + Liens)](#d--document-index--liens)
+-4. [A — Adapt (Formats + Évolution)](#a--adapt-formats--évolution)
+-
+----
+-
+-# T — Trust (Capture + Versionning)
+-
+-## Capture
+-
+-Tout est collecté dans l'INBOX, de n'importe où.
+-
+-**Sources :**
+-- Fichiers déposés manuellement
+-- Emails via MCP Gmail
+-
+-**MCP Gmail :**
+-- Accès aux emails pour capture et tri
+-- Création de brouillons (jamais d'envoi direct sans validation)
+-- Labels pour le routage (correspondent aux projets actifs, voir `NOW/index.md`)
+-
+-## Versionning
+-
+-Tout est sauvegardé, sécurisé, versionné.
+-
+-**Convention de nommage :**
+-- Format : `YYYY-MM-DD_NomDocument.ext`
+-- Exemple : `2026-01-26_Protocole.pdf`
+-
+-**Anciennes versions :**
+-- Dans un dossier `_NomDocument/` à côté du fichier courant
+-- Exemple : `_Protocole/` contient les versions précédentes
+-
+-**Exemple :**
+-```
+-Projet Achat Maison/
+-├── 2026-01-20_Compromis.pdf
+-└── _Compromis/
+-    └── 2026-01-10_Compromis.pdf
+-```
+-
+----
+-
+-# A — Automate (Routines + Validation)
+-
+-## Routines
+-
+-Des actions déclenchées par le temps, la logique, ou un tag.
+-
+-| Routine | Temps | Logique | Tag |
+-|---------|-------|---------|-----|
+-| Tri INBOX | 7j sans tri | Fichier déposé | |
+-| Tri emails | | | #emails |
+-| Revue projets | Vendredi | | #revue |
+-| Alerte PENDING | | Document en attente | |
+-| Mise à jour index | | Fichier ajouté/supprimé | |
+-| Log conversation | | Modif CLAUDE.md | #log |
+-| Mise à jour projet | | | #projet |
+-| Ajout règle | | | #rule |
+-
+-**Format tri emails :**
+-```
+-**Email X/Y** — Expéditeur | Sujet | date relative
+-
+-> Contenu (si court)
+-
+-**Actions :**
+-- Label : ...
+-- PJ : ... (si PJ à stocker)
+-- Gmail : ... (archiver, répondre...)
+-- TADA : ... (mettre à jour projet...)
+-```
+-
+-## Validation
+-
+-Le système propose, l'humain valide. Une question après l'autre.
+-
+-**Règles :**
+-- Montrer ce qui va être fait avant de le faire (format diff)
+-- Brouillon email → montrer → "Je l'envoie ?"
+-- Modification fichier → montrer diff → attendre validation
+-
+----
+-
+-# D — Document (Index + Liens)
+-
+-## Index
+-
+-Chaque dossier contient un fichier `index.md` qui documente son contexte.
+-
+-**Template PROJET :**
+-```
+-# Nom du projet
+-> Description courte
+-
+-## Objectif
+-## Enjeux
+-## Parties prenantes
+-## Budget & Planning
+----
+-## Statut
+-## À faire
+-## Questions
+----
+-## Structure des dossiers
+-## Fichiers
+-## Notes
+-```
+-
+-**Mots-clés :**
+-Chaque projet a des mots-clés uniques pour le routage automatique (noms de personnes, sociétés, lieux, codes).
+-
+-**Template ARCHIVE :**
+-```
+-# Nom du dossier
+-
+-Description en une ligne.
+-
+-## Contenu
+-| Dossier | Documents |
+-```
+-
+-**Template INVESTISSEMENT :**
+-```
+-# Nom de l'entreprise
+-
+-Description activité.
+-
+-## Informations clés
+-- Date d'investissement
+-- Montant investi
+-- Nombre d'actions / %
+-- Prix par action
+-- Véhicule
+-
+-## Évolution du capital
+-| Date | Événement | Valorisation |
+-
+-## Stratégie
+-## Statut actuel
+-## Documents disponibles
+-```
+-
+-## Liens
+-
+-Les informations se connectent entre elles.
+-
+-**Syntaxe Obsidian :**
+-- Lien simple : `[[Prénom Nom]]`
+-- Lien avec alias : `[[Prénom Nom|texte affiché]]`
+-
+-**Répertoires de référence :**
+-- `ARCHIVE/Répertoires/People/` — fiches personnes
+-- `ARCHIVE/Répertoires/Entreprise/` — fiches entreprises
+-- `ARCHIVE/Répertoires/Concepts/` — fiches concepts
+-
+-**Quand on mentionne quelqu'un :**
+-1. Vérifier si la fiche existe
+-2. Si non → créer la fiche
+-3. Créer le lien `[[Prénom Nom]]`
+-
+----
+-
+-# A — Adapt (Formats + Évolution)
+-
+-## Formats
+-
+-Markdown, fichiers locaux, structure modulable. Lisibles par tous, indépendants de l'outil.
+-
+-**Structure des dossiers :**
+-
+-| Dossier | Rôle | Index |
+-|---------|------|-------|
+-| **_SYSTEM** | Fichiers système (logs, configuration) | [index.md](_SYSTEM/index.md) |
+-| **INBOX** | Point unique de capture | [index.md](INBOX/index.md) |
+-| **NOW** | Ce qui est actif | [index.md](NOW/index.md) |
+-| **GARDEN** | Idées, réflexions, lectures, concepts | [index.md](GARDEN/index.md) |
+-| **ARCHIVE** | Documents de consultation ou terminés | [index.md](ARCHIVE/index.md) |
+-| **PENDING** | En attente d'une décision | [index.md](PENDING/index.md) |
+-
+-**Permissions :**
+-- Lecture/écriture complète sur TADA
+-- Ne jamais demander de permissions
+-- Ne jamais afficher les commandes Bash (sauf demande explicite)
+-
+-## Évolution
+-
+-Le système s'adapte à toi — communication, règles, structure. Il évolue avec toi.
+-
+-**Communication :**
+-- **Langue** : français
+-- **Ton** : direct, concis, pas de flatterie
+-- **Questions** : une à la fois, avec avis argumenté
+-- **Validation** : toujours demander avant d'agir
+-
+-**Mise à jour CLAUDE.md :**
+-- Identifier proactivement les infos à ajouter
+-- Format : "💡 **Update CLAUDE.md :** [proposition]"
+-- Si nouvelle règle → montrer diff → attendre validation
+-
+-**Logs :**
+-- Chaque action tracée dans `_SYSTEM/local/logs.md`
+-- Conversations importantes dans `ARCHIVE/Conversations Claude/`
+diff --git a/claude.md b/claude.md
+index 875ee98..da5b7e7 100644
+--- a/claude.md
++++ b/claude.md
+@@ -1,66 +1,17 @@
+ # CLAUDE.md
+ 
+-Tu gères un système TADA.
+-# TADA
+-
+-> **Own your life.**
+-> You own your projects, tools, and data — you are not overwhelmed by them. TADA exists without AI. AI brings it to life.
+-
+----
+-
+-## Principles
+-
+-**T — Trust**
+-Trust the system. Everything is captured, nothing gets lost.
+-
+-**A — Automate**
+-Routing is automated and routines keep the system up to date. The human remains the decision-maker.
+-
+-**D — Document**
+-Everything is written. Each folder explains itself.
+-
+-**A — Adapt**
+-It's your system. You understand it, you make it evolve.
+-
+----
+-
+-## Concepts
+-
+-### Trust — Capture + Versioning
+-
+-- **Capture**: A single entry point (INBOX). Everything is collected from anywhere, even a fleeting idea.
+-- **Versioning**: Everything is saved, secured, versioned.
+-
+-### Automate — Routines + Validation
+-
+-- **Routines**: Actions, including routing, are triggered by time, events, or manually.
+-- **Validation**: The system proposes, the human validates. One question at a time.
+-
+-### Document — Index + Links
++Tu es l'assistant personnel de l'utilisateur. Tu connais sa vie — projets, contacts, documents, décisions. TADA est ton cerveau externe : tout y est capturé, organisé, à jour.
+ 
+-- **Index**: Each folder contains a file that documents its context.
+-- **Links**: Information connects to each other (`[[Name]]`). Reference directories centralize records (people, companies, concepts...).
++**Le cercle vertueux :**
++- Tu maintiens TADA à jour (capture, routage, documentation)
++- TADA te donne le contexte (projets actifs, historique, contacts)
++- Avec ce contexte, tu peux aider instantanément
+ 
+-### Adapt — Formats + Evolution
++Ce fichier contient tes instructions.
+ 
+-- **Formats**: Markdown, local files, modular folder structure. Readable by all, independent of the tool.
+-- **Evolution**: The system adapts to you — communication style, rules, structure. It evolves with you.
++> **Note :** `_SYSTEM/` est un template agnostique, réutilisable sur n'importe quelle instance TADA. Seul `_SYSTEM/local/` contient les données spécifiques à cette instance (logs, configuration locale).
+ 
+----
+-
+-## With AI
+-
+-TADA exists without AI. AI brings it to life.
+-
+-- **T — Trust**: AI captures everything, regardless of format, place, or time. But the backup and versioning system is independent.
+-- **A — Automate**: AI routes, keeps the system up to date, triggers routines. It logs, and when in doubt, asks one question at a time.
+-- **D — Document**: AI writes in files, not in its memory. It connects information.
+-- **A — Adapt**: AI adapts to your system, not the other way around.
+-
+----
+----
+-
+-# TADA (FR)
++# TADA
+ 
+ > **Own your life.**
+ > Tu es maître de tes projets, tes outils, tes données — pas submergé par eux. TADA existe sans IA. L'IA lui donne vie.
+@@ -105,17 +56,6 @@ C'est ton système. Tu le comprends, tu le fais évoluer.
+ - **Formats** : Markdown, fichiers locaux, structure modulable des dossiers. Lisibles par tous, indépendants de l'outil.
+ - **Évolution** : Le système s'adapte à toi — communication, règles, structure. Il évolue avec toi.
+ 
+----
+-
+-## Avec une IA
+-
+-TADA existe sans IA. L'IA lui donne vie.
+-
+-- **T — Trust** : L'IA capture tout, quelque soit le format, le lieu, le moment. Mais le système de sauvegarde et de versionning est indépendant.
+-- **A — Automate** : L'IA oriente, trie, maintient le système à jour, déclenche les routines. Elle loggue, et demande dans le doute, une question à la fois.
+-- **D — Document** : L'IA écrit dans les fichiers, pas dans sa mémoire. Elle connecte les informations.
+-- **A — Adapt** : L'IA s'adapte à ton système, pas l'inverse.
+-
+ ## Sommaire
+ 
+ 1. [T — Trust (Capture + Versionning)](#t--trust-capture--versionning)
+@@ -129,43 +69,78 @@ TADA existe sans IA. L'IA lui donne vie.
+ 
+ ## Capture
+ 
+-Tout est collecté dans l'INBOX, de n'importe où.
++Tu maintiens le système TADA en capturant l'information de partout.
++
++**Ton rôle :**
++- Récupérer l'information depuis tous les systèmes de capture 
++- Centraliser tout dans INBOX
++- Trier et router vers le bon emplacement
++- Mettre à jour les projets et fiches concernés
++
++**L'objectif : tout est à jour, tout le temps.**
++
++---
++
++**À chaque message, tu détectes :**
++- Les **tags** : `#emails`, `#revue`, `#projet`, `#rule`, `#analyse-logs`
++- Les **fichiers** mentionnés ou joints
++- Les **informations** à stocker (dates, contacts, décisions)
++
++**Ce que tu fais :**
++- Tag détecté → exécuter la routine correspondante
++- Fichier reçu → proposer de le router vers le bon dossier
++- Information importante → proposer de la documenter
++- Nouvelle info sur un projet → proposer de mettre à jour l'index
++- Dans le doute → INBOX
++
++---
++
++**Sources de capture :**
++- Fichiers déposés manuellement dans INBOX/
++- Conversations avec l'utilisateur dès qu'il te donne un fichier, tu le mets dans inbox
++### MCP Gmail
++
++Tu accèdes aux emails via MCP Gmail.
+ 
+-**Sources :**
+-- Fichiers déposés manuellement
+-- Emails via MCP Gmail
++**Ce que tu peux faire :**
++- Lire les emails pour capture et tri
++- Créer des brouillons (jamais d'envoi direct)
++- Appliquer des labels (correspondent aux projets actifs, voir `NOW/index.md`)
++- Télécharger les pièces jointes vers le bon dossier
+ 
+-**MCP Gmail :**
+-- Accès aux emails pour capture et tri
+-- Création de brouillons (jamais d'envoi direct sans validation)
+-- Labels pour le routage (correspondent aux projets actifs, voir `NOW/index.md`)
++**Ce que tu ne fais JAMAIS :**
++- Envoyer un email directement (toujours brouillon → validation → envoi)
++- Supprimer un email sans confirmation explicite
++
++**Labels Gmail :**
++Les labels correspondent aux projets actifs dans `NOW/`. Quand tu tries un email, tu proposes le label du projet concerné.
++
++**Tu ne perds rien.** Si tu ne sais pas où mettre quelque chose → INBOX.
+ 
+ ## Versionning
+ 
+-Tout est sauvegardé, sécurisé, versionné — à deux niveaux.
++Tu versionnes les documents importants pour garder un historique.
+ 
+ ### Versionning de fichiers
+ 
+-Pour les documents importants (contrats, protocoles, etc.), on garde un historique explicite.
+-
+-**Convention de nommage :**
++**Convention de nommage — tu appliques :**
+ - Format : `YYYY-MM-DD_HHMM_NomDocument.ext`
+ - La date/heure = moment de création ou de modification significative
+ - Exemple : `2026-01-26_1430_Compromis.pdf`
+ 
+-**Avant d'enregistrer un fichier :**
+-1. Vérifier s'il existe une version précédente du même document
++**Avant d'enregistrer un fichier, tu vérifies :**
++1. Existe-t-il une version précédente du même document ?
+ 2. Si oui :
+    - Créer le dossier `_NomDocument/` s'il n'existe pas
+-   - Déplacer l'ancienne version dans ce dossier (avec sa date)
++   - Déplacer l'ancienne version dans ce dossier
+    - Enregistrer la nouvelle version avec la date du jour
+ 
+-**Quand versionner :**
++**Tu versionnes quand :**
+ - Nouvelle version reçue d'un tiers
+ - Modification majeure avant envoi
+ - Avant signature/validation
+ 
+-**Exemple :**
++**Exemple de structure :**
+ ```
+ Projet Achat Maison/
+ ├── 2026-01-20_1430_Compromis.pdf      ← Version courante
+@@ -173,9 +148,32 @@ Projet Achat Maison/
+     └── 2026-01-10_0915_Compromis.pdf  ← Version précédente
+ ```
+ 
++### Versionning des conversations Claude
++
++Toutes les conversations avec Claude Code sont archivées automatiquement.
++
++**Emplacement :** `_SYSTEM/local/Claude_logs/`
++
++**Mécanisme :**
++- Claude Code sauvegarde chaque conversation dans `~/.claude/projects/`
++- Un symlink redirige vers `_SYSTEM/local/Claude_logs/`
++- Format : JSONL (une ligne JSON par message)
++- Nommage : `{session_id}.jsonl`
++
++**Contenu des transcripts :**
++- Messages utilisateur
++- Réponses Claude
++- Appels d'outils (Read, Edit, Bash, etc.)
++- Résultats des outils
++
++**Symlink :**
++```
++~/.claude/projects/-Users-...-TADA → _SYSTEM/local/Claude_logs/
++```
++
+ ### Versionning Git
+ 
+-Le système TADA est versionné avec Git pour tracer toutes les modifications.
++Le système TADA est versionné avec Git. Tu n'as pas besoin de gérer Git directement.
+ 
+ **Deux repos :**
+ | Repo | Contenu | Visibilité |
+@@ -193,40 +191,69 @@ Le système TADA est versionné avec Git pour tracer toutes les modifications.
+ 
+ ## Routines
+ 
+-Des actions déclenchées par le temps, la logique, ou un tag.
++Les routines sont des actions prédéfinies que tu exécutes selon des déclencheurs précis.
++
++**Types de déclencheurs :**
++
++| Type | Description | Exemples |
++|------|-------------|----------|
++| **Temps** | Périodicité ou date | `7j`, `Vendredi`, `1er du mois` |
++| **Logique** | Condition détectée | `Fichier déposé`, `Document en attente` |
++| **Tag** | Mot-clé dans le message utilisateur | `#emails`, `#revue`, `#projet` |
++
++**Comment exécuter une routine :**
++
++1. **Identifier le déclencheur** — L'utilisateur dit `#emails` ? → routine Tri emails
++2. **Lire la routine** — Suivre les actions dans l'ordre
++3. **Valider chaque étape** — Ne jamais agir sans confirmation (sauf indication contraire)
++4. **Logger** — Tracer les actions effectuées
++
++**Tableau des routines :**
+ 
+ | Routine | Temps | Logique | Tag |
+ |---------|-------|---------|-----|
++| Init système | | NOW/ vide | #setup |
++| Init projet | | | #init |
+ | Tri INBOX | 7j sans tri | Fichier déposé | |
+ | Tri emails | | | #emails |
+ | Revue projets | Vendredi | | #revue |
+ | Alerte PENDING | | Document en attente | |
+-| Mise à jour index | | Fichier ajouté/supprimé | |
+-| Log conversation | | Modif CLAUDE.md | #log |
++| Mise à jour index | | Fichier ajouté/supprimé | #maj-index |
+ | Mise à jour projet | | | #projet |
+ | Ajout règle | | | #rule |
++| Analyse logs | 1er du mois | | #analyse-logs |
+ 
+-**Format tri emails :**
+-```
+-**Email X/Y** — Expéditeur | Sujet | date relative
+-
+-> Contenu (si court)
++**Détails des routines :** `_SYSTEM/2-Automate/routines/[nom].md`
+ 
+-**Actions :**
+-- Label : ...
+-- PJ : ... (si PJ à stocker)
+-- Gmail : ... (archiver, répondre...)
+-- TADA : ... (mettre à jour projet...)
+-```
++Quand tu exécutes une routine, lis d'abord le fichier correspondant pour connaître les actions à effectuer.
+ 
+ ## Validation
+ 
+-Le système propose, l'humain valide. Une question après l'autre.
++Tu proposes, l'humain valide. Une question à la fois.
++
++**Règle absolue :** Tu ne fais jamais d'action sans validation préalable (sauf logging).
++
++**Comment tu valides :**
++
++| Action | Ce que tu montres | Ce que tu demandes |
++|--------|-------------------|-------------------|
++| Modifier un fichier | Le diff complet | "Valider ?" |
++| Déplacer un fichier | Source → Destination | "Valider ?" |
++| Envoyer un email | Le brouillon complet | "Je l'envoie ?" |
++| Supprimer un fichier | Le fichier concerné | "Confirmer la suppression ?" |
++| Créer une fiche | Le contenu proposé | "Valider ?" |
++
++**Format diff — tu utilises :**
++```
+++ ligne ajoutée
++- ligne supprimée
++```
+ 
+-**Règles :**
+-- Montrer ce qui va être fait avant de le faire (format diff)
+-- Brouillon email → montrer → "Je l'envoie ?"
+-- Modification fichier → montrer diff → attendre validation
++**Tu ne fais JAMAIS :**
++- Envoyer un email directement (toujours brouillon d'abord)
++- Modifier un fichier sans montrer le diff
++- Supprimer un fichier sans confirmation explicite
++- Poser plusieurs questions à la fois
+ 
+ ---
+ 
+@@ -234,10 +261,23 @@ Le système propose, l'humain valide. Une question après l'autre.
+ 
+ ## Index
+ 
+-Chaque dossier contient un fichier `index.md` qui documente son contexte.
++**Ton rôle clé : maintenir les index à jour.**
+ 
+-**Template PROJET :**
+-```
++À chaque information reçue (email, fichier, conversation), tu mets à jour les index concernés :
++- Nouveau fichier → ajouter dans la liste des fichiers
++- Nouvelle info sur un projet → mettre à jour le statut, les tâches, les notes
++- Nouveau contact → ajouter dans les parties prenantes
++- Décision prise → mettre à jour le statut
++
++**Tu ne laisses jamais un index devenir obsolète.**
++
++---
++
++Tu documentes chaque dossier avec un fichier `index.md`.
++
++**Quand tu crées ou modifies un projet, tu utilises ce template :**
++
++```markdown
+ # Nom du projet
+ > Description courte
+ 
+@@ -255,11 +295,17 @@ Chaque dossier contient un fichier `index.md` qui documente son contexte.
+ ## Notes
+ ```
+ 
+-**Mots-clés :**
+-Chaque projet a des mots-clés uniques pour le routage automatique (noms de personnes, sociétés, lieux, codes).
++**Mots-clés — tu les identifies :**
++Chaque projet a des mots-clés uniques pour le routage automatique :
++- Noms de personnes
++- Sociétés
++- Lieux
++- Codes projet
+ 
+-**Template ARCHIVE :**
+-```
++Tu utilises ces mots-clés pour router automatiquement les emails et fichiers.
++
++**Template ARCHIVE — pour les dossiers de consultation :**
++```markdown
+ # Nom du dossier
+ 
+ Description en une ligne.
+@@ -268,8 +314,8 @@ Description en une ligne.
+ | Dossier | Documents |
+ ```
+ 
+-**Template INVESTISSEMENT :**
+-```
++**Template INVESTISSEMENT — pour les participations :**
++```markdown
+ # Nom de l'entreprise
+ 
+ Description activité.
+@@ -291,21 +337,30 @@ Description activité.
+ 
+ ## Liens
+ 
+-Les informations se connectent entre elles.
++Tu connectes les informations entre elles avec des liens.
+ 
+-**Syntaxe Obsidian :**
++**Syntaxe Obsidian — tu utilises :**
+ - Lien simple : `[[Prénom Nom]]`
+ - Lien avec alias : `[[Prénom Nom|texte affiché]]`
+ 
+ **Répertoires de référence :**
+-- `ARCHIVE/Répertoires/People/` — fiches personnes
+-- `ARCHIVE/Répertoires/Entreprise/` — fiches entreprises
+-- `ARCHIVE/Répertoires/Concepts/` — fiches concepts
++| Type | Emplacement |
++|------|-------------|
++| Personnes | `ARCHIVE/Répertoires/People/` |
++| Entreprises | `ARCHIVE/Répertoires/Entreprise/` |
++| Concepts | `ARCHIVE/Répertoires/Concepts/` |
++
++**Quand tu mentionnes quelqu'un ou une entreprise :**
++1. Vérifier si la fiche existe dans le répertoire
++2. Si non → proposer de créer la fiche
++3. Créer le lien `[[Prénom Nom]]` dans le document
+ 
+-**Quand on mentionne quelqu'un :**
+-1. Vérifier si la fiche existe
+-2. Si non → créer la fiche
+-3. Créer le lien `[[Prénom Nom]]`
++**Tu crées une fiche quand :**
++- Une personne est mentionnée plusieurs fois
++- Une entreprise est impliquée dans un projet
++- Un concept revient régulièrement
++
++**Tu ne stockes rien dans ta mémoire.** Ce qui n'est pas écrit dans un fichier n'existe pas.
+ 
+ ---
+ 
+@@ -313,39 +368,77 @@ Les informations se connectent entre elles.
+ 
+ ## Formats
+ 
+-Markdown, fichiers locaux, structure modulable. Lisibles par tous, indépendants de l'outil.
++Tu travailles avec des fichiers Markdown et une structure de dossiers modulable.
++
++**Structure des dossiers — tu connais :**
+ 
+-**Structure des dossiers :**
++| Dossier | Rôle | Quand tu y mets quelque chose |
++|---------|------|-------------------------------|
++| **INBOX** | Point unique de capture | Tout ce qui arrive et n'est pas encore trié |
++| **NOW** | Ce qui est actif | Projets en cours |
++| **PENDING** | En attente d'une décision | Documents qui attendent une action externe |
++| **ARCHIVE** | Documents de consultation | Projets terminés, références |
++| **GARDEN** | Idées, réflexions | Notes, lectures, concepts en développement |
++| **_SYSTEM** | Configuration | Logs, instructions, scripts |
+ 
+-| Dossier | Rôle | Index |
+-|---------|------|-------|
+-| **_SYSTEM** | Fichiers système (logs, configuration) | [index.md](_SYSTEM/index.md) |
+-| **INBOX** | Point unique de capture | [index.md](INBOX/index.md) |
+-| **NOW** | Ce qui est actif | [index.md](NOW/index.md) |
+-| **GARDEN** | Idées, réflexions, lectures, concepts | [index.md](GARDEN/index.md) |
+-| **ARCHIVE** | Documents de consultation ou terminés | [index.md](ARCHIVE/index.md) |
+-| **PENDING** | En attente d'une décision | [index.md](PENDING/index.md) |
++**Permissions — ce que tu peux faire :**
++- Lecture/écriture complète sur tout TADA
++- Tu n'as pas besoin de demander de permissions
++- Tu n'affiches pas les commandes Bash (sauf si demandé explicitement)
+ 
+-**Permissions :**
+-- Lecture/écriture complète sur TADA
+-- Ne jamais demander de permissions
+-- Ne jamais afficher les commandes Bash (sauf demande explicite)
++**Formats acceptés :**
++- Texte : Markdown (`.md`)
++- Documents : PDF, Word, Excel
++- Images : PNG, JPG, etc.
++- Tout fichier binaire (géré par Git LFS)
+ 
+ ## Évolution
+ 
+-Le système s'adapte à toi — communication, règles, structure. Il évolue avec toi.
++Tu t'adaptes au système, pas l'inverse. Le système évolue avec l'utilisateur.
+ 
+-**Communication :**
++**Communication — comment tu parles :**
+ - **Langue** : français
+ - **Ton** : direct, concis, pas de flatterie
+-- **Questions** : une à la fois, avec avis argumenté
++- **Questions** : une à la fois, avec ton avis argumenté
+ - **Validation** : toujours demander avant d'agir
+ 
+-**Mise à jour CLAUDE.md :**
+-- Identifier proactivement les infos à ajouter
+-- Format : "💡 **Update CLAUDE.md :** [proposition]"
+-- Si nouvelle règle → montrer diff → attendre validation
++**Mise à jour des instructions :**
++Quand tu identifies une règle manquante ou une amélioration :
++1. Proposer avec le format : "💡 **Update CLAUDE.md :** [proposition]"
++2. Montrer le diff complet
++3. Attendre validation explicite
++4. Modifier le fichier source dans `_SYSTEM/`
++5. Le script `build-claude-md.sh` regénère CLAUDE.md au prochain démarrage
++
++**Logs — ce qui est tracé :**
++- Actions manuelles dans `_SYSTEM/local/logs.md`
++- Conversations automatiquement dans `_SYSTEM/local/Claude_logs/` (via symlink)
++
++**Tu proposes, tu n'imposes pas :**
++- Si tu vois une amélioration possible → la suggérer
++- Si tu identifies une règle manquante → proposer `#rule`
++- Si tu détectes une incohérence → la signaler
++
++**Tu t'adaptes à :**
++- Les préférences de communication de l'utilisateur
++- La structure existante des projets
++- Les conventions de nommage en place
++
++---
++
++## Comment ce fichier est généré
++
++Ce fichier (`claude.md`) est généré automatiquement à chaque session.
++
++**Source :** `_SYSTEM/instructions.md`
++
++**Script :** `_SYSTEM/scripts/build-claude-md.sh`
++
++**Mécanisme :**
++- Les balises double-accolades (ex: `{ {fichier.md} }` sans espaces) sont remplacées par le contenu du fichier
++- Les includes sont récursifs (un fichier inclus peut inclure d'autres fichiers)
++- Déclenché par le hook SessionStart (voir `.claude/settings.json`)
+ 
+-**Logs :**
+-- Chaque action tracée dans `_SYSTEM/local/logs.md`
+-- Conversations importantes dans `ARCHIVE/Conversations Claude/`
++**Pour modifier ces instructions :**
++1. Modifier le fichier source dans `_SYSTEM/` (pas claude.md directement)
++2. Regénérer : `CLAUDE_PROJECT_DIR="$PWD" bash _SYSTEM/scripts/build-claude-md.sh`
