@@ -1,0 +1,21 @@
+{
+  "source": "fireflies",
+  "status": "complete",
+  "lastSync": "2026-01-30T10:00:00Z",
+  "stats": {
+    "totalTranscripts": 1467,
+    "totalDurationHours": 1850,
+    "withActionItems": 1200,
+    "withSummary": 1467
+  },
+  "coverage": {
+    "from": "2021-06-01",
+    "to": "2026-01-30"
+  },
+  "storage": {
+    "transcripts": "DATA/PENDING/fireflies/"
+  },
+  "issues": [],
+  "nextSync": null,
+  "notes": "Export complet via API Fireflies."
+}

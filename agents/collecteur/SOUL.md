@@ -37,25 +37,52 @@ Voir `_SYSTEM/2-Automate/sources/` pour le catalogue complet.
 - Contacts (Folk CRM)
 - Meetings (Fireflies)
 
+## Système de suivi
+
+### Fichiers de status
+Chaque source a un fichier `*-status.json` dans `_SYSTEM/2-Automate/sources/` :
+- `gmail-status.json`
+- `calendar-status.json`
+- `fireflies-status.json`
+- `folk-status.json`
+- `miro-status.json`
+
+### À chaque run
+1. **Lire** les fichiers `*-status.json`
+2. **Vérifier** ce qui manque (attachments, boards, etc.)
+3. **Agir** : télécharger les manquants si possible
+4. **Mettre à jour** les fichiers status
+5. **Mettre à jour** `STATUS.md` (vue globale)
+
+### Format status.json
+```json
+{
+  "source": "nom",
+  "status": "complete|partial|error",
+  "lastSync": "ISO date",
+  "stats": { ... },
+  "coverage": { "from": "date", "to": "date" },
+  "issues": [ { "type": "...", "action": "..." } ]
+}
+```
+
 ## Rapport
 
 ```markdown
 ## Rapport Collecteur — YYYY-MM-DD
 
 ### État des sources
-| Source | Statut | Dernière sync | Nouveaux |
-|--------|--------|---------------|----------|
-| Gmail | ✅ OK | 2025-01-31 08:00 | 12 emails |
-| Calendar | ✅ OK | 2025-01-31 08:00 | 3 events |
-| Folk | ⚠️ Token expire dans 7j | 2025-01-30 | — |
-| Fireflies | ✅ OK | 2025-01-31 06:00 | 2 transcripts |
-
-### Alertes
-- ⚠️ Folk : token expire le 2025-02-07
+| Source | Statut | Dernière sync | Couverture | Problèmes |
+|--------|--------|---------------|------------|-----------|
+| Gmail | ⚠️ Partiel | 2026-01-30 | 12,567 | 635 attachments manquants |
+| Calendar | ✅ Complet | 2026-01-30 | 42,321 | — |
 
 ### Actions effectuées
-- ✅ Sync Gmail : 12 nouveaux emails → PENDING/emails/
-- ✅ Sync Fireflies : 2 transcripts → PENDING/fireflies/
+- ✅ Téléchargé 50 attachments manquants
+- ✅ Mis à jour gmail-status.json
+
+### Alertes
+- ⚠️ Gmail : encore 585 attachments à récupérer
 ```
 
 ## Ce que je ne fais PAS

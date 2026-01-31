@@ -1,0 +1,22 @@
+{
+  "source": "google-calendar",
+  "account": "yvan.wibaux@gmail.com",
+  "status": "complete",
+  "lastSync": "2026-01-30T12:00:00Z",
+  "stats": {
+    "totalEvents": 42321,
+    "eventsWithLocation": 1250,
+    "eventsWithAttendees": 8500,
+    "recurringEvents": 15000
+  },
+  "coverage": {
+    "from": "2024-06-01",
+    "to": "2026-02-28"
+  },
+  "storage": {
+    "events": "DATA/PENDING/calendar/"
+  },
+  "issues": [],
+  "nextSync": null,
+  "notes": "Export complet. À consolider en fichiers jour par le Curateur."
+}
