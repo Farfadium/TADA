@@ -45,7 +45,7 @@ Puis ouvre `DATA/index.md` ensemble et parlez de :
 
 ## Connecter les sources
 
-👉 Consulte **[[automation/sources/CATALOG.md]]** — le catalogue complet des sources possibles.
+👉 Consulte **[[2-Automate/sources/CATALOG.md]]** — le catalogue complet des sources possibles.
 
 ### Processus
 

@@ -15,7 +15,7 @@
 | **Miro** | [[sources/miro.md]] | Boards (liens) |
 | **Files** | [[sources/files.md]] | Documents locaux |
 
-Chaque source a sa propre documentation dans `_SYSTEM/automation/sources/`.
+Chaque source a sa propre documentation dans `_SYSTEM/2-Automate/sources/`.
 
 ---
 
@@ -109,7 +109,7 @@ Chaque fichier doit avoir un **frontmatter YAML** avec au minimum :
 
 - **Tri des données** : [[METHODOLOGY.md]]
 - **Structure cible** : [[PROPOSAL-YVAN.md]] (exemple)
-- **Sources** : `_SYSTEM/automation/sources/`
+- **Sources** : `_SYSTEM/2-Automate/sources/`
 
 ---
 

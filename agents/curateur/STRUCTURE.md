@@ -13,7 +13,7 @@
 - **Dirigeant** : Sidekicks (accompagnement de leaders/dirigeants)
 - **Conseiller** : Missions de conseil stratégique (Déclic CNV, etc.)
 - **Investisseur** : Portfolio personnel (startups, immobilier)
-- **Père de famille** : Fils Célian, projets immobiliers familiaux
+- **Père de famille** : Fils Romain, projets immobiliers familiaux
 
 **Activité principale actuelle** : Sidekicks (626 mentions dans 1630 meetings Fireflies)
 
@@ -101,7 +101,7 @@ ARCHIVE/
 │
 ├── Famille/                   # Vie familiale (stable, pas de "projet")
 │   ├── index.md
-│   ├── Célian/
+│   ├── Romain/
 │   └── [Autres membres]
 │
 ├── Projets/                   # Projets terminés

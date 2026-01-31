@@ -29,11 +29,11 @@ Index du dossier _SYSTEM — Vue d'ensemble de la structure du système TADA
 | Fichier/Dossier | Description |
 |-----------------|-------------|
 | [instructions.md](instructions.md) | Point d'entrée principal pour l'IA |
-| [BOOTSTRAP.md](BOOTSTRAP.md) | Guide de première initialisation |
-| [tada.md](tada.md) | Vision et principes fondateurs T.A.D.A |
-| [1-Trust/](1-Trust/) | Lisibilité, versionning, personnalité (SOUL.md) |
-| [2-Automate/](2-Automate/) | Routines, sources, validation, HEARTBEAT |
+| [1-Trust/](1-Trust/) | Identité et architecture (SOUL.md, AGENTS.md) |
+| [2-Automate/](2-Automate/) | Routines, sources, tâches, HEARTBEAT |
 | [3-Document/](3-Document/) | Index et liens (répertoires de référence) |
 | [4-Act/](4-Act/) | Actions instantanées et proactivité |
-| [local/](local/) | Configuration et logs spécifiques à cette instance |
-| [scripts/](scripts/) | Scripts de maintenance (build-claude-md.sh) |
+| [agents/](agents/) | **Agents spécialisés** (Curateur, Collecteur, etc.) |
+| [bootstrap/](bootstrap/) | Guide de première initialisation |
+| [runtimes/](runtimes/) | Configuration par runtime (Moltbot, Claude Code, Web) |
+| [scripts/](scripts/) | Scripts de maintenance |

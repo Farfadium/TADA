@@ -6,6 +6,7 @@
 
 | Fichier/Dossier | Description |
 |-----------------|-------------|
+| [tasks.md](tasks.md) | **Système de tâches** — Convention TASKS.md, annotations, index |
 | [routines.md](routines.md) | Système de routines (déclencheurs, tableau, logging) |
 | [validation.md](validation.md) | Règles de validation (actions avec/sans confirmation) |
 | [HEARTBEAT.md](HEARTBEAT.md) | Checklist proactive (vérifications périodiques, notifications) |
