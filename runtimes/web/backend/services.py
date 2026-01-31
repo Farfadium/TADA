@@ -149,13 +149,18 @@ def get_file_tree(root_path: str = "") -> Dict[str, Any]:
     if not base.exists():
         return {"error": "Path not found"}
 
-    def build_tree(path: Path, depth: int = 0, max_depth: int = 3) -> Dict[str, Any]:
-        if depth > max_depth:
-            return {"name": path.name, "type": "dir", "truncated": True}
+    def remove_surrogates(text: str) -> str:
+        return ''.join(char if not (0xD800 <= ord(char) <= 0xDFFF) else '?' for char in text)
 
+    def build_tree(path: Path, depth: int = 0, max_depth: int = 5) -> Dict[str, Any]:
+        safe_name = remove_surrogates(path.name)
+        if depth > max_depth:
+            return {"name": safe_name, "type": "dir" if path.is_dir() else "file", "truncated": True}
+
+        safe_path = remove_surrogates(str(path.relative_to(config.TADA_ROOT))) if path != config.TADA_ROOT else ""
         result = {
-            "name": path.name or str(path),
-            "path": str(path.relative_to(config.TADA_ROOT)) if path != config.TADA_ROOT else "",
+            "name": safe_name or str(path),
+            "path": safe_path,
             "type": "dir" if path.is_dir() else "file",
         }
 
@@ -319,7 +324,7 @@ def transcribe_audio(audio_path: Path) -> str:
 chat_histories: Dict[str, List[Dict[str, str]]] = {}
 
 # Flag pour utiliser le vrai Moltbot
-USE_REAL_MOLTBOT = True
+USE_REAL_MOLTBOT = False  # Désactivé car timeout WebSocket
 
 
 async def chat_with_moltbot(message: str, username: str) -> str:

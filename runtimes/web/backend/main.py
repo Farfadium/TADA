@@ -89,8 +89,8 @@ async def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(s
 
 
 # Routes
-@app.get("/")
-async def root():
+@app.get("/api")
+async def api_root():
     return {"name": "TADA Web API", "version": "0.2.0", "status": "running"}
 
 
