@@ -65,6 +65,42 @@ description: Configuration source Messagerie — capture messages WhatsApp/Teleg
 
 ---
 
+## Détection nouvelles données
+
+**Méthode par plateforme :**
+
+| Plateforme | Push/Webhook | Polling | Fichier dédié |
+|------------|--------------|---------|---------------|
+| WhatsApp | Business API | MCP Baileys | [[whatsapp.md]] |
+| Telegram | Bot webhook | getUpdates | [[telegram.md]] |
+| Slack | Events API | conversations.history | [[slack.md]] |
+| Discord | Gateway WS | messages API | [[discord.md]] |
+| Signal | ❌ | signal-cli | [[signal.md]] |
+| iMessage | ❌ | DB SQLite | — |
+
+**iMessage (macOS) :**
+```bash
+# Base de données Messages
+DB="$HOME/Library/Messages/chat.db"
+
+# Polling nouveaux messages
+sqlite3 "$DB" "
+  SELECT text, datetime(date/1000000000 + 978307200, 'unixepoch')
+  FROM message 
+  WHERE date > (strftime('%s', 'now') - 978307200 - 3600) * 1000000000
+"
+
+# Ou watcher filesystem
+fswatch -o "$HOME/Library/Messages" | while read; do
+  echo "New message detected"
+done
+```
+
+**Setup général :**
+- Voir les fichiers dédiés pour chaque plateforme
+- La plupart supportent webhooks ou polling
+- Signal/iMessage = polling local uniquement
+
 ## Notes
 
 _Les configurations spécifiques sont dans `local/TOOLS.md`._

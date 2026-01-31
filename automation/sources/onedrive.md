@@ -130,6 +130,65 @@ curl -X GET "https://graph.microsoft.com/v1.0/me/drive/root/delta" \
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [x] Webhook/Push (Microsoft Graph webhooks)
+- [x] Polling API (delta query)
+- [ ] Sync manuelle uniquement
+
+**Webhooks Microsoft Graph (recommandé) :**
+```bash
+# Créer une subscription
+POST https://graph.microsoft.com/v1.0/subscriptions
+Authorization: Bearer $ACCESS_TOKEN
+Content-Type: application/json
+
+{
+  "changeType": "created,updated,deleted",
+  "notificationUrl": "https://your-domain.com/webhook/onedrive",
+  "resource": "/me/drive/root",
+  "expirationDateTime": "2024-07-20T18:00:00Z",
+  "clientState": "secret-validation-token"
+}
+```
+
+**Notification reçue :**
+```json
+{
+  "value": [{
+    "subscriptionId": "xxx",
+    "changeType": "updated",
+    "resource": "Users/xxx/drive/root",
+    "resourceData": {
+      "id": "item-id"
+    }
+  }]
+}
+```
+
+**Delta query (polling) :**
+```bash
+# Première requête
+GET https://graph.microsoft.com/v1.0/me/drive/root/delta
+# Stocker @odata.deltaLink
+
+# Requêtes suivantes
+GET {deltaLink}
+```
+
+**Setup requis :**
+1. Créer subscription via Graph API
+2. Endpoint HTTPS avec validation
+3. Renouveler subscription avant expiration (max 4230 minutes)
+4. Stocker deltaLink pour polling
+
+**Fréquence recommandée :**
+- Webhooks : temps réel
+- Delta polling : toutes les 5-15 minutes
+
+---
+
 ## Notes
 
 **Intégration Office :**

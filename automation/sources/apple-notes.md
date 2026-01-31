@@ -218,6 +218,58 @@ end tell
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [ ] Webhook/Push (non disponible)
+- [x] Polling API (SQLite ou AppleScript)
+- [x] Sync manuelle uniquement
+
+**Polling SQLite :**
+```bash
+DB="$HOME/Library/Group Containers/group.com.apple.notes/NoteStore.sqlite"
+
+# Notes modifiées récemment
+sqlite3 "$DB" "
+  SELECT ZTITLE, datetime(ZMODIFICATIONDATE + 978307200, 'unixepoch')
+  FROM ZSFNOTE 
+  WHERE ZMODIFICATIONDATE > (strftime('%s', 'now') - 978307200 - 3600)
+    AND ZTRASHED = 0
+"
+```
+
+**Polling AppleScript :**
+```applescript
+tell application "Notes"
+  set recentNotes to notes whose modification date > (current date) - 1 * hours
+  repeat with n in recentNotes
+    log (id of n) & "|" & (name of n)
+  end repeat
+end tell
+```
+
+**Filesystem watch (détection indirecte) :**
+```bash
+# Surveiller le dossier Notes
+fswatch -o "$HOME/Library/Group Containers/group.com.apple.notes" | while read; do
+  echo "Notes database changed"
+  # Déclencher sync
+done
+```
+
+**Setup requis :**
+1. Script cron/launchd pour polling
+2. Ou watcher sur le dossier Group Containers
+3. Stocker les derniers timestamps de modification
+
+**Fréquence recommandée :**
+- Polling : toutes les 15-30 minutes
+- Filesystem watch : quasi temps réel
+
+**Note :** Les notes protégées par mot de passe ne sont pas accessibles.
+
+---
+
 ## Liens et relations
 
 - Note projet → [[NOW/Projet]]

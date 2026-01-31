@@ -169,6 +169,63 @@ description: Configuration source Meetings (Fireflies) — récupération transc
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [x] Webhook/Push (Fireflies webhooks)
+- [x] Polling API (list meetings avec date filter)
+- [ ] Sync manuelle uniquement
+
+**Fireflies Webhooks :**
+```bash
+# Configurer dans Fireflies Dashboard → Integrations → Webhooks
+# URL: https://your-domain.com/webhook/fireflies
+
+# Payload reçu
+{
+  "meetingId": "xxx",
+  "title": "Team Meeting",
+  "date": "2024-07-15T10:00:00Z",
+  "duration": 3600,
+  "transcript_url": "https://app.fireflies.ai/view/xxx"
+}
+```
+
+**Events Fireflies :**
+- `transcription.complete` — Transcript prêt
+- `meeting.processed` — Meeting traité
+- `summary.ready` — Résumé disponible
+
+**Polling API :**
+```graphql
+query {
+  transcripts(
+    fromDate: "2024-07-15"
+    toDate: "2024-07-20"
+  ) {
+    id
+    title
+    date
+    duration
+  }
+}
+```
+
+**Otter.ai :**
+- Webhooks disponibles dans les plans Business
+- Polling via API REST
+
+**Setup requis :**
+1. Configurer webhook dans Fireflies Dashboard
+2. Ou script polling avec date filter
+3. Stocker le dernier ID/date synchronisé
+
+**Fréquence recommandée :**
+- Webhooks : temps réel (quelques minutes après meeting)
+- Polling : toutes les 30-60 minutes
+
+---
+
 ## Notes
 
 _Les configurations spécifiques (Fireflies, Otter, etc.) sont dans `local/TOOLS.md`._

@@ -222,6 +222,57 @@ end tell
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [ ] Webhook/Push (non disponible)
+- [x] Polling API (via AppleScript ou Contacts.framework)
+- [x] Sync manuelle uniquement
+
+**Polling AppleScript :**
+```applescript
+tell application "Contacts"
+  set recentContacts to people whose modification date > (current date) - 1 * days
+  repeat with p in recentContacts
+    log (id of p) & "|" & (name of p)
+  end repeat
+end tell
+```
+
+**Via Contacts.framework (Swift/ObjC) :**
+```swift
+let store = CNContactStore()
+let keys = [CNContactGivenNameKey, CNContactFamilyNameKey]
+let request = CNContactFetchRequest(keysToFetch: keys as [CNKeyDescriptor])
+// Filtrer par modification date si disponible
+```
+
+**Détection via filesystem :**
+```bash
+# Surveiller le dossier AddressBook
+fswatch -o "$HOME/Library/Application Support/AddressBook" | while read; do
+  echo "Contacts changed"
+  # Déclencher sync
+done
+```
+
+**iCloud sync detection :**
+```bash
+# Les contacts iCloud sont dans
+# ~/Library/Application Support/AddressBook/Sources/[UUID]/
+```
+
+**Setup requis :**
+1. Script launchd pour polling périodique
+2. Ou watcher filesystem sur le dossier AddressBook
+3. Stocker les IDs et modification dates
+
+**Fréquence recommandée :**
+- Polling : toutes les 30 minutes à 1 heure
+- Les contacts changent rarement
+
+---
+
 ## Liens et relations
 
 - Entreprise → [[Orgs/Entreprise]]

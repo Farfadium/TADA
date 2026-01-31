@@ -233,6 +233,59 @@ things:///update?id=UUID&completed=true
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [ ] Webhook/Push (non disponible)
+- [x] Polling API (via SQLite ou AppleScript)
+- [x] Sync manuelle uniquement
+
+**Polling SQLite (recommandé) :**
+```bash
+# Tâches modifiées dans les dernières X minutes
+sqlite3 "$DB" "
+  SELECT uuid, title, userModificationDate 
+  FROM TMTask 
+  WHERE userModificationDate > datetime('now', '-30 minutes')
+    AND trashed = 0
+"
+```
+
+**Polling AppleScript :**
+```applescript
+tell application "Things3"
+  set recentTodos to to dos whose modification date > (current date) - 30 * minutes
+  repeat with t in recentTodos
+    log (id of t) & "|" & (name of t)
+  end repeat
+end tell
+```
+
+**Détection via filesystem :**
+```bash
+# Surveiller la base de données
+fswatch -o "$HOME/Library/Group Containers/JLMPQHK86H.com.culturedcode.ThingsMac" | while read; do
+  echo "Things database changed"
+  # Déclencher sync
+done
+```
+
+**Setup requis :**
+1. Script cron ou launchd pour polling régulier
+2. Stocker le dernier timestamp de sync
+3. Comparer les modification dates
+
+**Fréquence recommandée :**
+- Polling : toutes les 5-15 minutes
+- Ou déclencher sur changement fichier DB
+
+**Limitations :**
+- Pas de push notification possible
+- AppleScript nécessite Things ouvert
+- SQLite = lecture seule recommandée
+
+---
+
 ## Liens et relations
 
 - Zones → Catégories de projets

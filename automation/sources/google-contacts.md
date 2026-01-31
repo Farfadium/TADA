@@ -223,6 +223,53 @@ curl -X GET "https://people.googleapis.com/v1/people/me/connections?syncToken=$S
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [ ] Webhook/Push (non disponible pour People API)
+- [x] Polling API (avec syncToken)
+- [ ] Sync manuelle uniquement
+
+**Polling avec syncToken (recommandé) :**
+```bash
+# Première requête : récupérer tous les contacts + syncToken
+GET https://people.googleapis.com/v1/people/me/connections?personFields=names,emailAddresses&requestSyncToken=true
+Authorization: Bearer $ACCESS_TOKEN
+
+# Réponse inclut: "nextSyncToken": "xxx"
+
+# Requêtes suivantes : utiliser syncToken
+GET https://people.googleapis.com/v1/people/me/connections?personFields=names,emailAddresses&syncToken=$SYNC_TOKEN
+```
+
+**Réponse sync :**
+```json
+{
+  "connections": [
+    {
+      "resourceName": "people/c123",
+      "metadata": {
+        "deleted": false  // true si contact supprimé
+      }
+    }
+  ],
+  "nextSyncToken": "new_token"
+}
+```
+
+**Setup requis :**
+1. Stocker le syncToken après chaque sync
+2. Script cron pour polling régulier
+3. Gérer les contacts supprimés (metadata.deleted)
+
+**Fréquence recommandée :**
+- Polling : toutes les 30 minutes à 1 heure
+- Les contacts changent peu fréquemment
+
+**Note :** Google Contacts n'a pas de webhook. Utiliser le syncToken est la méthode officielle pour l'incrémental.
+
+---
+
 ## Liens et relations
 
 - Organisation → [[Orgs/Entreprise]]

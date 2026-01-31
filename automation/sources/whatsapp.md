@@ -236,6 +236,65 @@ with open('_chat.txt', 'r') as f:
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [x] Webhook/Push (via Business API ou MCP Baileys)
+- [x] Polling API (via MCP avec stockage SQLite)
+- [x] Sync manuelle uniquement (export chat)
+
+**WhatsApp Business API (officiel) :**
+```bash
+# Configuration webhook dans Meta Business Suite
+# URL: https://your-domain.com/webhook/whatsapp
+
+# Vérification webhook
+GET /webhook?hub.mode=subscribe&hub.verify_token=TOKEN&hub.challenge=CHALLENGE
+# Répondre avec hub.challenge
+
+# Réception messages
+POST /webhook
+{
+  "entry": [{
+    "changes": [{
+      "value": {
+        "messages": [{
+          "from": "33612345678",
+          "text": {"body": "Hello"}
+        }]
+      }
+    }]
+  }]
+}
+```
+
+**Via MCP Baileys (non-officiel) :**
+```javascript
+// Le MCP maintient une connexion WebSocket
+// Messages stockés dans SQLite local
+// Polling de la DB pour nouveaux messages
+```
+
+**Events Business API :**
+- `messages` — Nouveaux messages reçus
+- `statuses` — Statuts de livraison
+- `message_template_status_update` — Templates
+
+**Setup requis :**
+1. **Business API** : Compte Meta Business, numéro vérifié
+2. **MCP Baileys** : Session WhatsApp Web maintenue
+3. Endpoint HTTPS pour webhooks
+
+**Fréquence recommandée :**
+- Business API webhooks : temps réel
+- MCP SQLite polling : toutes les 1-5 minutes
+
+**⚠️ Légal :**
+- Business API = seule option officielle
+- Baileys/Web = risque de ban, usage personnel
+
+---
+
 ## Liens et relations
 
 - Contact → [[People/Nom]]

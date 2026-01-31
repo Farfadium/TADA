@@ -234,4 +234,42 @@ Si une note Folk concerne un projet spécifique :
 - Folk a priorité pour : email, téléphone, poste, entreprise (données "officielles")
 - TADA a priorité pour : notes contextuelles, liens projets, historique détaillé
 
+---
+
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [x] Webhook/Push (Folk webhooks)
+- [x] Polling API (avec pagination)
+- [ ] Sync manuelle uniquement
+
+**Folk Webhooks :**
+```bash
+# Configurer dans Folk → Settings → Integrations → Webhooks
+# URL: https://your-domain.com/webhook/folk
+
+# Events disponibles
+- contact.created
+- contact.updated
+- contact.deleted
+- note.created
+- note.updated
+```
+
+**Polling API :**
+```bash
+# Récupérer les contacts modifiés
+curl "https://api.folk.app/v1/contacts?updated_since=2024-07-15T00:00:00Z" \
+  -H "Authorization: Bearer $FOLK_API_KEY"
+```
+
+**Setup requis :**
+1. Créer un webhook dans Folk Dashboard
+2. Ou configurer polling régulier
+3. Stocker le dernier timestamp de sync
+
+**Fréquence recommandée :**
+- Webhooks : temps réel
+- Polling : toutes les 30 minutes à 1 heure
+
 _Les configurations spécifiques (API key, compte, etc.) sont dans `local/TOOLS.md`._

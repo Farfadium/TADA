@@ -196,6 +196,67 @@ const results = await notion.search({
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [x] Webhook/Push (nouveau, via Notion Webhooks)
+- [x] Polling API (search avec sort par last_edited_time)
+- [ ] Sync manuelle uniquement
+
+**Webhooks Notion (recommandé) :**
+```bash
+# Créer un webhook
+POST https://api.notion.com/v1/webhooks
+Authorization: Bearer $NOTION_TOKEN
+Notion-Version: 2022-06-28
+Content-Type: application/json
+
+{
+  "target_url": "https://your-domain.com/webhook/notion",
+  "targets": [
+    {
+      "type": "page_id",
+      "page_id": "xxx"
+    }
+  ]
+}
+```
+
+**Events disponibles :**
+- `page.created` — Nouvelle page
+- `page.content_updated` — Contenu modifié
+- `page.properties_updated` — Propriétés modifiées
+- `page.deleted` / `page.restored` — Suppression/restauration
+- `database.content_updated` — Entrées DB modifiées
+
+**Polling (alternative) :**
+```javascript
+// Rechercher les pages modifiées récemment
+const results = await notion.search({
+  sort: {
+    direction: 'descending',
+    timestamp: 'last_edited_time'
+  },
+  filter: {
+    property: 'object',
+    value: 'page'
+  }
+});
+// Comparer last_edited_time avec dernière sync
+```
+
+**Setup requis :**
+1. Créer un webhook via l'API
+2. Endpoint HTTPS accessible
+3. Vérifier la signature des requêtes
+4. Gérer les retries (Notion retry en cas d'échec)
+
+**Fréquence recommandée :**
+- Webhooks : temps réel
+- Polling : toutes les 5-10 minutes
+
+---
+
 ## Liens et relations
 
 - Mentions de personnes → [[People/Nom]]

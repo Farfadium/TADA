@@ -240,6 +240,80 @@ curl -X GET "https://slack.com/api/conversations.history?channel=C123&oldest=172
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [x] Webhook/Push (Events API ou Socket Mode)
+- [x] Polling API (conversations.history)
+- [ ] Sync manuelle uniquement
+
+**Socket Mode (recommandé pour dev/local) :**
+```javascript
+// Pas besoin d'URL publique
+const { App } = require('@slack/bolt');
+const app = new App({
+  token: process.env.SLACK_BOT_TOKEN,
+  socketMode: true,
+  appToken: process.env.SLACK_APP_TOKEN
+});
+
+app.message(async ({ message, say }) => {
+  console.log('New message:', message);
+});
+```
+
+**Events API (webhooks HTTP) :**
+```bash
+# Configuration dans Slack App Dashboard
+# Request URL: https://your-domain.com/slack/events
+
+# Vérification challenge
+POST /slack/events
+{
+  "type": "url_verification",
+  "challenge": "xxx"
+}
+# Répondre avec le challenge
+
+# Réception événement
+{
+  "type": "event_callback",
+  "event": {
+    "type": "message",
+    "channel": "C1234",
+    "user": "U1234",
+    "text": "Hello"
+  }
+}
+```
+
+**Events disponibles :**
+- `message` — Nouveau message dans un channel
+- `message.channels` / `message.groups` / `message.im`
+- `reaction_added` / `reaction_removed`
+- `file_shared` — Fichier partagé
+- `member_joined_channel` / `member_left_channel`
+- `channel_created` / `channel_archive`
+
+**Polling (alternative) :**
+```bash
+# Messages depuis timestamp
+curl -X GET "https://slack.com/api/conversations.history?channel=C123&oldest=$LAST_TS" \
+  -H "Authorization: Bearer $SLACK_TOKEN"
+```
+
+**Setup requis :**
+1. Créer Slack App sur api.slack.com
+2. Activer Events API ou Socket Mode
+3. Souscrire aux événements voulus
+4. Installer l'app dans le workspace
+
+**Fréquence recommandée :**
+- Socket Mode / Events API : temps réel
+- Polling : toutes les 1-5 minutes
+
+---
+
 ## Liens et relations
 
 - User → [[People/Nom]]

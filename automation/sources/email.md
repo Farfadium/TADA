@@ -193,6 +193,64 @@ gog gmail download-attachment MESSAGE_ID ATTACHMENT_ID --out DESTINATION --accou
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [x] Webhook/Push (Gmail Pub/Sub, Microsoft Graph)
+- [x] Polling API (avec historyId/syncToken)
+- [ ] Sync manuelle uniquement
+
+**Gmail Push Notifications (recommandé) :**
+```bash
+# 1. Créer un topic Pub/Sub dans Google Cloud
+# 2. Donner accès au service account Gmail
+
+# Activer le watch
+POST https://gmail.googleapis.com/gmail/v1/users/me/watch
+Authorization: Bearer $ACCESS_TOKEN
+Content-Type: application/json
+
+{
+  "topicName": "projects/myproject/topics/gmail-push",
+  "labelIds": ["INBOX"]
+}
+```
+
+**Microsoft Graph (Outlook) :**
+```bash
+POST https://graph.microsoft.com/v1.0/subscriptions
+{
+  "changeType": "created",
+  "notificationUrl": "https://your-domain.com/webhook/outlook",
+  "resource": "/me/mailFolders/inbox/messages",
+  "expirationDateTime": "2024-07-20T18:00:00Z"
+}
+```
+
+**IMAP IDLE (polling amélioré) :**
+```python
+import imaplib
+mail = imaplib.IMAP4_SSL('imap.gmail.com')
+mail.login(user, password)
+mail.select('INBOX')
+mail.idle()  # Attend les nouveaux messages
+```
+
+**Polling avec historyId :**
+```bash
+# Gmail - changements depuis historyId
+GET https://gmail.googleapis.com/gmail/v1/users/me/history?startHistoryId=$HISTORY_ID
+```
+
+**Setup requis :**
+1. Gmail : Topic Pub/Sub + watch API
+2. Outlook : Subscription Microsoft Graph
+3. Renouveler les watches avant expiration (7 jours Gmail)
+
+**Fréquence recommandée :**
+- Push : temps réel
+- Polling : toutes les 5 minutes
+
 ## Notes
 
 _Les configurations spécifiques (Gmail, Outlook, etc.) sont dans `local/TOOLS.md`._

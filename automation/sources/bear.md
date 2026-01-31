@@ -166,6 +166,46 @@ bear://x-callback-url/search?term=tag:work&show_window=no
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [ ] Webhook/Push (non disponible)
+- [x] Polling API (SQLite)
+- [x] Sync manuelle uniquement
+
+**Polling SQLite :**
+```bash
+DB="$HOME/Library/Group Containers/9K33E3U3T4.net.shinyfrog.bear/Application Data/database.sqlite"
+
+# Notes modifiées récemment (timestamp = secondes depuis 2001-01-01)
+sqlite3 "$DB" "
+  SELECT ZUNIQUEIDENTIFIER, ZTITLE, datetime(ZMODIFICATIONDATE + 978307200, 'unixepoch')
+  FROM ZSFNOTE 
+  WHERE ZMODIFICATIONDATE > (strftime('%s', 'now') - 978307200 - 3600)
+    AND ZTRASHED = 0
+"
+```
+
+**Filesystem watch :**
+```bash
+# Surveiller la base Bear
+fswatch -o "$HOME/Library/Group Containers/9K33E3U3T4.net.shinyfrog.bear" | while read; do
+  echo "Bear database changed"
+  # Déclencher sync
+done
+```
+
+**Setup requis :**
+1. Script cron/launchd pour polling SQLite
+2. Ou watcher filesystem sur le Group Container
+3. Stocker le dernier ZMODIFICATIONDATE
+
+**Fréquence recommandée :**
+- Polling : toutes les 15-30 minutes
+- Filesystem watch : quasi temps réel local
+
+---
+
 ## Notes
 
 **Avantages Bear :**

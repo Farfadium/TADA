@@ -205,6 +205,73 @@ curl -X POST "https://api.todoist.com/sync/v9/sync" \
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [x] Webhook/Push (temps réel)
+- [x] Polling API (Sync API avec sync_token)
+- [ ] Sync manuelle uniquement
+
+**Webhooks Todoist (recommandé) :**
+```bash
+# Enregistrer un webhook
+POST https://api.todoist.com/sync/v9/webhooks
+Authorization: Bearer $TODOIST_TOKEN
+Content-Type: application/json
+
+{
+  "url": "https://your-domain.com/webhook/todoist",
+  "events": [
+    "item:added",
+    "item:updated",
+    "item:completed",
+    "item:deleted",
+    "project:added",
+    "project:updated"
+  ]
+}
+```
+
+**Events disponibles :**
+- `item:added` / `item:updated` / `item:completed` / `item:deleted`
+- `project:added` / `project:updated` / `project:deleted`
+- `note:added` / `note:updated` / `note:deleted`
+- `label:added` / `label:updated` / `label:deleted`
+
+**Payload webhook :**
+```json
+{
+  "event_name": "item:completed",
+  "user_id": "123",
+  "event_data": {
+    "id": "456",
+    "content": "Tâche complétée",
+    "project_id": "789"
+  }
+}
+```
+
+**Polling via Sync API :**
+```bash
+# Sync incrémentale avec token
+curl -X POST "https://api.todoist.com/sync/v9/sync" \
+  -H "Authorization: Bearer $TODOIST_TOKEN" \
+  -d "sync_token=$LAST_SYNC_TOKEN" \
+  -d "resource_types=[\"items\",\"projects\"]"
+```
+
+**Setup requis :**
+1. Créer un webhook via l'API
+2. Endpoint HTTPS avec SSL valide
+3. Répondre avec HTTP 200 rapidement
+4. Stocker sync_token pour le polling
+
+**Fréquence recommandée :**
+- Webhooks : temps réel
+- Polling : toutes les 5 minutes
+
+---
+
 ## Liens et relations
 
 - Tâches assignées → [[People/Assigné]]

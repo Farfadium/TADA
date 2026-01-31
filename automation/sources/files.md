@@ -67,6 +67,58 @@ description: Configuration source Fichiers — routage automatique depuis DATA/I
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [x] Webhook/Push (filesystem watch)
+- [ ] Polling API (non applicable)
+- [ ] Sync manuelle uniquement
+
+**Filesystem watch (recommandé) :**
+```bash
+# Avec fswatch
+fswatch -r DATA/INBOX/ | while read file; do
+  echo "New file: $file"
+  # Déclencher traitement
+done
+```
+
+**Avec launchd (macOS) :**
+```xml
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.tada.inbox-watcher</string>
+  <key>WatchPaths</key>
+  <array>
+    <string>~/DATA/INBOX</string>
+  </array>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/path/to/process-inbox.sh</string>
+  </array>
+</dict>
+</plist>
+```
+
+**Avec inotify (Linux) :**
+```bash
+inotifywait -m -r -e create,modify DATA/INBOX/ | while read dir action file; do
+  echo "Detected: $action on $file in $dir"
+done
+```
+
+**Setup requis :**
+1. Installer fswatch/inotify-tools
+2. Configurer daemon ou launchd
+3. Script de traitement des nouveaux fichiers
+
+**Fréquence recommandée :**
+- Filesystem watch : temps réel
+- Alternative polling : `find` toutes les 5 minutes
+
+---
+
 ## Notes
 
 _Source toujours active, pas de configuration requise._

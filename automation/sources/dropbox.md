@@ -142,6 +142,71 @@ curl -X POST https://api.dropboxapi.com/2/files/list_folder/continue \
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [x] Webhook/Push (temps réel)
+- [x] Polling API (list_folder/continue avec cursor)
+- [ ] Sync manuelle uniquement
+
+**Webhooks Dropbox (recommandé) :**
+```bash
+# 1. Configurer webhook dans App Console
+# URL: https://your-domain.com/webhook/dropbox
+
+# 2. Vérification (GET)
+GET /webhook?challenge=xxx
+# Répondre avec le challenge en plain text
+
+# 3. Réception notification (POST)
+POST /webhook
+{
+  "list_folder": {
+    "accounts": ["dbid:AAH4f99..."]
+  },
+  "delta": {
+    "users": [123456789]
+  }
+}
+```
+
+**Workflow webhook :**
+1. Dropbox envoie notification (user IDs seulement)
+2. Appeler `/files/list_folder/continue` avec le cursor stocké
+3. Traiter les changements retournés
+
+**Polling avec cursor :**
+```bash
+# Première requête
+POST https://api.dropboxapi.com/2/files/list_folder
+{"path": "", "recursive": true}
+# Stocker le cursor de la réponse
+
+# Requêtes suivantes
+POST https://api.dropboxapi.com/2/files/list_folder/continue
+{"cursor": "$CURSOR"}
+```
+
+**Long polling (alternative) :**
+```bash
+# Attendre jusqu'à 30s pour des changements
+POST https://notify.dropboxapi.com/2/files/list_folder/longpoll
+{"cursor": "$CURSOR", "timeout": 30}
+```
+
+**Setup requis :**
+1. Configurer webhook URL dans App Console
+2. Implémenter vérification challenge
+3. Stocker cursor par utilisateur
+4. Appeler list_folder/continue à chaque notification
+
+**Fréquence recommandée :**
+- Webhooks : temps réel
+- Long polling : connexion persistante
+- Polling classique : toutes les 5 minutes
+
+---
+
 ## Notes
 
 **Limites API :**

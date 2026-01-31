@@ -189,4 +189,48 @@ Quand l'utilisateur demande de récupérer un board Miro :
 - Stocker dans `_miro/[nom-board]/` pour garder organisé
 - Créer un fichier `.md.md` à côté de chaque PDF pour le rendre searchable
 
+---
+
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [x] Webhook/Push (Miro webhooks, Enterprise)
+- [x] Polling API (boards list avec modifiedAt)
+- [ ] Sync manuelle uniquement
+
+**Miro Webhooks (Enterprise) :**
+```bash
+# Créer un webhook via API
+POST https://api.miro.com/v2/webhooks
+Authorization: Bearer $TOKEN
+Content-Type: application/json
+
+{
+  "callbackUrl": "https://your-domain.com/webhook/miro",
+  "boardId": "xxx",
+  "status": "enabled"
+}
+```
+
+**Events disponibles :**
+- `board_content_change` — Contenu modifié
+- `board_subscription_change` — Membres modifiés
+- `item_create`, `item_update`, `item_delete`
+
+**Polling API :**
+```bash
+# Lister les boards avec tri par modification
+curl "https://api.miro.com/v2/boards?sort=last_modified" \
+  -H "Authorization: Bearer $TOKEN"
+```
+
+**Setup requis :**
+1. Plan Enterprise pour webhooks
+2. Ou polling avec modifiedAt filter
+3. Export manuel pour plans inférieurs
+
+**Fréquence recommandée :**
+- Webhooks : temps réel
+- Polling : toutes les heures (boards changent peu fréquemment)
+
 _Les configurations spécifiques (tokens API, etc.) sont dans `local/TOOLS.md`._

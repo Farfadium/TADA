@@ -186,6 +186,56 @@ notes = note_store.findNotesMetadata(filter, offset, max_notes, spec)
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [x] Webhook/Push (via MCP evernote avec polling transformé)
+- [x] Polling API (avec updateCount)
+- [ ] Sync manuelle uniquement
+
+**Polling avec updateCount :**
+```python
+from evernote.api.client import EvernoteClient
+
+client = EvernoteClient(token=TOKEN)
+note_store = client.get_note_store()
+
+# getSyncState retourne updateCount
+sync_state = note_store.getSyncState()
+current_update_count = sync_state.updateCount
+
+# Si updateCount a changé depuis la dernière sync
+if current_update_count > last_update_count:
+    # Récupérer les notes modifiées
+    filter = NoteFilter()
+    filter.order = NoteSortOrder.UPDATED
+    notes = note_store.findNotes(filter, 0, 50)
+```
+
+**Via MCP avec webhook :**
+```javascript
+// Le MCP mcp-evernote peut envoyer des webhooks
+// quand il détecte des changements via polling
+{
+  "webhook_url": "https://your-domain.com/webhook/evernote",
+  "poll_interval": 300  // 5 minutes
+}
+```
+
+**Setup requis :**
+1. Developer token Evernote
+2. Script polling régulier
+3. Stocker updateCount et lastSyncTime
+
+**Fréquence recommandée :**
+- Polling : toutes les 15-30 minutes
+- Evernote rate limits = prudence
+
+**Note pour migration :**
+Pour une migration one-shot, pas besoin de détection temps réel. Export ENEX complet puis conversion.
+
+---
+
 ## Notes
 
 **Limites API :**

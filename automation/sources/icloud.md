@@ -183,6 +183,67 @@ com~apple~Notes/     → Notes (pas accessible directement)
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [ ] Webhook/Push (non disponible)
+- [x] Polling API (filesystem watch)
+- [x] Sync manuelle uniquement
+
+**Filesystem watch (recommandé sur macOS) :**
+```bash
+# Surveiller les changements dans iCloud Drive
+ICLOUD="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
+
+# Avec fswatch
+fswatch -r "$ICLOUD" | while read file; do
+  echo "Changed: $file"
+  # Déclencher sync vers TADA
+done
+```
+
+**Avec launchd (daemon) :**
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "...">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.tada.icloud-watcher</string>
+  <key>WatchPaths</key>
+  <array>
+    <string>~/Library/Mobile Documents/com~apple~CloudDocs</string>
+  </array>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/path/to/sync-script.sh</string>
+  </array>
+</dict>
+</plist>
+```
+
+**Polling par date :**
+```bash
+# Fichiers modifiés récemment
+find "$ICLOUD" -mtime -1 -type f -not -name "*.icloud"
+```
+
+**Setup requis :**
+1. Installer fswatch (`brew install fswatch`)
+2. Ou configurer launchd pour WatchPaths
+3. Script de sync déclenché sur changements
+
+**Fréquence recommandée :**
+- Filesystem watch : temps réel local
+- Polling find : toutes les 15-30 minutes
+
+**Limitations :**
+- Pas de notification des changements cloud
+- Dépend de la sync iCloud vers le Mac
+- Délai possible si Mac en veille
+
+---
+
 ## Notes
 
 **Limites :**

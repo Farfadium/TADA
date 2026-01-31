@@ -156,6 +156,52 @@ const changes = await drive.changes.list({
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [x] Webhook/Push (temps réel via Google Pub/Sub)
+- [x] Polling API (changes.list avec pageToken)
+- [ ] Sync manuelle uniquement
+
+**Push Notifications (recommandé) :**
+```bash
+# Créer un watch sur les changements
+POST https://www.googleapis.com/drive/v3/changes/watch
+Authorization: Bearer $ACCESS_TOKEN
+Content-Type: application/json
+
+{
+  "id": "unique-channel-id",
+  "type": "web_hook",
+  "address": "https://your-domain.com/webhook/drive",
+  "expiration": "1735689600000"
+}
+```
+
+**Events disponibles :**
+- `sync` — Changement dans le Drive
+- Header `X-Goog-Changed` : `content`, `properties`, `parents`
+- Header `X-Goog-Resource-State` : `sync`, `add`, `remove`, `update`, `trash`
+
+**Polling (alternative) :**
+```bash
+# Récupérer les changements depuis le dernier token
+GET https://www.googleapis.com/drive/v3/changes?pageToken=$PAGE_TOKEN
+Authorization: Bearer $ACCESS_TOKEN
+```
+
+**Setup requis :**
+1. Domaine vérifié dans Google Cloud Console
+2. Endpoint HTTPS accessible publiquement
+3. Renouveler le watch avant expiration (max 24h pour Drive)
+4. Stocker le `pageToken` pour le polling
+
+**Fréquence recommandée :**
+- Push : temps réel
+- Polling : toutes les 5-15 minutes
+
+---
+
 ## Liens et relations
 
 - Fichiers partagés → [[People/Propriétaire]]
