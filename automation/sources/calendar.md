@@ -67,6 +67,60 @@ description: Configuration source Calendrier — sync événements, rappels éch
 
 ---
 
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [x] Webhook/Push (Google Pub/Sub, Microsoft Graph)
+- [x] Polling API (events list avec syncToken)
+- [ ] Sync manuelle uniquement
+
+**Google Calendar Push (recommandé) :**
+```bash
+# Créer un watch sur les événements
+POST https://www.googleapis.com/calendar/v3/calendars/primary/events/watch
+Authorization: Bearer $ACCESS_TOKEN
+Content-Type: application/json
+
+{
+  "id": "unique-channel-id",
+  "type": "web_hook",
+  "address": "https://your-domain.com/webhook/calendar"
+}
+```
+
+**Microsoft Graph (Outlook) :**
+```bash
+# Subscription pour changements calendrier
+POST https://graph.microsoft.com/v1.0/subscriptions
+{
+  "changeType": "created,updated,deleted",
+  "notificationUrl": "https://your-domain.com/webhook/outlook",
+  "resource": "/me/events"
+}
+```
+
+**Apple Calendar (CalDAV) :**
+- Pas de push natif
+- Polling avec CalDAV REPORT
+- Ou watcher filesystem sur ~/Library/Calendars
+
+**Polling avec syncToken :**
+```bash
+# Google Calendar
+GET https://www.googleapis.com/calendar/v3/calendars/primary/events?syncToken=$TOKEN
+```
+
+**Setup requis :**
+1. Configurer webhook selon provider
+2. Stocker syncToken/deltaLink
+3. Renouveler les subscriptions avant expiration
+
+**Fréquence recommandée :**
+- Push : temps réel
+- Polling : toutes les 15-30 minutes
+
+---
+
 ## Notes
 
 _Les configurations spécifiques sont dans `local/TOOLS.md`._

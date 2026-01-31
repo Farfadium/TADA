@@ -1,34 +1,77 @@
 # Sources
 
-> Configuration des sources de capture (template agnostique).
+> Configuration des sources de capture pour TADA.
 
-## Templates
+---
 
-| Fichier | Description |
-|---------|-------------|
-| [_template.md](_template.md) | Template pour configurer une nouvelle source |
+## Catalogue complet
 
-## Sources disponibles
+👉 **[[CATALOG.md]]** — Liste de toutes les sources possibles, classées par priorité.
 
-| Fichier | Source | Type |
-|---------|--------|------|
-| [email.md](email.md) | Email | Gmail, Outlook, IMAP |
-| [calendar.md](calendar.md) | Calendar | Google Calendar, Outlook Calendar |
-| [meetings.md](meetings.md) | Meetings | Fireflies, Otter |
-| [messaging.md](messaging.md) | Messaging | WhatsApp, Telegram, Slack |
-| [files.md](files.md) | Files | Système de fichiers local |
-| [folk.md](folk.md) | CRM | Folk API/CSV |
-| [miro.md](miro.md) | Collaboration | Miro Board Export API |
+Utilisé lors du bootstrap pour identifier et activer les sources de l'utilisateur.
 
-## Configuration instance
+---
 
-La configuration spécifique à cette instance (comptes, MCP, statut) est dans `_SYSTEM/local/TOOLS.md`.
+## Sources implémentées
+
+| Fichier | Source | Type | Statut |
+|---------|--------|------|--------|
+| [[email.md]] | Email | Gmail, Outlook, IMAP | 🟢 |
+| [[calendar.md]] | Calendar | Google Calendar, Outlook | 🟢 |
+| [[meetings.md]] | Meetings | Fireflies, Otter | 🟢 |
+| [[folk.md]] | CRM | Folk API | 🟢 |
+| [[miro.md]] | Boards | Miro API | 🟢 |
+| [[files.md]] | Fichiers | Système local | 🟢 |
+| [[messaging.md]] | Messagerie | WhatsApp, Telegram, Slack | 🔲 |
+
+---
+
+## Créer une nouvelle source
+
+1. Copier `_template.md`
+2. Remplir les sections :
+   - **Configuration** : Comment accéder (API, MCP, export)
+   - **Bootstrap** : Comment amorcer la source (collecte initiale)
+   - **Comportement** : Ce que l'IA peut/ne peut pas faire
+   - **Sync** : Fréquence et critères
+   - **Format** : Structure des fichiers créés
+3. Ajouter au catalogue `CATALOG.md`
+4. Documenter le statut dans `TOOLS.md`
+
+---
 
 ## Structure d'une source
 
-Chaque fichier source contient:
-- **Configuration** : MCP possibles, accès (lecture/écriture/suppression)
-- **Comportement** : Ce que l'IA peut/ne peut pas faire
-- **Sync** : Fréquence, critères de récupération
-- **Archivage** : Format Markdown, vérification doublons, création fiches People
-- **Recherche** : Comment rechercher pour un projet
+Chaque fichier source doit contenir :
+
+```markdown
+## Configuration
+- MCP / API / Export disponibles
+- Accès : lecture / écriture / suppression
+
+## Bootstrap
+- Comment amorcer (collecte initiale)
+- Période à récupérer
+- Commandes / scripts
+
+## Comportement
+- Ce que l'IA peut faire
+- Ce que l'IA ne fait JAMAIS
+
+## Sync
+- Fréquence (session, quotidien, temps réel)
+- Critères de récupération
+
+## Format
+- Structure des fichiers créés
+- Nommage
+- Liens entre fichiers
+```
+
+---
+
+## Configuration instance
+
+La configuration spécifique (comptes actifs, MCP, dernière sync) est dans :
+
+👉 `_SYSTEM/runtimes/[runtime]/TOOLS.md`

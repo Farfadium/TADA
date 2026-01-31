@@ -43,16 +43,43 @@ Puis ouvre `DATA/index.md` ensemble et parlez de :
 
 ---
 
-## Connecter les sources (optionnel)
+## Connecter les sources
 
-Demande comment ils veulent interagir :
-- **Email** — connecter Gmail via MCP
-- **Calendar** — connecter Google Calendar
-- **Meetings** — connecter Fireflies pour les transcriptions
-- **Autres** — WhatsApp, Telegram, etc.
+👉 Consulte **[[automation/sources/CATALOG.md]]** — le catalogue complet des sources possibles.
 
-Guide-les dans la configuration de ce qu'ils choisissent.
-Mets à jour `_SYSTEM/local/TOOLS.md` avec les sources activées.
+### Processus
+
+Parcours le catalogue par ordre de priorité :
+
+**Priorité 1 — Core** (obligatoire de demander)
+- Email (Gmail, Outlook...)
+- Calendar
+- Contacts/CRM
+- Meetings (Fireflies, Otter...)
+
+**Priorité 2 — Documents**
+- Fichiers cloud (Drive, Dropbox...)
+- Notes (Notion, Obsidian...)
+- Boards (Miro...)
+- Tâches (Things, Todoist...)
+
+**Priorité 3-6** — Selon le temps et l'intérêt de l'utilisateur.
+
+### Pour chaque source
+
+1. "Utilises-tu [Source] ?"
+2. Si oui :
+   - Configurer l'accès (API, MCP, export)
+   - Vérifier que ça fonctionne
+   - Noter dans `TOOLS.md`
+3. Si non : passer
+
+### Collecte initiale
+
+Une fois les sources activées :
+- Lancer la collecte vers `DATA/PENDING/`
+- Voir [[bootstrap/METHODOLOGY.md]] pour le tri
+- Créer la structure TADA à partir des données
 
 ---
 

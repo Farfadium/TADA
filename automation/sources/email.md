@@ -78,6 +78,16 @@ description: Configuration source Email — règles de sync, labellisation Gmail
 
 **Format Markdown :**
 ```markdown
+---
+id: MESSAGE_ID
+thread_id: THREAD_ID
+date: YYYY-MM-DD
+from: Prénom Nom <email@exemple.com>
+to: destinataires
+subject: Sujet
+reply_to: [[emails/YYYY/YYYY-MM-DD_Message_Precedent.md]]  # Si réponse
+---
+
 # [Sujet de l'email]
 
 - **De :** [[Prénom Nom]] (email@exemple.com)
@@ -93,13 +103,77 @@ description: Configuration source Email — règles de sync, labellisation Gmail
 
 ---
 
-[Contenu complet de l'email]
+[Contenu du message — SANS l'historique quoté]
 
 ---
 
 ## PJ
-- [Nom_fichier.pdf](Nom_fichier.pdf) — description
+- [[attachments/YYYY/Nom_fichier.pdf]] — description
 ```
+
+---
+
+## Gestion des threads (historique)
+
+**Règle critique** : Ne JAMAIS dupliquer le contenu des messages précédents.
+
+Quand un email contient l'historique (citations ">" ou "Le XX/XX, Untel a écrit:") :
+1. **Supprimer** tout l'historique quoté du contenu
+2. **Créer un lien** vers le message précédent dans le frontmatter : `reply_to: [[chemin/message.md]]`
+3. Le thread est ainsi reconstitué par les liens, sans duplication
+
+**Exemple** :
+```markdown
+---
+id: abc123
+thread_id: xyz789
+date: 2026-01-15
+from: Jean Dupont
+subject: Re: Proposition
+reply_to: [[emails/2026/2026-01-14_Marie_Martin_Proposition.md]]
+---
+
+Merci pour ta proposition, je suis d'accord.
+
+(historique supprimé — voir message lié ci-dessus)
+```
+
+---
+
+## Pièces jointes
+
+**Règles de téléchargement :**
+```bash
+gog gmail download-attachment MESSAGE_ID ATTACHMENT_ID --out DESTINATION --account EMAIL
+```
+
+**Organisation :**
+- Stockées dans `DATA/PENDING/attachments/YYYY/` (collecte)
+- Ou dans `DATA/NOW/[Projet]/_emails/` (archivage projet)
+- Nom original conservé
+- Si doublon : ajouter suffix `_1`, `_2`
+
+**Fichier .md companion** (OBLIGATOIRE pour chaque attachment) :
+```markdown
+# nom_fichier.pdf
+
+**Type** : application/pdf
+**Taille** : 1.2 MB
+**Date email** : 2026-01-15
+**Email source** : [[emails/2026/2026-01-15_Expediteur_Sujet.md]]
+
+## Contenu
+(Résumé ou extraction du contenu — surtout pour PDFs)
+
+## Contexte
+(Pourquoi ce fichier est important, de quoi il parle)
+```
+
+**Extraction de contenu** :
+- PDFs : utiliser `pdftotext` ou `mutool draw -F txt`
+- DOCX : utiliser `pandoc` ou parser le XML
+- XLSX : extraire en CSV ou décrire le contenu
+- Images : description si pertinent
 
 **Emplacement :** `DATA/NOW/[Projet]/_emails/YYYY-MM-DD_Sujet_court.md`
 
@@ -118,6 +192,64 @@ description: Configuration source Email — règles de sync, labellisation Gmail
 - Ne jamais dupliquer un email déjà archivé
 
 ---
+
+## Détection nouvelles données
+
+**Méthode disponible :**
+- [x] Webhook/Push (Gmail Pub/Sub, Microsoft Graph)
+- [x] Polling API (avec historyId/syncToken)
+- [ ] Sync manuelle uniquement
+
+**Gmail Push Notifications (recommandé) :**
+```bash
+# 1. Créer un topic Pub/Sub dans Google Cloud
+# 2. Donner accès au service account Gmail
+
+# Activer le watch
+POST https://gmail.googleapis.com/gmail/v1/users/me/watch
+Authorization: Bearer $ACCESS_TOKEN
+Content-Type: application/json
+
+{
+  "topicName": "projects/myproject/topics/gmail-push",
+  "labelIds": ["INBOX"]
+}
+```
+
+**Microsoft Graph (Outlook) :**
+```bash
+POST https://graph.microsoft.com/v1.0/subscriptions
+{
+  "changeType": "created",
+  "notificationUrl": "https://your-domain.com/webhook/outlook",
+  "resource": "/me/mailFolders/inbox/messages",
+  "expirationDateTime": "2024-07-20T18:00:00Z"
+}
+```
+
+**IMAP IDLE (polling amélioré) :**
+```python
+import imaplib
+mail = imaplib.IMAP4_SSL('imap.gmail.com')
+mail.login(user, password)
+mail.select('INBOX')
+mail.idle()  # Attend les nouveaux messages
+```
+
+**Polling avec historyId :**
+```bash
+# Gmail - changements depuis historyId
+GET https://gmail.googleapis.com/gmail/v1/users/me/history?startHistoryId=$HISTORY_ID
+```
+
+**Setup requis :**
+1. Gmail : Topic Pub/Sub + watch API
+2. Outlook : Subscription Microsoft Graph
+3. Renouveler les watches avant expiration (7 jours Gmail)
+
+**Fréquence recommandée :**
+- Push : temps réel
+- Polling : toutes les 5 minutes
 
 ## Notes
 
