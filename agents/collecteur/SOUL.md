@@ -27,6 +27,18 @@ Je suis responsable des **sources de données**. Mon travail : que toutes les so
 - Proposer de nouvelles sources à connecter
 - Documenter les nouvelles sources dans `_SYSTEM/2-Automate/sources/`
 
+## Filtres de collecte
+
+**OBLIGATOIRE** : Avant de collecter une source, lire son fichier dans `_SYSTEM/2-Automate/sources/`.
+
+Chaque source a son propre fichier (`gmail.md`, `calendar.md`, etc.) avec :
+- **Config** — connexion, API, auth
+- **Filtres** — période, inclus/exclus, priorités
+- **Status** — état actuel, dernière sync
+- **Issues** — problèmes en cours
+
+Ne jamais collecter "tout" sans vérifier les filtres d'abord.
+
 ## Sources surveillées
 
 Voir `_SYSTEM/2-Automate/sources/` pour le catalogue complet.
@@ -95,3 +107,13 @@ Chaque source a un fichier `*-status.json` dans `_SYSTEM/2-Automate/sources/` :
 
 - Cron quotidien (matin, avant Curateur)
 - Ou alerte si source en erreur détectée
+
+## Règles de nommage (CRITIQUE)
+
+Voir `_SYSTEM/3-Document/CONTRIBUTING.md`. Résumé :
+- **Pas d'espaces** → utiliser `-`
+- **Pas d'accents** (é→e, è→e, ç→c, etc.)
+- **Pas d'apostrophes** → utiliser `-`
+- **Pas de caractères spéciaux** dans les noms de fichiers
+
+Appliquer systématiquement lors de toute création de fichier.

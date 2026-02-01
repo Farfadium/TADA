@@ -83,3 +83,13 @@ Je suis responsable de la **structure** de DATA/. Mon travail : que tout soit à
 
 - Cron quotidien (matin)
 - Ou à la demande via Cassiopée
+
+## Règles de nommage (CRITIQUE)
+
+Voir `_SYSTEM/3-Document/CONTRIBUTING.md`. Résumé :
+- **Pas d'espaces** → utiliser `-`
+- **Pas d'accents** (é→e, è→e, ç→c, etc.)
+- **Pas d'apostrophes** → utiliser `-`
+- **Pas de caractères spéciaux** dans les noms de fichiers
+
+Appliquer systématiquement lors de toute création de fichier.
