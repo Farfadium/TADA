@@ -588,6 +588,30 @@
       "gitBranch": "main",
       "projectPath": "/Users/yvanwibaux/Library/CloudStorage/GoogleDrive-yvan.wibaux@gmail.com/Mon Drive/TADA",
       "isSidechain": false
+    },
+    {
+      "sessionId": "3f79491d-6c0c-498f-b3c3-dc9eb8de444b",
+      "fullPath": "/Users/yvanwibaux/.claude/projects/-Users-yvanwibaux-Library-CloudStorage-GoogleDrive-yvan-wibaux-gmail-com-Mon-Drive-TADA/3f79491d-6c0c-498f-b3c3-dc9eb8de444b.jsonl",
+      "fileMtime": 1769901987166,
+      "firstPrompt": "<ide_opened_file>The user opened the file /Users/yvanwibaux/Library/CloudStorage/GoogleDrive-yvan.wibaux@gmail.com/Mon Drive/TADA/DATA/PENDING/emails/2022/2022-06-30_Eric_Maison_Caulires_Maison_Caulir…",
+      "messageCount": 26,
+      "created": "2026-01-31T22:09:37.099Z",
+      "modified": "2026-01-31T23:26:27.147Z",
+      "gitBranch": "main",
+      "projectPath": "/Users/yvanwibaux/Library/CloudStorage/GoogleDrive-yvan.wibaux@gmail.com/Mon Drive/TADA",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "332efe1e-41cf-4251-a1c6-93cabef0846b",
+      "fullPath": "/Users/yvanwibaux/.claude/projects/-Users-yvanwibaux-Library-CloudStorage-GoogleDrive-yvan-wibaux-gmail-com-Mon-Drive-TADA/332efe1e-41cf-4251-a1c6-93cabef0846b.jsonl",
+      "fileMtime": 1769903074514,
+      "firstPrompt": "<ide_opened_file>The user opened the file /Users/yvanwibaux/Library/CloudStorage/GoogleDrive-yvan.wibaux@gmail.com/Mon Drive/TADA/DATA/NOW/TADA-PROJECT/MANIFESTO.md in the IDE. This may or may not be…",
+      "messageCount": 18,
+      "created": "2026-01-31T23:26:48.693Z",
+      "modified": "2026-01-31T23:44:34.501Z",
+      "gitBranch": "main",
+      "projectPath": "/Users/yvanwibaux/Library/CloudStorage/GoogleDrive-yvan.wibaux@gmail.com/Mon Drive/TADA",
+      "isSidechain": false
     }
   ],
   "originalPath": "/Users/yvanwibaux/Library/CloudStorage/GoogleDrive-yvan.wibaux@gmail.com/Mon Drive/TADA"
