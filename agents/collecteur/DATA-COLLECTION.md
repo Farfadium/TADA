@@ -66,9 +66,14 @@ Fréquence définie par source (voir documentation).
 YYYY-MM-DD_Origine_Sujet_Court.md
 ```
 
+**RÈGLE ABSOLUE** : Tous les noms de fichiers DOIVENT être nettoyés avec `sanitize_filename()` avant création.
+
 - Underscores pour les espaces
-- Pas de caractères spéciaux
-- Sujet tronqué si trop long (max 50 chars)
+- **AUCUN emoji, caractère spécial, ou Unicode invalide**
+- Uniquement : `a-z A-Z 0-9 - _ . ( ) [ ]`
+- Sujet tronqué si trop long (max 200 chars)
+
+**Voir [[filename-sanitizer.md]] pour la fonction de nettoyage obligatoire.**
 
 ### Liens
 
