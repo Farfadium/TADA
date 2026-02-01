@@ -1,0 +1,23 @@
+{
+  "source": "folk-crm",
+  "status": "complete",
+  "lastSync": "2026-01-30T09:00:00Z",
+  "stats": {
+    "totalContacts": 300,
+    "contactsWithEmail": 280,
+    "contactsWithPhone": 120,
+    "contactsWithCompany": 250,
+    "groups": 4
+  },
+  "coverage": {
+    "type": "snapshot",
+    "date": "2026-01-30"
+  },
+  "storage": {
+    "contacts": "DATA/PENDING/folk/people/",
+    "groups": "DATA/PENDING/folk/groups/"
+  },
+  "issues": [],
+  "nextSync": null,
+  "notes": "Snapshot complet. Sync incrémentale à configurer."
+}

@@ -79,6 +79,35 @@ git branch -d feature/refacto-structure
 
 ## Naming conventions
 
+### Fichiers et dossiers — RÈGLES STRICTES
+
+**Compatibilité cross-platform (Mac, Linux, Windows, Google Drive) :**
+
+| ❌ Interdit | ✅ Correct |
+|-------------|-----------|
+| Espaces | Tirets `-` ou underscores `_` |
+| Accents (é, è, ê, à, ô, etc.) | Sans accents (e, a, o) |
+| Caractères spéciaux (`?`, `*`, `:`, `<`, `>`, `\|`) | Aucun |
+| Apostrophes, guillemets | Aucun |
+
+**Exemples :**
+| ❌ Mauvais | ✅ Bon |
+|------------|--------|
+| `Les Jaunets` | `Les-Jaunets` |
+| `Déclic CNV` | `Declic-CNV` |
+| `Impôts` | `Impots` |
+| `idées` | `idees` |
+| `A traiter` | `A-traiter` |
+
+**Convention _SYSTEM :**
+- Préfixes numériques : `1-Trust`, `2-Automate`, `3-Document`, `4-Act`
+- PascalCase pour les dossiers principaux
+- kebab-case ou snake_case pour les sous-dossiers
+
+**Convention DATA :**
+- PascalCase pour les projets : `Les-Jaunets`, `TADA-PROJECT`
+- Dates en préfixe : `YYYY-MM-DD_Sujet.md`
+
 ### Branches
 
 ```

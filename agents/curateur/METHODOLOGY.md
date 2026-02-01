@@ -129,12 +129,14 @@ Pour chaque type d'entité :
 1. Extraire toutes les personnes uniques
 2. Dédupliquer
 3. Créer un fichier par personne
-4. **Mettre à jour TOUS les fichiers qui mentionnent cette personne** avec un lien `[[People/Prénom_Nom]]`
+4. **Enrichir avec internet** : Chercher sur LinkedIn/web pour ajouter photo, bio, poste actuel
+5. **Mettre à jour TOUS les fichiers qui mentionnent cette personne** avec un lien `[[People/Prénom_Nom]]`
 
 **Organisations (Orgs/)** :
 1. Extraire les organisations uniques
 2. Créer un fichier par org
-3. **Mettre à jour TOUS les fichiers** qui mentionnent cette org avec un lien `[[Orgs/Nom_Org]]`
+3. **Enrichir avec internet** : Chercher site web, description, logo, actualités récentes
+4. **Mettre à jour TOUS les fichiers** qui mentionnent cette org avec un lien `[[Orgs/Nom_Org]]`
 
 **Règle critique** : Quand une entité est ajoutée à un annuaire, **tous les fichiers existants** qui la mentionnent doivent être mis à jour pour inclure le lien vers l'entrée de l'annuaire.
 

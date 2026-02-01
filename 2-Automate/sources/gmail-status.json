@@ -1,0 +1,30 @@
+{
+  "source": "gmail",
+  "account": "yvan.wibaux@gmail.com",
+  "status": "partial",
+  "lastSync": "2026-01-30T14:00:00Z",
+  "stats": {
+    "totalEmails": 12567,
+    "emailsWithAttachments": 850,
+    "attachmentsDownloaded": 215,
+    "attachmentsMissing": 635
+  },
+  "coverage": {
+    "from": "2022-01-01",
+    "to": "2026-01-30"
+  },
+  "storage": {
+    "emails": "DATA/PENDING/emails/",
+    "attachments": "DATA/PENDING/attachments/"
+  },
+  "issues": [
+    {
+      "type": "incomplete_attachments",
+      "description": "Beaucoup d'attachments non téléchargés",
+      "severity": "medium",
+      "action": "Relancer téléchargement avec script gog"
+    }
+  ],
+  "nextSync": null,
+  "notes": "Collecte initiale 2026-01-30. Attachments partiels."
+}

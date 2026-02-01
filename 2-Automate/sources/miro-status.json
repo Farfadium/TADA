@@ -1,0 +1,30 @@
+{
+  "source": "miro",
+  "status": "partial",
+  "lastSync": "2026-01-30T16:00:00Z",
+  "stats": {
+    "totalBoards": 213,
+    "boardsExported": 196,
+    "boardsMissing": 17
+  },
+  "coverage": {
+    "from": "2020-01-01",
+    "to": "2026-01-30"
+  },
+  "storage": {
+    "boards": "DATA/PENDING/miro/boards/"
+  },
+  "issues": [
+    {
+      "type": "rate_limit",
+      "description": "API rate limit atteint pendant export",
+      "severity": "low",
+      "action": "Attendre reset et relancer pour les 17 boards manquants"
+    }
+  ],
+  "missingBoards": [
+    "Liste des 17 boards à récupérer"
+  ],
+  "nextSync": null,
+  "notes": "Export partiel. 17 boards à récupérer après reset rate limit."
+}
