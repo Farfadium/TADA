@@ -6,12 +6,14 @@ Voir [1-Trust/AGENTS.md](../1-Trust/AGENTS.md) pour l'architecture globale.
 
 ## Agents implémentés
 
-| Agent | Statut | Dossier |
-|-------|--------|---------|
-| 🗂️ Curateur | ✅ Prêt | [curateur/](curateur/) |
-| 🔌 Collecteur | ✅ Prêt | [collecteur/](collecteur/) |
-| 📝 Scribe | ✅ Prêt | [scribe/](scribe/) |
-| 🔧 Tech Lead | ⏳ À faire | — |
+| Agent | Statut | Dossier | Mission |
+|-------|--------|---------|---------|
+| 🌟 Cassiopée | ✅ Principal | — | Interface Yvan, orchestration |
+| 🗂️ Curateur | ✅ Prêt | [curateur/](curateur/) | Structure DATA |
+| 🔌 Collecteur | ✅ Prêt | [collecteur/](collecteur/) | Fait rentrer la donnée |
+| 📝 Scribe | ✅ Prêt | [scribe/](scribe/) | Mémoire (USER.md, daily notes) |
+| 🔧 Tech Lead | ✅ Prêt | [tech-lead/](tech-lead/) | Maintient _SYSTEM |
+| 🛡️ Gardien | ✅ Prêt | [gardien/](gardien/) | QA, vérifie, alerte |
 
 ## Structure d'un agent
 
